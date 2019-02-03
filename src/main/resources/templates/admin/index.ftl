@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-	<title>Apartment - Premium Real Estate HMTL Site Template</title>
-	<meta name="keywords" content="Download, Apartment, Premium, Real Estate, HMTL, Site Template, property, mortgage, CSS" />
-	<meta name="description" content="Download Apartment - Premium Real Estate HMTL Site Template" />
+	<title>rentafacilpuebla</title>
+	<meta name="keywords" content="puebla,renta,facil,casa,departamento,ava" />
+	<meta name="description" content="renta de casas y departamentos facil en puebla sin aval" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
