@@ -85,7 +85,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
 						</li>
-						<li><a href="submit-property.html" class="special-color">registrar propiedad</a></li>
+						<!--<li><a href="submit-property.html" class="special-color">registrar propiedad</a></li>-->
 					</ul>
 				</div>
 			</div>
