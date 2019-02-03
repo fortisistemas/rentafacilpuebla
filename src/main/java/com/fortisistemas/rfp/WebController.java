@@ -31,7 +31,8 @@ public class WebController {
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
-
 		return "admin/index";
 	}
+	
+	
 }
