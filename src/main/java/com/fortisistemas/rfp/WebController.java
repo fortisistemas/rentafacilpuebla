@@ -18,4 +18,15 @@ public class WebController {
 
 		return "public/index";
 	}
+	
+	@GetMapping(path = "/admin")
+	public String admin(Authentication auth, Model model) {
+		if (auth != null) {
+			User principal = (User) auth.getPrincipal();
+			if (principal != null)
+				model.addAttribute("principal", principal.getUsername());
+		}
+
+		return "admin/index";
+	}
 }
