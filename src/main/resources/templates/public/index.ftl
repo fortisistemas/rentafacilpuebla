@@ -108,13 +108,12 @@
 								<div class="slide-desc pull-right">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">apartamentos</div>
-										<div class="transaction-type">sale</div>
-										<h4>Fort Collins, Colorado 80523, USA</h4>
+										<div class="estate-type">departamentos</div>
+										<div class="transaction-type">se vende</div>
+										<h4>Chachapa, El Arenal</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+										<p>Cholul 7 es un desarrollo residencial de 7 casas que ofrece una gran comodidad  
 										</p>
 									</div>
 									<div class="slide-desc-params">	
@@ -155,13 +154,12 @@
 								<div class="slide-desc pull-left">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">casas</div>
-										<div class="transaction-type">sale</div>
-										<h4>West Fourth Street, New York 10003, USA</h4>
+										<div class="estate-type">casa</div>
+										<div class="transaction-type">se vende</div>
+										<h4>Amozc, Amozoc De Mota</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<p>Esta hermosa casa de 91 metros cuadrados de construcción cuenta con una sala-comedor, cocina, 3 recámaras, 2baños, patio de...</p>
 									</div>
 									<div class="slide-desc-params">	
 										<div class="slide-desc-area">
@@ -190,11 +188,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="video-slide">
+					<!--<div class="video-slide">
                         <video poster="images/slides/2.jpg" preload="auto" loop autoplay muted>
                              <source src='images/slides/2.mp4' type='video/mp4' />
                         </video>
-                    </div>
+                    </div>-->
 				</div>
 				<div class="swiper-slide">
 					<div class="slide-bg swiper-lazy" data-background="images/slides/kkk.jpg"></div>
@@ -206,13 +204,12 @@
 								<div class="slide-desc center-block">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">apartment</div>
-										<div class="transaction-type">sale</div>
-										<h4>E. Elwood St. Phoenix, AZ 85034, USA</h4>
+										<div class="estate-type">departamento</div>
+										<div class="transaction-type">se renta</div>
+										<h4>Amalucan, Clavijero</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+										<p>Privada Campocielo, un desarrollo habitacional cuenta con vigilancia, amplias avenidas, áreas verdes, jardines con juegos...
 										</p>
 									</div>
 									<div class="slide-desc-params">	
@@ -298,7 +295,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms1-value" class="adv-search-label">Cuartos:</label>
+								<label for="slider-range-bedrooms1-value" class="adv-search-label">Recamaras:</label>
 								<input type="text" id="slider-range-bedrooms1-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bedrooms1" data-min="1" data-max="10" class="slider-range"></div>
@@ -344,7 +341,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms2-value" class="adv-search-label">Cuartos:</label>
+								<label for="slider-range-bedrooms2-value" class="adv-search-label">Recamaras:</label>
 								<input type="text" id="slider-range-bedrooms2-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bedrooms2" data-min="1" data-max="10" class="slider-range"></div>
@@ -384,40 +381,40 @@
     <section class="section-light bottom-padding-45 section-both-shadow">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInLeft" id="feature1">
 						<div class="feature-icon center-block"><i class="fa fa-building"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">PIXEL PERFECT</h5>
-							<h3>DESIGN<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>Departamentos<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Departamentos en Puebla, los mejores de la ciudad .</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInUp" id="feature2">
 						<div class="feature-icon center-block"><i class="fa fa-home"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">FIFTY</h5>
-							<h3>HTML FILES<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>casas<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Casa en Puebla, las mejores para vivir.</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInUp" id="feature3">
-						<div class="feature-icon center-block"><i class="fa fa-industry"></i></div>
+						<div class="feature-icon center-block"><i class="fa fa-question"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">MASONRY, LIST &amp; GRID</h5>
-							<h3>LAYOUTS<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>Asesorias<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Renta de casas y departamentos en Puebla: inclusive si no tienes aval nosotros te asesoramos.</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<!--<div class="col-sm-6 col-lg-3">
 					<div class="feature wow fadeInRight" id="feature4">
 						<div class="feature-icon center-block"><i class="fa fa-tree"></i></div>
 						<div class="feature-text">
@@ -428,7 +425,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
     </section>
 
