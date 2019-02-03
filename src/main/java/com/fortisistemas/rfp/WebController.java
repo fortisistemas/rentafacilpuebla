@@ -19,6 +19,11 @@ public class WebController {
 		return "public/index";
 	}
 	
+	@GetMapping(path = "/login")
+	public String login() {
+		return "login/index";
+	}
+	
 	@GetMapping(path = "/admin")
 	public String admin(Authentication auth, Model model) {
 		if (auth != null) {

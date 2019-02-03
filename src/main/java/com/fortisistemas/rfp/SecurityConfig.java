@@ -27,10 +27,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
           .csrf().disable()
           .authorizeRequests()
-          //.antMatchers("/admin").hasRole("ADMIN")
-          //.antMatchers("/admin/**").hasRole("ADMIN")
-          //.antMatchers("/anonymous*").anonymous()
-          .anyRequest().permitAll();
+          .antMatchers("/admin").hasRole("ADMIN")
+          .antMatchers("/admin/*").hasRole("ADMIN")
+  		  .antMatchers("/admin/**").hasRole("ADMIN")
+  		  .anyRequest().permitAll()
+  		  .and().formLogin().loginPage("/login").permitAll();
     }
      
     @Bean
