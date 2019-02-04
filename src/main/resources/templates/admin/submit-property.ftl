@@ -93,7 +93,7 @@
 									<input type="checkbox" id="c10" name="cc" class="main-checkbox" />
 									<label for="c10"><span></span>Alto Nivel</label><br/>
 									<input type="checkbox" id="c11" name="cc" class="main-checkbox" />
-									<label for="c11"><span></span>Centro De La ciudad</label><br/>
+									<label for="c11"><span></span>Centrico</label><br/>
 									<input type="checkbox" id="c12" name="cc" class="main-checkbox" />
 									<label for="c12"><span></span>Con Muebles</label>
 								</div>
@@ -115,7 +115,7 @@
 						</div>				
 					</div>
 					<div class="col-xs-12 col-md-6 margin-top-xs-60 margin-top-sm-60">
-						<h3 class="title-negative-margin">Localisacion<span class="special-color">.</span></h3>
+						<h3 class="title-negative-margin">Localizacion<span class="special-color">.</span></h3>
 						<div class="title-separator-primary"></div>
 						<div class="dark-col margin-top-60">
 							<input id="geocomplete" name="geocomplete" type="text" class="input-full main-input" placeholder="Localisacion" />
