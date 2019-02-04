@@ -19,8 +19,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 short-image-title">
-					<h5 class="subtitle-margin second-color">Estar En Contacto</h5>
-					<h1 class="second-color">Contactame</h1>
+					<!--<h5 class="subtitle-margin second-color">Estar En Contacto</h5>-->
+					<!--<h1 class="second-color">Contactame</h1>-->
 					<div class="short-title-separator"></div>
 				</div>
 			</div>
