@@ -935,9 +935,9 @@ jQuery(window).load(function() {
 			$("#geocomplete").geocomplete({
 				map: "#submit-property-map",
 				details: "form ",
-				location: new google.maps.LatLng(40.6700, -73.9400),
+				location: new google.maps.LatLng(19.118742740060604,-98.26834974544067),
 				mapOptions: {
-					zoom: 14,
+					zoom: 18,
 					scrollwheel: true,
 					mapTypeId: "roadmap",
 					disableDefaultUI: false,
@@ -958,7 +958,7 @@ jQuery(window).load(function() {
 				},
 				markerOptions: {
 					draggable: true,
-					icon: 'images/pin-empty.png'
+					icon: '/images/pin-empty.png'
 				}
 			});
 				
@@ -1482,7 +1482,7 @@ function offersMapInit(id, locations) {
 	map.fitBounds(bounds);
 				
 	var markerClusterStyle = [{
-		url: 'images/pin-empty.png',
+		url: '/images/pin-empty.png',
 		height: 80,
 		width: 48,
 		textSize: 16,
