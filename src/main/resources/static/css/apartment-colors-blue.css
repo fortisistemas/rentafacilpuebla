@@ -6,7 +6,7 @@ Author: Jan Skwara - http://themeforest.net/user/johnnychaos
 
 
 body {
-	background: #3797dd url(../images/bg-pattern5.jpg) repeat;
+	background: #3797dd url(/images/bg-pattern5.jpg) repeat;
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
@@ -697,7 +697,7 @@ html.no-pointerevents.no-touchevents .list-agency:hover .list-agency-separator {
 }
 
 .loader-bg {
-	background: #ffffff url(../images/loader.png) no-repeat center center;
+	background: #ffffff url(/images/loader.png) no-repeat center center;
 }
 
 header.header2.header-dark, 
@@ -708,7 +708,7 @@ header.header3.header-dark {
 
 .navbar-nav > li > a.dropdown-toggle:hover::after, 
 .hover-menu::after {
-	background: transparent url(../images/menu-carret.png) no-repeat bottom center;
+	background: transparent url(/images/menu-carret.png) no-repeat bottom center;
 }
 
 header.header2 .navbar-nav > li > a.dropdown-toggle:hover::after, 
@@ -720,26 +720,26 @@ header.header3 .hover-menu::after {
 
 .adv-search-tabs li.active::after, 
 .adv-search-tabs li:hover::after  {
-	background: transparent url(../images/menu-carret.png) no-repeat bottom center;
+	background: transparent url(/images/menu-carret.png) no-repeat bottom center;
 }
 
 .select-cont {
-	background: white url(../images/select-bg.png) no-repeat right center;
+	background: white url(/images/select-bg.png) no-repeat right center;
 }
 
 .bootstrap-select.btn-group .dropdown-toggle .caret {
-	background: white url(../images/select-bg.png) no-repeat right center;
+	background: white url(/images/select-bg.png) no-repeat right center;
 }
 
 .cs-skin-border > span::after,
 .cs-skin-border .cs-selected span::after {
-	background: white url(../images/select-bg.png) no-repeat right center;
+	background: white url(/images/select-bg.png) no-repeat right center;
 }
 
 .ui-state-default, 
 .ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default {
-	background: #ebebeb url(../images/range-bg.png) no-repeat center center;
+	background: #ebebeb url(/images/range-bg.png) no-repeat center center;
 }
 
 .simple-search-cont {
@@ -752,27 +752,27 @@ header.header3 .hover-menu::after {
 
 .simple-search-cont .cs-skin-border > span::after,
 .simple-search-cont .cs-skin-border .cs-selected span::after {
-	background: white url(../images/select-bg2.png) no-repeat right center;
+	background: white url(/images/select-bg2.png) no-repeat right center;
 }
 
 .simple-search-cont .bootstrap-select.btn-group .dropdown-toggle .caret {
-	background: white url(../images/select-bg2.png) no-repeat right center;
+	background: white url(/images/select-bg2.png) no-repeat right center;
 }
 
 html.no-pointerevents.no-touchevents #feature1:hover > .feature-text::after {
-	background: #3797dd url(../images/feature-bg1.jpg) no-repeat center center;
+	background: #3797dd url(/images/feature-bg1.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature2:hover > .feature-text::after {
-	background: #3797dd url(../images/feature-bg2.jpg) no-repeat center center;
+	background: #3797dd url(/images/feature-bg2.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature3:hover > .feature-text::after {
-	background: #3797dd url(../images/feature-bg3.jpg) no-repeat center center;
+	background: #3797dd url(/images/feature-bg3.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature4:hover > .feature-text::after {
-	background: #3797dd url(../images/feature-bg4.jpg) no-repeat center center;
+	background: #3797dd url(/images/feature-bg4.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature1.feature2:hover, 
@@ -785,43 +785,43 @@ html.no-pointerevents.no-touchevents #feature6.feature2:hover {
 }
 
 html.no-pointerevents.no-touchevents #feature1.feature2:hover::after {
-	background: url(../images/feature-bg1.jpg) no-repeat center center; 
+	background: url(/images/feature-bg1.jpg) no-repeat center center; 
 }
 
 html.no-pointerevents.no-touchevents #feature2.feature2:hover::after {
-	background: url(../images/feature-bg2.jpg) no-repeat center center;
+	background: url(/images/feature-bg2.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature3.feature2:hover::after {
-	background: url(../images/feature-bg3.jpg) no-repeat center center;
+	background: url(/images/feature-bg3.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature4.feature2:hover::after {
-	background: url(../images/feature-bg4.jpg) no-repeat center center;
+	background: url(/images/feature-bg4.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature5.feature2:hover::after {
-	background: url(../images/feature-bg1.jpg) no-repeat center center;
+	background: url(/images/feature-bg1.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature6.feature2:hover::after {
-	background: url(../images/feature-bg2.jpg) no-repeat center center;
+	background: url(/images/feature-bg2.jpg) no-repeat center center;
 }
 
 section.featured-offers {
-	background: #183263 url(../images/featured-bg.jpg) no-repeat fixed 50% 0;
+	background: #183263 url(/images/featured-bg.jpg) no-repeat fixed 50% 0;
 }
 
 .testimonials {
-	background: #152560 url(../images/testimonials-bg.jpg) no-repeat fixed 50% 0;
+	background: #152560 url(/images/testimonials-bg.jpg) no-repeat fixed 50% 0;
 }
 
 section.blog-short-title {
-	background: #475057 url(../images/short-bg4.jpg) no-repeat center;
+	background: #475057 url(/images/short-bg4.jpg) no-repeat center;
 }
 
 footer.large-cont {
-	background: #151F2B url(../images/footer-bg.jpg) no-repeat center 0px;
+	background: #151F2B url no-repeat center 0px;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -834,7 +834,7 @@ footer.large-cont {
 }
 
 section.contact-short-title {
-	background: #152560 url(../images/short-bg2.jpg) no-repeat center;
+	background: #152560 url(/images/short-bg2.jpg) no-repeat center;
 }
 
 .quote-box,
@@ -847,26 +847,26 @@ section.contact-short-title {
 }
 
 section.agencies {
-	background: #152560 url(../images/short-bg1.jpg) no-repeat center;
+	background: #152560 url(/images/short-bg1.jpg) no-repeat center;
 }
 
 section.agency {
-	background: #152560 url(../images/short-bg2.jpg) no-repeat center;
+	background: #152560 url(/images/short-bg2.jpg) no-repeat center;
 }
 
 
 section.agent {
-	background: #152560 url(../images/short-bg3.jpg) no-repeat center;
+	background: #152560 url(/images/short-bg3.jpg) no-repeat center;
 }
 
 
 section.neighbourhood {
-	background: #f8f8f8 url(../images/neighbourhood-bg.jpg) no-repeat fixed 50% 0;
+	background: #f8f8f8 url(/images/neighbourhood-bg.jpg) no-repeat fixed 50% 0;
 }
 
 
 section.rooms {
-	background: #f8f8f8 url(../images/rooms-bg.jpg) no-repeat fixed 50% 0;
+	background: #f8f8f8 url(/images/rooms-bg.jpg) no-repeat fixed 50% 0;
 }
 
 

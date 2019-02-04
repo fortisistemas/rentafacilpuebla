@@ -108,13 +108,12 @@
 								<div class="slide-desc pull-right">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">apartamentos</div>
-										<div class="transaction-type">sale</div>
-										<h4>Fort Collins, Colorado 80523, USA</h4>
+										<div class="estate-type">departamentos</div>
+										<div class="transaction-type">se vende</div>
+										<h4>Chachapa, El Arenal</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+										<p>Cholul 7 es un desarrollo residencial de 7 casas que ofrece una gran comodidad  
 										</p>
 									</div>
 									<div class="slide-desc-params">	
@@ -155,13 +154,12 @@
 								<div class="slide-desc pull-left">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">casas</div>
-										<div class="transaction-type">sale</div>
-										<h4>West Fourth Street, New York 10003, USA</h4>
+										<div class="estate-type">casa</div>
+										<div class="transaction-type">se vende</div>
+										<h4>Amozc, Amozoc De Mota</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<p>Esta hermosa casa de 91 metros cuadrados de construcción cuenta con una sala-comedor, cocina, 3 recámaras, 2baños, patio de...</p>
 									</div>
 									<div class="slide-desc-params">	
 										<div class="slide-desc-area">
@@ -190,11 +188,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="video-slide">
+					<!--<div class="video-slide">
                         <video poster="images/slides/2.jpg" preload="auto" loop autoplay muted>
                              <source src='images/slides/2.mp4' type='video/mp4' />
                         </video>
-                    </div>
+                    </div>-->
 				</div>
 				<div class="swiper-slide">
 					<div class="slide-bg swiper-lazy" data-background="images/slides/kkk.jpg"></div>
@@ -206,13 +204,12 @@
 								<div class="slide-desc center-block">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">apartment</div>
-										<div class="transaction-type">sale</div>
-										<h4>E. Elwood St. Phoenix, AZ 85034, USA</h4>
+										<div class="estate-type">departamento</div>
+										<div class="transaction-type">se renta</div>
+										<h4>Amalucan, Clavijero</h4>
 										<div class="clearfix"></div>
 										
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+										<p>Privada Campocielo, un desarrollo habitacional cuenta con vigilancia, amplias avenidas, áreas verdes, jardines con juegos...
 										</p>
 									</div>
 									<div class="slide-desc-params">	
@@ -298,7 +295,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms1-value" class="adv-search-label">Cuartos:</label>
+								<label for="slider-range-bedrooms1-value" class="adv-search-label">Recamaras:</label>
 								<input type="text" id="slider-range-bedrooms1-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bedrooms1" data-min="1" data-max="10" class="slider-range"></div>
@@ -344,7 +341,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms2-value" class="adv-search-label">Cuartos:</label>
+								<label for="slider-range-bedrooms2-value" class="adv-search-label">Recamaras:</label>
 								<input type="text" id="slider-range-bedrooms2-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bedrooms2" data-min="1" data-max="10" class="slider-range"></div>
@@ -384,40 +381,40 @@
     <section class="section-light bottom-padding-45 section-both-shadow">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInLeft" id="feature1">
 						<div class="feature-icon center-block"><i class="fa fa-building"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">PIXEL PERFECT</h5>
-							<h3>DESIGN<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>Departamentos<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Departamentos en Puebla, los mejores de la ciudad .</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInUp" id="feature2">
 						<div class="feature-icon center-block"><i class="fa fa-home"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">FIFTY</h5>
-							<h3>HTML FILES<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>casas<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Casa en Puebla, las mejores para vivir.</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-4">
 					<div class="feature wow fadeInUp" id="feature3">
-						<div class="feature-icon center-block"><i class="fa fa-industry"></i></div>
+						<div class="feature-icon center-block"><i class="fa fa-question"></i></div>
 						<div class="feature-text">
-							<h5 class="subtitle-margin">MASONRY, LIST &amp; GRID</h5>
-							<h3>LAYOUTS<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin"></h5>
+							<h3>Asesorias<span class="special-color">.</span></h3>
 							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+							<p>Renta de casas y departamentos en Puebla: inclusive si no tienes aval nosotros te asesoramos.</p>
 						</div>
 					</div>
 				</div>			
-				<div class="col-sm-6 col-lg-3">
+				<!--<div class="col-sm-6 col-lg-3">
 					<div class="feature wow fadeInRight" id="feature4">
 						<div class="feature-icon center-block"><i class="fa fa-tree"></i></div>
 						<div class="feature-text">
@@ -428,7 +425,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
     </section>
 
@@ -437,8 +434,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9">
-					<h5 class="subtitle-margin second-color">highly recommended</h5>
-							<h1 class="second-color">featured offers<span class="special-color">.</span></h1>
+					<h5 class="subtitle-margin second-color">Alta mente recomendado </h5>
+							<h1 class="second-color">ofertas destacadas<span class="special-color">.</span></h1>
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<a href="#" class="navigation-box navigation-box-next" id="featured-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
@@ -456,13 +453,13 @@
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer1.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">apartment</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Departamento</div>
+								<div class="transaction-type">En Renta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">250 South Dr, Fort Collins, Colorado 80523, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4 class="featured-offer-title">El Carmen Al mada</h4>
+							<p>cuenta con un servicio de limpieza gratuito y una terraza.</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
@@ -497,13 +494,13 @@
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer2.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">apartment</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Departamento</div>
+								<div class="transaction-type">En Renta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">West Fourth Street, New York 10003, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4 class="featured-offer-title">Puebla la Noria </h4>
+							<p>cuenta con una terrasa y elevador privado.</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
@@ -538,13 +535,13 @@
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer3.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">house</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">casa</div>
+								<div class="transaction-type">En Venta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">500 E. Elwood St. Phoenix, AZ 85034, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4 class="featured-offer-title">Las vegas Amozoc</h4>
+							<p>casa rustica en muy buen estado a muy buen precio.</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
@@ -574,13 +571,13 @@
 					</div>
 					
 				</div>
-				<div class="featured-offer-col">
+				<!--<div class="featured-offer-col">
 					<div class="featured-offer-front">
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer4.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">apartment</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Departamento</div>
+								<div class="transaction-type">En Renta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
@@ -614,14 +611,14 @@
 						</div>
 					</div>
 
-				</div>
-				<div class="featured-offer-col">
+				</div>-->
+				<!--<div class="featured-offer-col">
 					<div class="featured-offer-front">
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer5.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">apartment</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Departamento</div>
+								<div class="transaction-type">En Renta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
@@ -655,19 +652,19 @@
 						</div>
 					</div>
 
-				</div>
+				</div>-->
 				<div class="featured-offer-col">
 					<div class="featured-offer-front">
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer6.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">apartment</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Departamento</div>
+								<div class="transaction-type">En Renta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">One Neumann Drive Aston, Philadelphia 19014-1298, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4 class="featured-offer-title">Puebla la paz</h4>
+							<p>departamento acsesible y amueblado.</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
@@ -702,13 +699,13 @@
 						<div class="featured-offer-photo">
 							<img src="images/featured-offer7.jpg" alt="" />
 							<div class="type-container">
-								<div class="estate-type">house</div>
-								<div class="transaction-type">sale</div>
+								<div class="estate-type">Casa</div>
+								<div class="transaction-type">En Venta</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">200 South Dr, Fort Collins, Colorado 80523, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h4 class="featured-offer-title">20 sur la paz</h4>
+							<p>casa hurbana en muy buen estado.</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
@@ -746,8 +743,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9">
-					<h5 class="subtitle-margin">meet our</h5>
-							<h1>proffesional team<span class="special-color">.</span></h1>
+					<h5 class="subtitle-margin">Conoce Nuestro</h5>
+							<h1>Equipo De Asesores<span class="special-color">.</span></h1>
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<a href="#" class="navigation-box navigation-box-next" id="team-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
@@ -784,24 +781,24 @@
 									<div class="team-social-cont">
 										<div class="team-social">
 											<a class="team-icon-circle" href="#">
-												<!-- <i class="fa fa-facebook"></i> -->
+												 <i class="fa fa-facebook"></i>
 											</a>
 										</div>
 										<div class="team-social">
 											<a class="team-icon-circle" href="#">
-												<!--<i class="fa fa-twitter"></i>-->
+												<i class="fa fa-twitter"></i>
 											</a>
 										</div>
-										<div class="team-social">
+										<!--<div class="team-social">
 											<a class="team-icon-circle" href="#">
-												<!--<i class="fa fa-google-plus"></i>-->
+												<i class="fa fa-google-plus"></i>
 											</a>
-										</div>
-										<div class="team-social">
+										</div>-->
+										<!--<div class="team-social">
 											<a class="team-icon-circle" href="#">
-												<!--<i class="fa fa-skype"></i>-->
+												<i class="fa fa-skype"></i>
 											</a>
-										</div>
+										</div>-->
 									</div>
 									<p class="team-text">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -810,8 +807,8 @@
 							</div>
 						</div>
 						<div class="team-name">
-							<h5>manager</h5>
-							<h4>Mark Smith<span class="special-color">.</span></h4>
+							<h5>propetario</h5>
+							<h4>Rosario Rodriguez<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
@@ -865,8 +862,8 @@
 							</div>
 						</div>
 						<div class="team-name">
-							<h5>Agent</h5>
-							<h4>Michelle Jackson<span class="special-color">.</span></h4>
+							<h5>agente</h5>
+							<h4>Mari<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
@@ -920,8 +917,8 @@
 							</div>
 						</div>
 						<div class="team-name">
-							<h5>specialist</h5>
-							<h4>Robert Duncan<span class="special-color">.</span></h4>
+							<h5>specialista</h5>
+							<h4>Ruben Varradas<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
@@ -975,8 +972,8 @@
 							</div>
 						</div>
 						<div class="team-name">
-							<h5>agent</h5>
-							<h4>Veronica Green<span class="special-color">.</span></h4>
+							<h5>sistemas</h5>
+							<h4>Cristofer Arzaluz<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
@@ -1098,8 +1095,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9">
-					<h5 class="subtitle-margin second-color">recommendations</h5>
-							<h1 class="second-color">our clients say<span class="special-color">.</span></h1>
+					<h5 class="subtitle-margin second-color">Recomendaciones</h5>
+							<h1 class="second-color">Nuestros Clientes Dicen<span class="special-color">.</span></h1>
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<a href="#" class="navigation-box navigation-box-next" id="testimonials-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
@@ -1117,8 +1114,8 @@
 						<div class="testimonial">
 							<img src="images/testimonials1.jpg" alt="" class="testimonials-photo" />	
 							<div class="testimonials-content">							
-								<p class="lead">Smith’s Family</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p class="lead">Familia Torres Romero</p>
+								<p>El servicio de rentafacilpuebla.com y su personal es sumamente profecional,ellos se ajustaron a nuestro presupuesto y necisidades de vivienda. Nos consigueron casa muy rapido y en la sona apropiada. Nosotrros nos encontrabamos afueras de puebla y el personal de rentafacilpuebla.com nos asesoro para cuando llegaramos apuebla tuvieramos casa  .</p>
 								
 							</div>
 							<div class="big-triangle">							
@@ -1128,8 +1125,8 @@
 						<div class="testimonial">
 							<img src="images/testimonials2.jpg" alt="" class="testimonials-photo" />	
 							<div class="testimonials-content">
-								<p class="lead">Meggy Johnson</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p class="lead">Vargas Muños Gilverto</p>
+								<p>la señora rosario conseguira testimonio.</p>
 								<div class="big-triangle">							
 								</div>
 								<div class="big-icon"><i class="fa fa-quote-right fa-lg"></i></div>
@@ -1139,7 +1136,7 @@
 							<img src="images/testimonials3.jpg" alt="" class="testimonials-photo" />
 							<div class="testimonials-content">
 								<p class="lead">Paola Brown &amp; Tommy</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>la señora rosario conseguira un tercer testimonio.</p>
 								<div class="big-triangle">							
 								</div>
 								<div class="big-icon"><i class="fa fa-quote-right fa-lg"></i></div>
@@ -1155,8 +1152,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9">
-					<h5 class="subtitle-margin">hot</h5>
-							<h1>new listings<span class="special-color">.</span></h1>
+					<h5 class="subtitle-margin">Aproveche Nuestras</h5>
+							<h1>Novedades<span class="special-color">.</span></h1>
 				</div>
 				<div class="col-xs-12 col-sm-3">
 					<a href="#" class="navigation-box navigation-box-next" id="grid-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
@@ -1499,11 +1496,11 @@
 				<div class="col-xs-6 col-sm-6 col-lg-3">
 					<h4 class="second-color">Contacto<span class="special-color">.</span></h4>
 					<div class="footer-title-separator"></div>
-					<p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p class="footer-p">siempre al pendiente de nuestros clientes nuestra prioridad es su bienestar</p>
 					<address>
 						<!--<span><i class="fa fa-map-marker"></i>00456 Some Address line</span>-->
 						<div class="footer-separator"></div>
-						<span><i class="fa fa-envelope fa-sm"></i><a href="#">email@rentafacilpuebla</a></span>
+						<span><i class="fa fa-envelope fa-sm"></i><a href="#">rosario@rentafacilpuebla</a></span>
 						<div class="footer-separator"></div>
 						<span><i class="fa fa-phone"></i>22-21-66-79-72</span>
 					</address>
@@ -1525,10 +1522,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 small-cont">
-					<img src="images/logo-light.png" alt="" class="img-responsive footer-logo" />
+					<!--<img src="images/logo-.png" alt="" class="img-responsive footer-logo" />-->
 				</div>
 				<div class="col-xs-12 col-md-6 footer-copyrights">
-					&copy; Copyright 2015 <a href="http://themeforest.net/user/johnnychaos?ref=johnnychaos" target="blank">Jan Skwara</a>. All rights reserved. Buy on <a href="http://themeforest.net/user/johnnychaos/portfolio?ref=johnnychaos" target="blank">Themeforest</a>.
+					<!--&copy; Copyright 2015 <a href="http://themeforest.net/user/johnnychaos?ref=johnnychaos" target="blank">Jan Skwara</a>. All rights reserved. Buy on <a href="http://themeforest.net/user/johnnychaos/portfolio?ref=johnnychaos" target="blank">Themeforest</a>.-->
 				</div>
 			</div>
 		</div>
