@@ -39,7 +39,7 @@
 							<div class="row">
 								
 								<div class="col-xs-12 col-sm-6">
-									<select name="transaction2" class="bootstrap-select" title="Tipo De Propiedadd:">
+									<select name="type" class="bootstrap-select" title="Tipo De Propiedadd:">
 										<option>Departamento</option>
 										<option>Casa</option>
 										<option>Comercial</option>
@@ -47,7 +47,7 @@
 									</select>
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-xs-15">
-									<select name="transaction2" class="bootstrap-select" title="Tipo De Transaccion:">
+									<select name="transaction" class="bootstrap-select" title="Tipo De Transaccion:">
 										<option>En Venta</option>
 										<option>En Renta</option>
 									</select>
@@ -62,7 +62,7 @@
 									<input name="bedrooms" type="number" class="input-full main-input" placeholder="Rec" />
 								</div>
 								<div class="col-xs-12 col-sm-4">
-									<input name="parking" type="number" class="input-full main-input" placeholder="Baños" />
+									<input name="garageSize" type="number" class="input-full main-input" placeholder="Baños" />
 								</div>
 							<div class="col-xs-12 col-sm-4">
 									<input name="parking" type="number" class="input-full main-input" placeholder="Est" />
