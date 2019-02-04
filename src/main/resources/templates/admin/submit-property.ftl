@@ -19,8 +19,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 short-image-title">
-					<h5 class="subtitle-margin second-color">add listing</h5>
-					<h1 class="second-color">my account</h1>
+					<h5 class="subtitle-margin second-color">Registro De Propiedad</h5>
+					<h1 class="second-color">Nueva Propiedad</h1>
 					<div class="short-title-separator"></div>
 				</div>
 			</div>
@@ -32,72 +32,75 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
-						<h3 class="title-negative-margin">Listing details<span class="special-color">.</span></h3>
+						<h3 class="title-negative-margin">Lista De Detalles<span class="special-color">.</span></h3>
 						<div class="title-separator-primary"></div>
 						<div class="dark-col margin-top-60">
 							<div class="row">
 								
 								<div class="col-xs-12 col-sm-6">
-									<select name="transaction2" class="bootstrap-select" title="Property type:">
-										<option>Apartment</option>
-										<option>House</option>
-										<option>Commercial</option>
-										<option>Land</option>
+									<select name="transaction2" class="bootstrap-select" title="Tipo De Propiedadd:">
+										<option>Departamento</option>
+										<option>Casa</option>
+										<option>Comercial</option>
+										<option>Lugar</option>
 									</select>
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-xs-15">
-									<select name="transaction2" class="bootstrap-select" title="Transaction:">
-										<option>For sale</option>
-										<option>For rent</option>
+									<select name="transaction2" class="bootstrap-select" title="Tipo De Transaccion:">
+										<option>En Venta</option>
+										<option>En Renta</option>
 									</select>
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-15">
-									<input name="price" type="text" class="input-full main-input" placeholder="Price" />
+									<input name="price" type="text" class="input-full main-input" placeholder="Precio" />
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-15 margin-top-xs-0">
 									<input name="area" type="text" class="input-full main-input" placeholder="Area" />
 								</div>
-								<div class="col-xs-12 col-sm-6">
-									<input name="bedrooms" type="text" class="input-full main-input" placeholder="Bedrooms" />
+								<div class="col-xs-12 col-sm-4">
+									<input name="bedrooms" type="number" class="input-full main-input" placeholder="Rec" />
 								</div>
-								<div class="col-xs-12 col-sm-6">
-									<input name="bathrooms" type="text" class="input-full main-input" placeholder="Bathrooms" />
+								<div class="col-xs-12 col-sm-4">
+									<input name="parking" type="number" class="input-full main-input" placeholder="Baños" />
 								</div>
-							</div>
-							<textarea name="message" class="input-full main-input property-textarea" placeholder="Description"></textarea>
+							<div class="col-xs-12 col-sm-4">
+									<input name="parking" type="number" class="input-full main-input" placeholder="Est" />
+								</div>
+								</div>
+							<textarea name="message" class="input-full main-input property-textarea" placeholder="Descripcion"></textarea>
 							<div class="row">
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c1" name="cc" class="main-checkbox" />
-									<label for="c1"><span></span>Air Conditioning</label><br/>
+									<label for="c1"><span></span>Aire Acondicionado</label><br/>
 									<input type="checkbox" id="c2" name="cc" class="main-checkbox" />
 									<label for="c2"><span></span>Internet</label><br/>
 									<input type="checkbox" id="c3" name="cc" class="main-checkbox" />
 									<label for="c3"><span></span>Cable TV</label><br/>
 									<input type="checkbox" id="c4" name="cc" class="main-checkbox" />
-									<label for="c4"><span></span>Balcony</label><br/>
+									<label for="c4"><span></span>Balcon</label><br/>
 									<input type="checkbox" id="c5" name="cc" class="main-checkbox" />
-									<label for="c5"><span></span>Roof Terrace</label><br/>
+									<label for="c5"><span></span>Azotea</label><br/>
 									<input type="checkbox" id="c6" name="cc" class="main-checkbox" />
-									<label for="c6"><span></span>Terrace</label>
+									<label for="c6"><span></span>Terrassa</label>
 								</div>
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c7" name="cc" class="main-checkbox" />
-									<label for="c7"><span></span>Lift</label><br/>
+									<label for="c7"><span></span>Elevador</label><br/>
 									<input type="checkbox" id="c8" name="cc" class="main-checkbox" />
-									<label for="c8"><span></span>Garage</label><br/>
+									<label for="c8"><span></span>Garaje</label><br/>
 									<input type="checkbox" id="c9" name="cc" class="main-checkbox" />
-									<label for="c9"><span></span>Security</label><br/>
+									<label for="c9"><span></span>Seguridad</label><br/>
 									<input type="checkbox" id="c10" name="cc" class="main-checkbox" />
-									<label for="c10"><span></span>High Standard</label><br/>
+									<label for="c10"><span></span>Alto Nivel</label><br/>
 									<input type="checkbox" id="c11" name="cc" class="main-checkbox" />
-									<label for="c11"><span></span>City Centre</label><br/>
+									<label for="c11"><span></span>Centro De La ciudad</label><br/>
 									<input type="checkbox" id="c12" name="cc" class="main-checkbox" />
-									<label for="c12"><span></span>Furniture</label>
+									<label for="c12"><span></span>Con Muebles</label>
 								</div>
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c13" name="cc" class="main-checkbox" />
-									<label for="c13"><span></span>Another Option</label><br/>
-									<input type="checkbox" id="c14" name="cc" class="main-checkbox" />
+									<label for="c13"><span></span>Con Alberca</label><br/>
+									<!--<input type="checkbox" id="c14" name="cc" class="main-checkbox" />
 									<label for="c14"><span></span>Another Option</label><br/>
 									<input type="checkbox" id="c15" name="cc" class="main-checkbox" />
 									<label for="c15"><span></span>Another Option</label><br/>
@@ -106,24 +109,24 @@
 									<input type="checkbox" id="c17" name="cc" class="main-checkbox" />
 									<label for="c17"><span></span>Another Option</label><br/>
 									<input type="checkbox" id="c18" name="cc" class="main-checkbox" />
-									<label for="c18"><span></span>Another Option</label>
+									<label for="c18"><span></span>Another Option</label>-->
 								</div>
 							</div>
 						</div>				
 					</div>
 					<div class="col-xs-12 col-md-6 margin-top-xs-60 margin-top-sm-60">
-						<h3 class="title-negative-margin">Localization<span class="special-color">.</span></h3>
+						<h3 class="title-negative-margin">Localisacion<span class="special-color">.</span></h3>
 						<div class="title-separator-primary"></div>
 						<div class="dark-col margin-top-60">
-							<input id="geocomplete" name="geocomplete" type="text" class="input-full main-input" placeholder="Localization" />
-							<p class="negative-margin bold-indent">Or drag the marker to property position<p>
+							<input id="geocomplete" name="geocomplete" type="text" class="input-full main-input" placeholder="Localisacion" />
+							<p class="negative-margin bold-indent">O Arrastra El Marcador a La Posicion<p>
 							<div id="submit-property-map" class="submit-property-map"></div>
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 margin-top-15">
-									<input name="lng" type="text" class="input-full main-input input-last" placeholder="Longitude" readonly="readonly" />
+									<input name="lng" type="text" class="input-full main-input input-last" placeholder="Lonjitud" readonly="readonly" />
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-15">
-									<input name="lat" type="text" class="input-full main-input input-last" placeholder="Latitude" readonly="readonly" />
+									<input name="lat" type="text" class="input-full main-input input-last" placeholder="Latitud" readonly="readonly" />
 								</div>
 							</div>
 						</div>
