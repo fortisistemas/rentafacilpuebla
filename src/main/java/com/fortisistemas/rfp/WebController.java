@@ -33,6 +33,11 @@ public class WebController {
 		return "public/index";
 	}
 	
+	@GetMapping(path = "/search")
+	public String search(Authentication auth) {
+		return "public/search-results";
+	}
+	
 	@GetMapping(path = "/contact")
 	public String contact(Authentication auth) {
 		return "public/contact";
