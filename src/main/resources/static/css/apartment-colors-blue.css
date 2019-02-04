@@ -817,7 +817,8 @@ section.featured-offers {
 }
 
 section.blog-short-title {
-	background: #475057 url(/images/short-bg4.jpg) no-repeat center;
+	background: #475057 url(/images/PEP.jpg) no-repeat;
+	background-size:cover;
 }
 
 footer.large-cont {
