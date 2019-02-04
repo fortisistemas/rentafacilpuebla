@@ -29,6 +29,7 @@
 	
 	<section class="section-light section-top-shadow">
 		<form id="realstatePropertyForm" name="realstatePropertyForm" action="/admin/properties/create" enctype="multipart/form-data" method="POST">
+			<input type="hidden" name="imageCsv" id="imageCsv" />
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
@@ -136,11 +137,11 @@
 						<div class="title-separator-primary"></div>
 					</div>
 					<div class="col-xs-12 margin-top-60">
-						<input id="file-upload" name="arrImages" type="file" multiple>
+						<input id="prop-images" name="prop-images[]" type="file" multiple>
 					</div>
 					<div class="col-xs-12">
 						<div class="center-button-cont margin-top-60">
-							<a href="javascript: submitProperty();" class="button-primary button-shadow">
+							<a id="customSubmitButton" href="#" class="button-primary button-shadow">
 								<span>submit property</span>
 								<div class="button-triangle"></div>
 								<div class="button-triangle2"></div>
