@@ -38,6 +38,11 @@ public class WebController {
 		return "public/search-results";
 	}
 	
+	@GetMapping(path = "/detail")
+	public String propertyDetails(Authentication auth) {
+		return "public/detail";
+	}
+	
 	@GetMapping(path = "/contact")
 	public String contact(Authentication auth) {
 		return "public/contact";
