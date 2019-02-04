@@ -38,15 +38,15 @@
 				</div>
 				<div class="container">
 			<div class="row tab-content">
-				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade in active" id="apartments">
+				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade in active" id="">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<select name="transaction1" class="bootstrap-select" title="Transaction:" multiple>
-								<option>For sale</option>
-								<option>For rent</option>
+							<select name="transaction1" class="bootstrap-select" title="Transaccion:" multiple>
+								<option>Se Vende</option>
+								<option>Se Renta</option>
 							</select>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
+						<!--<div class="col-xs-12 col-sm-6 col-lg-3">
 							<select name="country1" class="bootstrap-select" title="Country:" multiple data-actions-box="true">
 								
 								<option>United States</option>
@@ -67,20 +67,20 @@
 								<option>Detroit</option>
 								<option>Boston</option>
 							</select>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<select name="location1" class="bootstrap-select" title="Location:" multiple data-actions-box="true">
-								<option>Some location 1</option>
+						</div>-->
+				<<div class="col-xs-12 col-sm-6 col-lg-3">
+							<!--<select name="location1" class="bootstrap-select" title="Location:" multiple data-actions-box="true">-->
+								<!--<option>Some location 1</option>
 								<option>Some location 2</option>
 								<option>Some location 3</option>
-								<option>Some location 4</option>
+								<option>Some location 4</option>-->
 							</select>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-price1-value" class="adv-search-label">Price:</label>
+								<label for="slider-range-price1-value" class="adv-search-label">Precio:</label>
 								<span>$</span>
 								<input type="text" id="slider-range-price1-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
@@ -98,7 +98,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms1-value" class="adv-search-label">Bedrooms:</label>
+								<label for="slider-range-bedrooms1-value" class="adv-search-label">Recamaras:</label>
 								<input type="text" id="slider-range-bedrooms1-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bedrooms1" data-min="1" data-max="10" class="slider-range"></div>
@@ -106,7 +106,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-bathrooms1-value" class="adv-search-label">Bathrooms:</label>
+								<label for="slider-range-bathrooms1-value" class="adv-search-label">Baños:</label>
 								<input type="text" id="slider-range-bathrooms1-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
 								<div id="slider-range-bathrooms1" data-min="1" data-max="4" class="slider-range"></div>
@@ -114,10 +114,10 @@
 						</div>
 					</div>
 				</div>
-				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade" id="houses">
+				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade" id="Casas">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<select name="transaction2" class="bootstrap-select" title="Transaction:" multiple>
+							<select name="transaction2" class="bootstrap-select" title="Transaccion:" multiple>
 								<option>For sale</option>
 								<option>For rent</option>
 							</select>
@@ -156,7 +156,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-lg-3">
 							<div class="adv-search-range-cont">	
-								<label for="slider-range-price2-value" class="adv-search-label">Price:</label>
+								<label for="slider-range-price2-value" class="adv-search-label">Precio:</label>
 								<span>$</span>
 								<input type="text" id="slider-range-price2-value" readonly class="adv-search-amount">
 								<div class="clearfix"></div>
@@ -363,26 +363,26 @@
 				<div class="col-xs-12 col-md-9 col-md-push-3">
 						<div class="row">
 							<div class="col-xs-12 col-lg-6">
-								<h5 class="subtitle-margin">apartments for sale, colorodo, usa</h5>
-								<h1>42 estates found<span class="special-color">.</span></h1>
+								<h5 class="subtitle-margin">Departamentos En Venta o En Renta</h5>
+								<h1>Propiedades Encontradas<span class="special-color">.</span></h1>
 							</div>
 							<div class="col-xs-12 col-lg-6">											
-								<div class="view-icons-container">
+								<!--<div class="view-icons-container">
 									<a class="view-box" href="listing-grid-right-sidebar.html"><img src="images/grid-icon.png" alt=""/></a>
 									<a class="view-box view-box-active"><img src="images/list-icon.png" alt=""/></a>
-								</div>
+								</div>-->
 								<div class="order-by-container">
-									<select name="sort" class="bootstrap-select" title="Order By:">
-										<option>Price low to high</option>
-										<option>Price high to low</option>
-										<option>Area high to low</option>
-										<option>Area high to low</option>
+									<select name="sort" class="bootstrap-select" title="Ordenar Por:">
+										<option>Precio Alto</option>
+										<option>Precio Bajo</option>
+										<option>Area Grande</option>
+										<option>Area Pequeña</option>
 									</select>
 								</div>	
 							</div>							
-							<div class="col-xs-12">
+							<!--<div class="col-xs-12">
 								<div class="title-separator-primary"></div>
-							</div>
+							</div>-->
 						</div>
 						<div class="row list-offer-row">
 							<div class="col-xs-12">

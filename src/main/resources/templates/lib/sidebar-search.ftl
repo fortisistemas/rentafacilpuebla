@@ -1,17 +1,17 @@
 <#macro nav>
-<h3 class="sidebar-title">narrow search<span class="special-color">.</span></h3>
+<h3 class="sidebar-title">Personalizar Busqueda<span class="special-color">.</span></h3>
 <div class="title-separator-primary"></div>
 <div class="sidebar-select-cont">
-	<select name="transaction1" class="bootstrap-select" title="Transaction:" multiple>
-		<option>For sale</option>
-		<option>For rent</option>
+	<select name="transaction1" class="bootstrap-select" title="Transaccion:" multiple>
+		<option>Se Vende</option>
+		<option>Se Renta</option>
 	</select>
-	<select name="conuntry1" class="bootstrap-select" title="Country:" multiple data-actions-box="true">
+	<!--<select name="conuntry1" class="bootstrap-select" title="Country:" multiple data-actions-box="true">
 		<option>United States</option>
 		<option>Canada</option>
 		<option>Mexico</option>
-	</select>
-	<select name="city1" class="bootstrap-select" title="City:" multiple data-actions-box="true">
+	</select>-->
+	<!--<select name="city1" class="bootstrap-select" title="City:" multiple data-actions-box="true">
 		<option>New York</option>
 		<option>Los Angeles</option>
 		<option>Chicago</option>
@@ -22,17 +22,17 @@
 		<option>Salt Lake Cty</option>
 		<option>Detroit</option>
 		<option>Boston</option>
-	</select>					
-	<select name="location1" class="bootstrap-select" title="Location:" multiple data-actions-box="true">
+	</select>-->					
+	<!--<select name="location1" class="bootstrap-select" title="Location:" multiple data-actions-box="true">
 		<option>Some location 1</option>
 		<option>Some location 2</option>
 		<option>Some location 3</option>
 		<option>Some location 4</option>
-	</select>
+	</select>-->
 </div>
 <!-- /.transaction, city and location selectors -->
 <div class="adv-search-range-cont">	
-	<label for="slider-range-price-sidebar-value" class="adv-search-label">Price:</label>
+	<label for="slider-range-price-sidebar-value" class="adv-search-label">Precio</label>
 	<span>$</span>
 	<input type="text" id="slider-range-price-sidebar-value" readonly class="adv-search-amount">
 	<div class="clearfix"></div>
@@ -46,27 +46,27 @@
 	<div id="slider-range-area-sidebar" data-min="0" data-max="180" class="slider-range"></div>
 </div>
 <div class="adv-search-range-cont">	
-	<label for="slider-range-bedrooms-sidebar-value" class="adv-search-label">Bedrooms:</label>
+	<label for="slider-range-bedrooms-sidebar-value" class="adv-search-label">Recamaras:</label>
 	<input type="text" id="slider-range-bedrooms-sidebar-value" readonly class="adv-search-amount">
 	<div class="clearfix"></div>
 	<div id="slider-range-bedrooms-sidebar" data-min="1" data-max="10" class="slider-range"></div>
 </div>
 <div class="adv-search-range-cont">	
-	<label for="slider-range-bathrooms-sidebar-value" class="adv-search-label">Bathrooms:</label>
+	<label for="slider-range-bathrooms-sidebar-value" class="adv-search-label">Baños:</label>
 	<input type="text" id="slider-range-bathrooms-sidebar-value" readonly class="adv-search-amount">
 	<div class="clearfix"></div>
 	<div id="slider-range-bathrooms-sidebar" data-min="1" data-max="4" class="slider-range"></div>
 </div>
 <div class="sidebar-search-button-cont">
 	<a href="#" class="button-primary">
-		<span>search</span>
+		<span>Buscar</span>
 		<div class="button-triangle"></div>
 		<div class="button-triangle2"></div>
 		<div class="button-icon"><i class="fa fa-search"></i></div>
 	</a>
 </div>
 <div class="sidebar-title-cont">
-	<h4 class="sidebar-title">featured offers<span class="special-color">.</span></h4>
+	<h4 class="sidebar-title">Ofertas<span class="special-color">.</span></h4>
 	<div class="title-separator-primary"></div>
 </div>
 <!-- /.FEATURE OFFERS TITLE -->
@@ -110,7 +110,7 @@
 </div>
 <!-- /.FEATURE OFFERS CONTENT -->
 <div class="sidebar-title-cont">
-	<h4 class="sidebar-title">latest news<span class="special-color">.</span></h4>
+	<h4 class="sidebar-title">Novedades<span class="special-color">.</span></h4>
 	<div class="title-separator-primary"></div>
 </div>
 <!-- /.LATEST NEWS TITLE -->
