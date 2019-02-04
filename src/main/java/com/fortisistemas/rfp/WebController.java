@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.fortisistemas.rfp.realstateProperty.RealstateProperty;
-import com.fortisistemas.rfp.realstateProperty.RealstatePropertyPostFormWrapper;
 import com.fortisistemas.rfp.realstateProperty.RealstatePropertyService;
 
 @Controller
@@ -61,33 +60,20 @@ public class WebController {
 	}
 
 	@PostMapping("/admin/properties/create")
-	public String realstateProperyWithImages(@ModelAttribute RealstateProperty model) {
+	public String realstateProperyWithImages(@ModelAttribute RealstateProperty model,
+			@RequestParam("imageCsv") String imageCsv) {
 		// Save the real state property in database
-		//RealstateProperty rsp = shadowCopyRealstateProperty(model);
 		rpService.addRealstateProperty(model);
-		// Save images in amazons3
-		/*System.out.println("IMAGES: " + uploadingFiles.length);
-		if (uploadingFiles != null) {
-			for (int i = 0; i < uploadingFiles.length; i++) {
-				System.out.println("IMAGE: " + i);
-				MultipartFile mf = uploadingFiles[i];
-				String extension = mf.getOriginalFilename().split("\\.")[1];
-				String fileName = "rfp-" + model.getId() + "-" + i + "." + extension;
-				amazonService.uploadFile(mf, fileName);
-			}
-		}*/
+
+		int i = 0;
+		for (String tempFileName : imageCsv.split(",")) {
+			i++;
+			String extension = tempFileName.split("\\.")[1];
+			String fileName = "rfp-" + model.getId() + "-" + i + "." + extension;
+			amazonService.renameFileFromS3Bucket(tempFileName, fileName);
+		}
 
 		return "redirect:/admin";
-	}
-
-	private RealstateProperty shadowCopyRealstateProperty(RealstateProperty original) {
-		RealstateProperty result = new RealstateProperty();
-		result.setAirConditioner(original.getAirConditioner());
-		result.setArea(original.getArea());
-		result.setBalcony(original.getBalcony());
-		result.setBathrooms(original.getBathrooms());
-		// TODO: Complete the shadow copy
-		return result;
-	}
+	}	
 
 }

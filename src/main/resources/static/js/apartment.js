@@ -819,22 +819,6 @@ jQuery(window).load(function() {
 		
 		
 		
-/********** FILE INPUT **********/	
-		
-		
-
-		if( $('#file-upload').length ) {
-			$('#file-upload').fileinput({
-			uploadUrl: '#',
-			allowedFileExtensions : ['jpg','png','gif'],
-			showUpload: false,
-			showRemove: false,
-			browseClass: "button-shadow btn",
-		});
-	}
-		
-		
-		
 /********** AGENT PHOTO UPLOAD **********/		
 		
 		
