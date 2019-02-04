@@ -62,45 +62,45 @@
 									<input name="bedrooms" type="number" class="input-full main-input" placeholder="Rec" />
 								</div>
 								<div class="col-xs-12 col-sm-4">
-									<input name="garageSize" type="number" class="input-full main-input" placeholder="Baños" />
+									<input name="bathrooms" type="number" class="input-full main-input" placeholder="Baños" />
 								</div>
 							<div class="col-xs-12 col-sm-4">
-									<input name="parking" type="number" class="input-full main-input" placeholder="Est" />
+									<input name="garageSize" type="number" class="input-full main-input" placeholder="Est" />
 								</div>
 								</div>
-							<textarea name="message" class="input-full main-input property-textarea" placeholder="Descripcion"></textarea>
+							<textarea name="description" class="input-full main-input property-textarea" placeholder="Descripcion"></textarea>
 							<div class="row">
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c1" name="cc" class="main-checkbox" />
-									<label for="c1"><span></span>Aire Acondicionado</label><br/>
+									<label for="airconditioner"><span></span>Aire Acondicionado</label><br/>
 									<input type="checkbox" id="c2" name="cc" class="main-checkbox" />
-									<label for="c2"><span></span>Internet</label><br/>
+									<label for="internet"><span></span>Internet</label><br/>
 									<input type="checkbox" id="c3" name="cc" class="main-checkbox" />
-									<label for="c3"><span></span>Cable TV</label><br/>
+									<label for="cableTv"><span></span>Cable TV</label><br/>
 									<input type="checkbox" id="c4" name="cc" class="main-checkbox" />
-									<label for="c4"><span></span>Balcon</label><br/>
+									<label for="balcony"><span></span>Balcon</label><br/>
 									<input type="checkbox" id="c5" name="cc" class="main-checkbox" />
-									<label for="c5"><span></span>Azotea</label><br/>
+									<label for="roofTerrace"><span></span>Azotea</label><br/>
 									<input type="checkbox" id="c6" name="cc" class="main-checkbox" />
-									<label for="c6"><span></span>Terrassa</label>
+									<label for="terrace"><span></span>Terrassa</label>
 								</div>
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c7" name="cc" class="main-checkbox" />
-									<label for="c7"><span></span>Elevador</label><br/>
+									<label for="lift"><span></span>Elevador</label><br/>
 									<input type="checkbox" id="c8" name="cc" class="main-checkbox" />
-									<label for="c8"><span></span>Garaje</label><br/>
+									<label for="garage"><span></span>Garage</label><br/>
 									<input type="checkbox" id="c9" name="cc" class="main-checkbox" />
-									<label for="c9"><span></span>Seguridad</label><br/>
+									<label for="security"><span></span>Seguridad</label><br/>
 									<input type="checkbox" id="c10" name="cc" class="main-checkbox" />
-									<label for="c10"><span></span>Alto Nivel</label><br/>
+									<label for="highStandard;"><span></span>Alto Nivel</label><br/>
 									<input type="checkbox" id="c11" name="cc" class="main-checkbox" />
-									<label for="c11"><span></span>Centrico</label><br/>
+									<label for="cityCentre"><span></span>Centrico</label><br/>
 									<input type="checkbox" id="c12" name="cc" class="main-checkbox" />
-									<label for="c12"><span></span>Con Muebles</label>
+									<label for="furniture;"><span></span>Con Muebles</label>
 								</div>
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="c13" name="cc" class="main-checkbox" />
-									<label for="c13"><span></span>Con Alberca</label><br/>
+									<label for="swimmingPool"><span></span>Con Alberca</label><br/>
 									<!--<input type="checkbox" id="c14" name="cc" class="main-checkbox" />
 									<label for="c14"><span></span>Another Option</label><br/>
 									<input type="checkbox" id="c15" name="cc" class="main-checkbox" />
