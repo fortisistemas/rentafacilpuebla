@@ -47,19 +47,27 @@
 					<img src="/images/logo_rfp.png" style="height: 50px;" alt="Apartment - Premium Real Estate Template" />
 				</a>
 			</div>
+			<!--  -->
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+					<#if principal??>
+					<li>
+						<a href="/admin">Inicio</a>
 					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">listado</a>
+					<#else>
+					<li>
+						<a href="/">Inicio</a>
 					</li>
+					</#if>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+						<a href="/search">listado</a>
 					</li>
 					<#if principal??>
 					<li><a href="/admin/properties/create" class="special-color">registrar propiedad</a></li>
+					<#else>
+					<li class="dropdown">
+						<a href="/contact">Contacto</a>
+					</li>
 					</#if>
 				</ul>
 			</div>

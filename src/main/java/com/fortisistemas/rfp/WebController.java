@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.fortisistemas.rfp.realstateProperty.RealstateProperty;
 import com.fortisistemas.rfp.realstateProperty.RealstatePropertyService;
@@ -32,6 +31,11 @@ public class WebController {
 		}
 
 		return "public/index";
+	}
+	
+	@GetMapping(path = "/contact")
+	public String contact(Authentication auth) {
+		return "public/contact";
 	}
 
 	@GetMapping(path = "/login")
