@@ -835,7 +835,8 @@ footer.large-cont {
 }
 
 section.contact-short-title {
-	background: #152560 url(/images/short-bg2.jpg) no-repeat center;
+	background: #475057 url(/images/PEP.jpg) no-repeat;
+	background-size:cover;
 }
 
 .quote-box,

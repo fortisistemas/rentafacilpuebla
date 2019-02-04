@@ -119,12 +119,12 @@
 						<h3 class="title-negative-margin">Localizacion<span class="special-color">.</span></h3>
 						<div class="title-separator-primary"></div>
 						<div class="dark-col margin-top-60">
-							<input id="geocomplete" name="geocomplete" type="text" class="input-full main-input" placeholder="Localisacion" />
+							<input id="geocomplete" name="geocomplete" type="text" class="input-full main-input" placeholder="Localizacion" />
 							<p class="negative-margin bold-indent">O Arrastra El Marcador a La Posicion<p>
 							<div id="submit-property-map" class="submit-property-map"></div>
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 margin-top-15">
-									<input name="lng" type="text" class="input-full main-input input-last" placeholder="Lonjitud" readonly="readonly" />
+									<input name="lng" type="text" class="input-full main-input input-last" placeholder="Longitud" readonly="readonly" />
 								</div>
 								<div class="col-xs-12 col-sm-6 margin-top-15">
 									<input name="lat" type="text" class="input-full main-input input-last" placeholder="Latitud" readonly="readonly" />
