@@ -573,14 +573,14 @@
 					</div>
 					<div class="row margin-top-60">
 						<div class="col-xs-12">
-							<h3 class="title-negative-margin">contact the agent<span class="special-color">.</span></h3>
+							<h3 class="title-negative-margin">contactar Al Asesor<span class="special-color">.</span></h3>
 							<div class="title-separator-primary"></div>
 						</div>
 					</div>
 					<div class="row margin-top-60">
 						<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-							<h5 class="subtitle-margin">manager</h5>
-							<h3 class="title-negative-margin">Mark Smith<span class="special-color">.</span></h3>
+							<h5 class="subtitle-margin">Asesor</h5>
+							<h3 class="title-negative-margin">Rosario Rodriguez<span class="special-color">.</span></h3>
 							<a href="agent-right-sidebar.html" class="agent-photo">
 								<img src="images/agent3.jpg" alt="" class="img-responsive" />
 							</a>
@@ -591,13 +591,13 @@
 									<span class="agent-icon-circle">
 										<i class="fa fa-phone"></i>
 									</span>
-									<span class="agent-bar-text">123-456-789</span>
+									<span class="agent-bar-text">22-21-66-79-72</span>
 								</div>
 								<div class="pull-left">
 									<span class="agent-icon-circle">
 										<i class="fa fa-envelope fa-sm"></i>
 									</span>
-									<span class="agent-bar-text">apartment@domain.tld</span>
+									<span class="agent-bar-text">rosario@rentafacilpuebla.com</span>
 								</div>
 								<div class="pull-right">
 									<div class="pull-right">
@@ -624,13 +624,13 @@
 								<div class="clearfix"></div>
 							</div>
 							<form name="contact-from" action="#">
-								<input name="name" type="text" class="input-short main-input" placeholder="Your name" />
-								<input name="phone" type="text" class="input-short pull-right main-input" placeholder="Your phone" />
-								<input name="mail" type="email" class="input-full main-input" placeholder="Your email" />
-								<textarea name="message" class="input-full agent-textarea main-input" placeholder="Your question"></textarea>
+								<input name="name" type="text" class="input-short main-input" placeholder="Tu Nombre" />
+								<input name="phone" type="text" class="input-short pull-right main-input" placeholder="Tu Movil" />
+								<input name="mail" type="email" class="input-full main-input" placeholder="Tu Email" />
+								<textarea name="message" class="input-full agent-textarea main-input" placeholder="Escriba Aqui Su Pregunta"></textarea>
 								<div class="form-submit-cont">
 									<a href="#" class="button-primary pull-right">
-										<span>send</span>
+										<span>Enviar</span>
 										<div class="button-triangle"></div>
 										<div class="button-triangle2"></div>
 										<div class="button-icon"><i class="fa fa-paper-plane"></i></div>
@@ -643,8 +643,8 @@
 					
 					<div class="row margin-top-90">
 						<div class="col-xs-12 col-sm-9">
-							<h5 class="subtitle-margin">hot</h5>
-									<h1>new listings<span class="special-color">.</span></h1>
+							<h5 class="subtitle-margin">Nuevas</h5>
+									<h1>Nuevedades<span class="special-color">.</span></h1>
 						</div>
 						<div class="col-xs-12 col-sm-3">
 							<a href="#" class="navigation-box navigation-box-next" id="short-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
