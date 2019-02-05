@@ -53,7 +53,7 @@ public class WebController {
 		
 		result = rps.stream()
 				.filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
-				.filter(rp -> !transaction.isPresent() || transaction.get().equals(rp.getTransaction()))
+				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
 				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0]) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1])))
 				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0]) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1])))
 				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0]) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1])))
@@ -109,13 +109,17 @@ public class WebController {
 			@RequestParam("imageCsv") String imageCsv) {
 		// Save the real state property in database
 		rpService.addRealstateProperty(model);
-
+		System.out.println("PROPERTY STORED TO DATABASE: " + model);
 		int i = 0;
 		for (String tempFileName : imageCsv.split(",")) {
 			i++;
 			String extension = tempFileName.split("\\.")[1];
 			String fileName = "rfp-" + model.getId() + "-" + i + "." + extension;
-			amazonService.renameFileFromS3Bucket(tempFileName, fileName);
+			try {
+				amazonService.renameFileFromS3Bucket(tempFileName, fileName);
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
 
 		return "redirect:/admin";

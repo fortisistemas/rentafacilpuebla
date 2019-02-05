@@ -22,5 +22,5 @@
 <!-- template scripts -->
 	<script type="text/javascript" src="/mail/validate.js"></script>
     <script type="text/javascript" src="/js/apartment.js"></script>
-
+	
 </#macro>

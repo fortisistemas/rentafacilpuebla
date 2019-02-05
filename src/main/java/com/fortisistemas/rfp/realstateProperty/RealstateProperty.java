@@ -2,6 +2,7 @@ package com.fortisistemas.rfp.realstateProperty;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,9 +21,13 @@ public class RealstateProperty implements Serializable {
 	private Integer price;
 	private Integer area;
 	private Integer bedrooms;
-	private Integer bathrooms;
+	private Float bathrooms;
 	private Integer garageSize;
+	@Column(columnDefinition = "TEXT")
 	private String description;
+	private String street;
+	private String neighborghood;
+	private String cityStateZip;
 	private String airConditioner;
 	private String internet;
 	private String cableTv;
@@ -35,8 +40,8 @@ public class RealstateProperty implements Serializable {
 	private String highStandard;
 	private String cityCentre;
 	private String furniture;
-	private String latitude;
-	private String longitude;
+	private String lat;
+	private String lng;
 
 	public Integer getId() {
 		return id;
@@ -86,11 +91,11 @@ public class RealstateProperty implements Serializable {
 		this.bedrooms = bedrooms;
 	}
 
-	public Integer getBathrooms() {
+	public Float getBathrooms() {
 		return bathrooms;
 	}
 
-	public void setBathrooms(Integer bathrooms) {
+	public void setBathrooms(Float bathrooms) {
 		this.bathrooms = bathrooms;
 	}
 
@@ -206,20 +211,44 @@ public class RealstateProperty implements Serializable {
 		this.furniture = furniture;
 	}
 
-	public String getLatitude() {
-		return latitude;
+	public String getLat() {
+		return lat;
 	}
 
-	public void setLatitude(String latitude) {
-		this.latitude = latitude;
+	public void setLat(String lat) {
+		this.lat = lat;
 	}
 
-	public String getLongitude() {
-		return longitude;
+	public String getLng() {
+		return lng;
 	}
 
-	public void setLongitude(String longitude) {
-		this.longitude = longitude;
+	public void setLng(String lng) {
+		this.lng = lng;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getNeighborghood() {
+		return neighborghood;
+	}
+
+	public void setNeighborghood(String neighborghood) {
+		this.neighborghood = neighborghood;
+	}
+
+	public String getCityStateZip() {
+		return cityStateZip;
+	}
+
+	public void setCityStateZip(String cityStateZip) {
+		this.cityStateZip = cityStateZip;
 	}
 
 }
