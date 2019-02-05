@@ -54,10 +54,10 @@ public class WebController {
 		result = rps.stream()
 				.filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
 				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
-				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0]) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1])))
-				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0]) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1])))
-				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0]) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1])))
-				.filter(rp -> !bathRange.isPresent() || (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0]) && rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1])))
+				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim()) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
+				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim()) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))
+				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0].trim()) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1].trim())))
+				.filter(rp -> !bathRange.isPresent() || (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0].trim()) && rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
 				.collect(Collectors.toList());
 
 		model.addAttribute("realstateProperties", result);
