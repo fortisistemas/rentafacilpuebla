@@ -28,26 +28,26 @@
 				<div class="col-xs-12 col-md-9 col-md-push-3">
 						<div class="row">
 							<div class="col-xs-12 col-lg-6">
-								<h5 class="subtitle-margin">apartments for sale, colorodo, usa</h5>
-								<h1>42 estates found<span class="special-color">.</span></h1>
+								<h5 class="subtitle-margin">Departamentos En Venta o En Renta</h5>
+								<h1>Propiedades Encontradas<span class="special-color">.</span></h1>
 							</div>
 							<div class="col-xs-12 col-lg-6">											
-								<div class="view-icons-container">
+								<!--<div class="view-icons-container">
 									<a class="view-box" href="listing-grid-right-sidebar.html"><img src="images/grid-icon.png" alt=""/></a>
 									<a class="view-box view-box-active"><img src="images/list-icon.png" alt=""/></a>
-								</div>
+								</div>-->
 								<div class="order-by-container">
-									<select name="sort" class="bootstrap-select" title="Order By:">
-										<option>Price low to high</option>
-										<option>Price high to low</option>
-										<option>Area high to low</option>
-										<option>Area high to low</option>
+									<select name="sort" class="bootstrap-select" title="Ordenar Por:">
+										<option>Precio Alto</option>
+										<option>Precio Bajo</option>
+										<option>Area Grande</option>
+										<option>Area Pequeña</option>
 									</select>
 								</div>	
 							</div>							
-							<div class="col-xs-12">
+							<!--<div class="col-xs-12">
 								<div class="title-separator-primary"></div>
-							</div>
+							</div>-->
 						</div>
 						<div class="row list-offer-row">
 							<div class="col-xs-12">
