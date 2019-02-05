@@ -23,20 +23,20 @@ public class RealstateProperty implements Serializable {
 	private Integer bathrooms;
 	private Integer garageSize;
 	private String description;
-	private Boolean airConditioner;
-	private Boolean internet;
-	private Boolean cableTv;
-	private Boolean balcony;
-	private Boolean roofTerrace;
-	private Boolean terrace;
-	private Boolean lift;
-	private Boolean garage;
-	private Boolean security;
-	private Boolean highStandard;
-	private Boolean cityCentre;
-	private Boolean furniture;
-	private Boolean latitude;
-	private Boolean longitude;
+	private String airConditioner;
+	private String internet;
+	private String cableTv;
+	private String balcony;
+	private String roofTerrace;
+	private String terrace;
+	private String lift;
+	private String garage;
+	private String security;
+	private String highStandard;
+	private String cityCentre;
+	private String furniture;
+	private String latitude;
+	private String longitude;
 
 	public Integer getId() {
 		return id;
@@ -110,115 +110,115 @@ public class RealstateProperty implements Serializable {
 		this.description = description;
 	}
 
-	public Boolean getAirConditioner() {
+	public String getAirConditioner() {
 		return airConditioner;
 	}
 
-	public void setAirConditioner(Boolean airConditioner) {
+	public void setAirConditioner(String airConditioner) {
 		this.airConditioner = airConditioner;
 	}
 
-	public Boolean getInternet() {
+	public String getInternet() {
 		return internet;
 	}
 
-	public void setInternet(Boolean internet) {
+	public void setInternet(String internet) {
 		this.internet = internet;
 	}
 
-	public Boolean getCableTv() {
+	public String getCableTv() {
 		return cableTv;
 	}
 
-	public void setCableTv(Boolean cableTv) {
+	public void setCableTv(String cableTv) {
 		this.cableTv = cableTv;
 	}
 
-	public Boolean getBalcony() {
+	public String getBalcony() {
 		return balcony;
 	}
 
-	public void setBalcony(Boolean balcony) {
+	public void setBalcony(String balcony) {
 		this.balcony = balcony;
 	}
 
-	public Boolean getRoofTerrace() {
+	public String getRoofTerrace() {
 		return roofTerrace;
 	}
 
-	public void setRoofTerrace(Boolean roofTerrace) {
+	public void setRoofTerrace(String roofTerrace) {
 		this.roofTerrace = roofTerrace;
 	}
 
-	public Boolean getTerrace() {
+	public String getTerrace() {
 		return terrace;
 	}
 
-	public void setTerrace(Boolean terrace) {
+	public void setTerrace(String terrace) {
 		this.terrace = terrace;
 	}
 
-	public Boolean getLift() {
+	public String getLift() {
 		return lift;
 	}
 
-	public void setLift(Boolean lift) {
+	public void setLift(String lift) {
 		this.lift = lift;
 	}
 
-	public Boolean getGarage() {
+	public String getGarage() {
 		return garage;
 	}
 
-	public void setGarage(Boolean garage) {
+	public void setGarage(String garage) {
 		this.garage = garage;
 	}
 
-	public Boolean getSecurity() {
+	public String getSecurity() {
 		return security;
 	}
 
-	public void setSecurity(Boolean security) {
+	public void setSecurity(String security) {
 		this.security = security;
 	}
 
-	public Boolean getHighStandard() {
+	public String getHighStandard() {
 		return highStandard;
 	}
 
-	public void setHighStandard(Boolean highStandard) {
+	public void setHighStandard(String highStandard) {
 		this.highStandard = highStandard;
 	}
 
-	public Boolean getCityCentre() {
+	public String getCityCentre() {
 		return cityCentre;
 	}
 
-	public void setCityCentre(Boolean cityCentre) {
+	public void setCityCentre(String cityCentre) {
 		this.cityCentre = cityCentre;
 	}
 
-	public Boolean getFurniture() {
+	public String getFurniture() {
 		return furniture;
 	}
 
-	public void setFurniture(Boolean furniture) {
+	public void setFurniture(String furniture) {
 		this.furniture = furniture;
 	}
 
-	public Boolean getLatitude() {
+	public String getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Boolean latitude) {
+	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public Boolean getLongitude() {
+	public String getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Boolean longitude) {
+	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
