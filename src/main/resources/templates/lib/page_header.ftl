@@ -43,7 +43,7 @@
 					<span class="icon-bar icon-bar2"></span>
 					<span class="icon-bar icon-bar3"></span>
 				</button>
-				<a href="index.html" title="" class="navbar-brand">
+				<a href="/"title=""class="navbar-brand">
 					<img src="/images/logo_rfp.png" style="height: 50px;" alt="Apartment - Premium Real Estate Template" />
 				</a>
 			</div>

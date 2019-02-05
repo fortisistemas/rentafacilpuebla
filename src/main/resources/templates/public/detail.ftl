@@ -643,8 +643,8 @@
 					
 					<div class="row margin-top-90">
 						<div class="col-xs-12 col-sm-9">
-							<h5 class="subtitle-margin">Nuevas</h5>
-									<h1>Nuevedades<span class="special-color">.</span></h1>
+							<h5 class="subtitle-margin"></h5>
+									<h1>Novedades<span class="special-color">.</span></h1>
 						</div>
 						<div class="col-xs-12 col-sm-3">
 							<a href="#" class="navigation-box navigation-box-next" id="short-offers-owl-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
