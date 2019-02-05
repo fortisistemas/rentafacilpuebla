@@ -1,5 +1,10 @@
 package com.fortisistemas.rfp;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
@@ -32,17 +37,43 @@ public class WebController {
 
 		return "public/index";
 	}
-	
+
 	@GetMapping(path = "/search")
-	public String search(Authentication auth) {
+	public String search(
+			@RequestParam("transaction") Optional<String> transaction,
+			@RequestParam("type") Optional<String> type, 
+			@RequestParam("priceRange") Optional<String> priceRange,
+			@RequestParam("areaRange") Optional<String> areaRange,
+			@RequestParam("roomRange") Optional<String> roomRange,
+			@RequestParam("bathRange") Optional<String> bathRange, Model model) {
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+		List<RealstateProperty> result = new ArrayList<>();
+		
+		System.out.println(transaction);
+		
+		result = rps.stream()
+				.filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
+				.filter(rp -> !transaction.isPresent() || transaction.get().equals(rp.getTransaction()))
+				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0]) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1])))
+				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0]) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1])))
+				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0]) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1])))
+				.filter(rp -> !bathRange.isPresent() || (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0]) && rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1])))
+				.collect(Collectors.toList());
+
+		model.addAttribute("realstateProperties", result);
 		return "public/search-results";
 	}
-	
+
 	@GetMapping(path = "/detail")
-	public String propertyDetails(Authentication auth) {
+	public String propertyDetails(Authentication auth, Model model) {
+		if (auth != null) {
+			User principal = (User) auth.getPrincipal();
+			if (principal != null)
+				model.addAttribute("principal", principal.getUsername());
+		}
 		return "public/detail";
 	}
-	
+
 	@GetMapping(path = "/contact")
 	public String contact(Authentication auth) {
 		return "public/contact";
@@ -60,7 +91,7 @@ public class WebController {
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
-		return "admin/index";
+		return "public/index";
 	}
 
 	@GetMapping(path = "/admin/properties/create")
@@ -88,6 +119,6 @@ public class WebController {
 		}
 
 		return "redirect:/admin";
-	}	
+	}
 
 }

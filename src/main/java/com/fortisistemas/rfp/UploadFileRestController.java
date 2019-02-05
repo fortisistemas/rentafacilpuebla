@@ -20,8 +20,6 @@ public class UploadFileRestController {
 
 	@PostMapping(value = "upload", produces = "application/json")
 	public String uploadImages(@RequestParam(name = "prop-images[]") MultipartFile image, Authentication auth) {
-		// TODO: warning: this might be executed in async mode
-		// TODO: return a json object with details about how to delete the image:
 		// http://plugins.krajee.com/file-input#form-submission
 		System.out.println("UPLOADING FILES!");
 		String userName = "Anonymous";

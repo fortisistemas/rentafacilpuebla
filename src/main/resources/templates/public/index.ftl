@@ -3,6 +3,7 @@
 <#import "../lib/page_header.ftl" as ph />
 <#import "../lib/footer.ftl" as footer />
 <#import "../lib/end-scripts.ftl" as endscripts />
+<#import "../lib/title-search.ftl" as titleSearch />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,11 +111,6 @@
 							</div>
 						</div>
 					</div>
-					<!--<div class="video-slide">
-                        <video poster="images/slides/2.jpg" preload="auto" loop autoplay muted>
-                             <source src='images/slides/2.mp4' type='video/mp4' />
-                        </video>
-                    </div>-->
 				</div>
 				<div class="swiper-slide">
 					<div class="slide-bg swiper-lazy" data-background="images/slides/kkk.jpg"></div>
@@ -158,146 +154,13 @@
 									<a href="estate-details-right-sidebar.html" class="navigation-box navigation-box-more slide-more"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont fa-lg">&#xe813;</i></div></a>
 									<a href="#" class="navigation-box navigation-box-prev slide-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
 								</div>
-							
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-
-		<form class="adv-search-form" action="#">
-			<div class="adv-search-cont">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-lg-11 adv-search-icons">
-							<!-- Nav tabs -->
-							<ul class="nav nav-tabs adv-search-tabs" role="tablist">
-								<li role="presentation" class="active" data-toggle="tooltip" data-placement="top" title="de partamentos"><a href="#apartments" aria-controls="apartments" role="tab" data-toggle="tab" id="adv-search-tab1"><i class="fa fa-building"></i></a></li>
-								<li role="presentation" data-toggle="tooltip" data-placement="top" title="casas"><a href="#houses" aria-controls="houses" role="tab" data-toggle="tab" id="adv-search-tab2"><i class="fa fa-home"></i></a></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 visible-lg">
-							<a id="adv-search-hide" href="#"><i class="jfont">&#xe801;</i></a>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-			<div class="row tab-content">
-				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade in active" id="apartamentos">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
-								<option>se vende</option>
-								<option>se renta</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-price1-value" class="adv-search-label">Precio:</label>
-								<span>$</span>
-								<input type="text" id="slider-range-price1-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-price1" data-min="0" data-max="300000" class="slider-range"></div>
-							</div>
-							
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-area1-value" class="adv-search-label">Area:</label>
-								<span>m<sup>2</sup></span>
-								<input type="text" id="slider-range-area1-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-area1" data-min="0" data-max="180" class="slider-range"></div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms1-value" class="adv-search-label">Recamaras:</label>
-								<input type="text" id="slider-range-bedrooms1-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-bedrooms1" data-min="1" data-max="10" class="slider-range"></div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-bathrooms1-value" class="adv-search-label">Baños:</label>
-								<input type="text" id="slider-range-bathrooms1-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-bathrooms1" data-min="1" data-max="4" class="slider-range"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div role="tabpanel" class="col-xs-12 adv-search-outer tab-pane fade" id="casas">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<select name="transaccion" class="bootstrap-select" title="Transaccion:" multiple>
-								<option>se vende</option>
-								<option>se renta</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-price2-value" class="adv-search-label">Precio:</label>
-								<span>$</span>
-								<input type="text" id="slider-range-price2-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-price2" data-min="0" data-max="300000" class="slider-range"></div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-area2-value" class="adv-search-label">Area:</label>
-								<span>m<sup>2</sup></span>
-								<input type="text" id="slider-range-area2-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-area2" data-min="0" data-max="180" class="slider-range"></div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-bedrooms2-value" class="adv-search-label">Recamaras:</label>
-								<input type="text" id="slider-range-bedrooms2-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-bedrooms2" data-min="1" data-max="10" class="slider-range"></div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<div class="adv-search-range-cont">	
-								<label for="slider-range-bathrooms2-value" class="adv-search-label">Baños:</label>
-								<input type="text" id="slider-range-bathrooms2-value" readonly class="adv-search-amount">
-								<div class="clearfix"></div>
-								<div id="slider-range-bathrooms2" data-min="1" data-max="4" class="slider-range"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-				
-				
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-md-6 col-lg-3 col-md-offset-6 col-lg-offset-9 adv-search-button-cont">
-							<a href="#" class="button-primary pull-right">
-								<span>search</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
+		<@titleSearch.nav />
     </section>
 	
     <section class="section-light bottom-padding-45 section-both-shadow">
@@ -335,19 +198,7 @@
 							<p>Renta de casas y departamentos en Puebla: inclusive si no tienes aval nosotros te asesoramos.</p>
 						</div>
 					</div>
-				</div>			
-				<!--<div class="col-sm-6 col-lg-3">
-					<div class="feature wow fadeInRight" id="feature4">
-						<div class="feature-icon center-block"><i class="fa fa-tree"></i></div>
-						<div class="feature-text">
-							<h5 class="subtitle-margin">MODERN &amp; CLEAN</h5>
-							<h3>PROJECT<span class="special-color">.</span></h3>
-							<div class="title-separator center-block feature-separator"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-						</div>
-					</div>
 				</div>
-			</div>-->
 		</div>
     </section>
 
@@ -491,90 +342,7 @@
 							</a>
 						</div>
 					</div>
-					
 				</div>
-				<!--<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer4.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">Departamento</div>
-								<div class="transaction-type">En Renta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">N. Willamette Blvd., Portland, OR 97203-5798, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />40m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />2
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 299 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map4" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-
-				</div>-->
-				<!--<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer5.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">Departamento</div>
-								<div class="transaction-type">En Renta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">One Brookings Drive St. Louis, Missouri 63130-4899, USA</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />80m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />3
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 390 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map5" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-
-				</div>-->
 				<div class="featured-offer-col">
 					<div class="featured-offer-front">
 						<div class="featured-offer-photo">
@@ -711,16 +479,6 @@
 												<i class="fa fa-twitter"></i>
 											</a>
 										</div>
-										<!--<div class="team-social">
-											<a class="team-icon-circle" href="#">
-												<i class="fa fa-google-plus"></i>
-											</a>
-										</div>-->
-										<!--<div class="team-social">
-											<a class="team-icon-circle" href="#">
-												<i class="fa fa-skype"></i>
-											</a>
-										</div>-->
 									</div>
 									<p class="team-text">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -1416,6 +1174,7 @@
 </div>	
 
 <@endscripts.nav />
+<script type="text/javascript" src="/js/title-search.js"></script>
 <!-- google maps initialization -->
 	<script type="text/javascript">
             google.maps.event.addDomListener(window, 'load', init);
@@ -1423,11 +1182,8 @@
 				
 				mapInitAddress("narodowa 18 Pruszków","featured-map1","images/pin-house.png", false);
 				
-				//mapInit(40.6128,-73.7903,"featured-map1","images/pin-house.png", false);
 				mapInit(40.7222,-73.7903,"featured-map2","images/pin-apartment.png", false);
 				mapInit(41.0306,-73.7669,"featured-map3","images/pin-land.png", false);
-				mapInit(41.3006,-72.9440,"featured-map4","images/pin-commercial.png", false);
-				mapInit(42.2418,-74.3626,"featured-map5","images/pin-house.png", false);
 				mapInit(38.8974,-77.0365,"featured-map6","images/pin-apartment.png", false);
 				mapInit(38.7860,-77.0129,"featured-map7","images/pin-house.png", false);
 				

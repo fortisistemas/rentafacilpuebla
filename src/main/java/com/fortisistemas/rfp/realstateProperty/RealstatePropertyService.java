@@ -1,6 +1,5 @@
 package com.fortisistemas.rfp.realstateProperty;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +21,8 @@ public class RealstatePropertyService {
 	public RealstateProperty getRealstatePropertyById(Integer id) {
 		return propRepo.findById(id).orElse(null);
 	}
-	
-	public List<RealstateProperty> getRealstateProperties() {
-		List<RealstateProperty> rps = new ArrayList<>();
-		propRepo.findAll().forEach(rps::add);
-		return rps;
-	}
 
+	public List<RealstateProperty> getRealstateProperties() {
+		return propRepo.findAll();
+	}
 }
