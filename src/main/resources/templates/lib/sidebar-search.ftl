@@ -3,8 +3,8 @@
 <div class="title-separator-primary"></div>
 <div class="sidebar-select-cont">
 	<select name="transaction1" class="bootstrap-select" title="Transaccion:" multiple>
-		<option>Se Vende</option>
-		<option>Se Renta</option>
+		<option>Ee Vende</option>
+		<option>Ee Renta</option>
 	</select>
 	<!--<select name="conuntry1" class="bootstrap-select" title="Country:" multiple data-actions-box="true">
 		<option>United States</option>
