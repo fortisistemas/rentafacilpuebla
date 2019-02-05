@@ -49,7 +49,7 @@
 								<input name="name" id="name" type="text" class="input-short main-input required,all" placeholder="tu nombre" />
 								<input name="phone" id="phone" type="text" class="input-short pull-right main-input required,all" placeholder="numero movil" />
 								<input name="mail" id="mail" type="email" class="input-full main-input required,email" placeholder="tu correo" />
-								<textarea name="message" id="message" class="input-full contact-textarea main-input required,email" placeholder="Aqui Escriba Su Pregunta"></textarea>
+								<textarea name="message" id="message" class="input-full contact-textarea main-input required,email" placeholder="Escriba Aqui Su Pregunta"></textarea>
 								<div class="form-submit-cont">
 									<a href="#" class="button-primary pull-right" id="form-submit">
 										<span>enviar</span>
