@@ -467,15 +467,15 @@
 								<i class="fa fa-home"></i>
 							</div>
 							<div class="details-title pull-left">
-								<h5 class="subtitle-margin">apartment for sale</h5>
-								<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
+								<h5 class="subtitle-margin">${property.type} ${property.transaction}</h5>
+								<h3>${propiedad.cityStateZip}<span class="special-color">.</span></h3>
 							</div>
 							<div class="clearfix"></div>	
 							<div class="title-separator-primary"></div>
 							<p class="details-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
 						</div>
 						<div class="col-xs-12 col-sm-5 col-md-4">
-							<div class="details-parameters-price">$320 000</div>
+							<div class="details-parameters-price">${property.price}</div>
 							<div class="details-parameters">
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">area</div>

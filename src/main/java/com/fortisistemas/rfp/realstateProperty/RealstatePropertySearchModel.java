@@ -10,14 +10,37 @@ public class RealstatePropertySearchModel extends RealstateProperty {
 	public RealstatePropertySearchModel(RealstateProperty property) {
 		super();
 		setId(property.getId());
+		setType(property.getType());
+		setTransaction(property.getTransaction());
+		setPrice(property.getPrice());
 		setArea(property.getArea());
-		setBalcony(property.getBalcony());
+		setBedrooms(property.getBedrooms());
 		setBathrooms(property.getBathrooms());
+		setGarageSize(property.getGarageSize());
+		setDescription(property.getDescription());
+		setStreet(property.getStreet());
+		setNeighborghood(property.getNeighborghood());
+		setCityStateZip(property.getCityStateZip());
+		setInternet(property.getInternet());
+		setCableTv(property.getCableTv());
+		setBalcony(property.getBalcony());
+		setRoofTerrace(property.getRoofTerrace());
+		setTerrace(property.getTerrace());
+		setLift(property.getLift());
+		setGarage(property.getGarage());
+		setSecurity(property.getSecurity());
+		setCityCentre(property.getCityCentre());
+		setFurniture(property.getFurniture());
+		setSwimmingPool(property.getSwimmingPool());
+		setPatio(property.getPatio());
+		setKitchen(property.getKitchen());
+		setCluster(property.getCluster());
+		setEco(property.getEco());
 		setLat(property.getLat());
 		setLng(property.getLng());
-		setType(property.getType());
-		setCityStateZip(property.getCityStateZip());
-		setPrice(property.getPrice());
+		
+		
+		
 		// TODO: Complete all properties
 	}
 
