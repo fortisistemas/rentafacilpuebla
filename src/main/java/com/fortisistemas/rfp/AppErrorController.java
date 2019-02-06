@@ -25,6 +25,11 @@ public class AppErrorController implements ErrorController {
 			error.printStackTrace();
 		return "public/error";
 	}
+	
+	@RequestMapping("/empty-list")
+	public String emptyList(Model model, WebRequest webRequest) {
+		return "public/empty-list";
+	}
 
 	/*
 	 * (non-Javadoc)

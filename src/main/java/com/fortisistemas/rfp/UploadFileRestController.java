@@ -21,7 +21,6 @@ public class UploadFileRestController {
 	@PostMapping(value = "upload", produces = "application/json")
 	public String uploadImages(@RequestParam(name = "prop-images[]") MultipartFile image, Authentication auth) {
 		// http://plugins.krajee.com/file-input#form-submission
-		System.out.println("UPLOADING FILES!");
 		String userName = "Anonymous";
 		if (auth != null) {
 			User principal = (User) auth.getPrincipal();

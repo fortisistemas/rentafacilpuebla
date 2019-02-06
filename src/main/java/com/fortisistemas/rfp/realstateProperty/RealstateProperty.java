@@ -28,7 +28,6 @@ public class RealstateProperty implements Serializable {
 	private String street;
 	private String neighborghood;
 	private String cityStateZip;
-	private String airConditioner;
 	private String internet;
 	private String cableTv;
 	private String balcony;
@@ -37,9 +36,13 @@ public class RealstateProperty implements Serializable {
 	private String lift;
 	private String garage;
 	private String security;
-	private String highStandard;
 	private String cityCentre;
 	private String furniture;
+	private String swimmingPool;
+	private String patio;
+	private String kitchen;
+	private String cluster;
+	private String eco;
 	private String lat;
 	private String lng;
 
@@ -115,14 +118,6 @@ public class RealstateProperty implements Serializable {
 		this.description = description;
 	}
 
-	public String getAirConditioner() {
-		return airConditioner;
-	}
-
-	public void setAirConditioner(String airConditioner) {
-		this.airConditioner = airConditioner;
-	}
-
 	public String getInternet() {
 		return internet;
 	}
@@ -187,14 +182,6 @@ public class RealstateProperty implements Serializable {
 		this.security = security;
 	}
 
-	public String getHighStandard() {
-		return highStandard;
-	}
-
-	public void setHighStandard(String highStandard) {
-		this.highStandard = highStandard;
-	}
-
 	public String getCityCentre() {
 		return cityCentre;
 	}
@@ -249,6 +236,46 @@ public class RealstateProperty implements Serializable {
 
 	public void setCityStateZip(String cityStateZip) {
 		this.cityStateZip = cityStateZip;
+	}
+
+	public String getSwimmingPool() {
+		return swimmingPool;
+	}
+
+	public void setSwimmingPool(String swimmingPool) {
+		this.swimmingPool = swimmingPool;
+	}
+
+	public String getPatio() {
+		return patio;
+	}
+
+	public void setPatio(String patio) {
+		this.patio = patio;
+	}
+
+	public String getKitchen() {
+		return kitchen;
+	}
+
+	public void setKitchen(String kitchen) {
+		this.kitchen = kitchen;
+	}
+
+	public String getCluster() {
+		return cluster;
+	}
+
+	public void setCluster(String cluster) {
+		this.cluster = cluster;
+	}
+
+	public String getEco() {
+		return eco;
+	}
+
+	public void setEco(String eco) {
+		this.eco = eco;
 	}
 
 }

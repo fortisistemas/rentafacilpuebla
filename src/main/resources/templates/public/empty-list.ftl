@@ -20,8 +20,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 short-image-title">
-					<h5 class="subtitle-margin second-color">ERROR 404</h5>
-					<h1 class="second-color">Page not found</h1>
+					<h5 class="subtitle-margin second-color">BÚSQUEDA FALLIDA</h5>
 					<div class="short-title-separator"></div>
 				</div>
 			</div>
@@ -33,11 +32,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1 class="huge-header">404<span class="special-color">.</span></h1>
-					<h1 class="error-subtitle text-color4">No se encontró la página</h1>
+					<h1 class="error-subtitle text-color4">No encontramos propiedades</h1>
 					
-					<p class="margin-top-105 centered-text">La página que usted está buscando pudo haber sido eliminada, o está temporalmente fuera de servicio.</p>
-					<p class="centered-text">Regrese a nuestra página de <strong><a href="/">INICIO</a></strong> o regrese a la <strong><a href="javascript:history.back()">PÁGINA ANGERIOR</a></strong></p>
+					<p class="margin-top-105 centered-text">Los filtros que utilizó para la búsqueda de propiedades no dieron resultados en nuestras listas.</p>
+					<p class="centered-text">Intente <strong><a href="/">nuevamente</a></strong> con filtros diferentes</p>
 				</div>
 			</div>
 		</div>

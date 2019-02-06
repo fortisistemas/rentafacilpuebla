@@ -41,7 +41,6 @@ public class AmazonS3ClientService {
 	}
 
 	public String uploadFile(MultipartFile multipartFile, String fileName) {
-		System.out.println("FILE UPLOAD!");
 		String fileUrl = "";
 		try {
 			File file = convertMultiPartToFile(multipartFile);
@@ -63,7 +62,6 @@ public class AmazonS3ClientService {
 	}
 
 	private void uploadFileTos3bucket(String fileName, File file) {
-		System.out.println(fileName);
 		s3client.putObject(
 				new PutObjectRequest(bucketName, fileName, file).withCannedAcl(CannedAccessControlList.PublicRead));
 	}
@@ -78,7 +76,7 @@ public class AmazonS3ClientService {
 		CopyObjectRequest copyRequest = new CopyObjectRequest(bucketName, source, bucketName, destination)
 				.withCannedAccessControlList(CannedAccessControlList.PublicRead);
 		s3client.copyObject(copyRequest);
-		
+
 		DeleteObjectRequest deleteRequest = new DeleteObjectRequest(bucketName, source);
 		s3client.deleteObject(deleteRequest);
 		return "renamed";

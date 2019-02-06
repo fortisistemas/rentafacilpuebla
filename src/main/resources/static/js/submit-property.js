@@ -6,7 +6,7 @@ $(document).on("ready", function () {
 	var images = [];
 	$("#prop-images").fileinput({
 		uploadUrl: "/admin/files/rest/upload",
-		allowedFileExtensions: ['jpg', 'png', 'gif'],
+		allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
 		showUpload: false,
 		maxFileCount: 15,
 		minFileCount: 1

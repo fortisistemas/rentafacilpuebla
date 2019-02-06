@@ -79,8 +79,6 @@
 							<textarea name="description" class="input-full main-input property-textarea" placeholder="Descripcion"></textarea>
 							<div class="row">
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
-									<input type="checkbox" id="airconditioner" name="airConditioner" class="main-checkbox" />
-									<label for="airconditioner"><span></span>Aire Acondicionado</label><br/>
 									<input type="checkbox" id="internet" name="internet" class="main-checkbox" />
 									<label for="internet"><span></span>Internet</label><br/>
 									<input type="checkbox" id="cableTv" name="cableTv" class="main-checkbox" />
@@ -99,8 +97,6 @@
 									<label for="garage"><span></span>Garage</label><br/>
 									<input type="checkbox" id="security" name="security" class="main-checkbox" />
 									<label for="security"><span></span>Seguridad</label><br/>
-									<input type="checkbox" id="highStandard" name="highStandard" class="main-checkbox" />
-									<label for="highStandard"><span></span>Alto Nivel</label><br/>
 									<input type="checkbox" id="cityCentre" name="cityCentre" class="main-checkbox" />
 									<label for="cityCentre"><span></span>Céntrico</label><br/>
 									<input type="checkbox" id="furniture" name="furniture" class="main-checkbox" />
@@ -109,6 +105,14 @@
 								<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 margin-top-15">
 									<input type="checkbox" id="swimmingPool" name="swimmingPool" class="main-checkbox" />
 									<label for="swimmingPool"><span></span>Con Alberca</label><br/>
+									<input type="checkbox" id="patio" name="patio" class="main-checkbox" />
+									<label for="patio"><span></span>Patio</label><br/>
+									<input type="checkbox" id="kitchen" name="kitchen" class="main-checkbox" />
+									<label for="kitchen"><span></span>Cocina</label><br/>
+									<input type="checkbox" id="cluster" name="cluster" class="main-checkbox" />
+									<label for="cluster"><span></span>Cerrado</label><br/>
+									<input type="checkbox" id="eco" name="eco" class="main-checkbox" />
+									<label for="eco"><span></span>Ecotecnologias</label><br/>
 								</div>
 							</div>
 						</div>				

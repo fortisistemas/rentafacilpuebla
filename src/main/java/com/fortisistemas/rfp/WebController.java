@@ -49,8 +49,6 @@ public class WebController {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstateProperty> result = new ArrayList<>();
 		
-		System.out.println(transaction);
-		
 		result = rps.stream()
 				.filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
 				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
@@ -59,9 +57,14 @@ public class WebController {
 				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0].trim()) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1].trim())))
 				.filter(rp -> !bathRange.isPresent() || (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0].trim()) && rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
 				.collect(Collectors.toList());
-
-		model.addAttribute("realstateProperties", result);
-		return "public/search-results";
+		
+		System.out.println("FOUND " + result.size() + " PROPERTIES TO SHOW IN SEARCH");
+		if(result.size() == 0)
+			return "redirect:/empty-list";
+		else {
+			model.addAttribute("realstateProperties", result);
+			return "public/search-results";			
+		}
 	}
 
 	@GetMapping(path = "/detail")
@@ -109,15 +112,15 @@ public class WebController {
 			@RequestParam("imageCsv") String imageCsv) {
 		// Save the real state property in database
 		rpService.addRealstateProperty(model);
-		System.out.println("PROPERTY STORED TO DATABASE: " + model);
 		int i = 0;
 		for (String tempFileName : imageCsv.split(",")) {
 			i++;
 			String extension = tempFileName.split("\\.")[1];
-			String fileName = "rfp-" + model.getId() + "-" + i + "." + extension;
+			String fileName = model.getId() + "/rfp-" + model.getId() + "-" + i + "." + extension;
 			try {
 				amazonService.renameFileFromS3Bucket(tempFileName, fileName);
 			} catch(Exception e) {
+				System.out.println("ERROR WHILE TRYING TO RENAME " + tempFileName + " to " + fileName);
 				e.printStackTrace();
 			}
 		}
