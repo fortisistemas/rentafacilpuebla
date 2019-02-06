@@ -31,8 +31,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-lg-3">
 					<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
-						<option>En Venta</option>
-						<option>En Renta</option>
+						<option value="En Venta">En Venta</option>
+						<option value="En Renta">En Renta</option>
 					</select>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 							<span>$</span>
 							<input type="text" name="priceRange" id="slider-range-price1-value" readonly class="adv-search-amount">
 							<div class="clearfix"></div>
-							<div id="slider-range-price1" data-min="0" data-max="300000" class="slider-range"></div>
+							<div id="slider-range-price1" data-min="<#if minPrice??>${minPrice?c}<#else>0</#if>" data-max="<#if maxPrice??>${maxPrice?c}<#else>300000</#if>" class="slider-range"></div>
 						</div>
 					</div>
 					<!-- /.col #precio -->
@@ -54,7 +54,7 @@
 							<span>m<sup>2</sup></span>
 							<input type="text" name="areaRange" id="slider-range-area1-value" readonly class="adv-search-amount">
 							<div class="clearfix"></div>
-							<div id="slider-range-area1" data-min="0" data-max="180" class="slider-range"></div>
+							<div id="slider-range-area1" data-min="0" data-max="500" class="slider-range"></div>
 						</div>
 					</div>
 					<!-- /.col #area -->
@@ -91,8 +91,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-lg-3">
 					<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
-						<option>En Venta</option>
-						<option>En Renta</option>
+						<option value="En Venta">En Venta</option>
+						<option value="En Renta">En Renta</option>
 					</select>
 					</div>
 				</div>
@@ -104,7 +104,7 @@
 							<span>$</span>
 							<input type="text" name="priceRange" id="slider-range-price2-value" readonly class="adv-search-amount">
 							<div class="clearfix"></div>
-							<div id="slider-range-price2" data-min="0" data-max="300000" class="slider-range"></div>
+							<div id="slider-range-price2" data-min="<#if minPrice??>${minPrice?c}<#else>0</#if>" data-max="<#if maxPrice??>${maxPrice?c}<#else>300000</#if>" class="slider-range"></div>
 						</div>
 					</div>
 					<!-- /.col #precio -->
@@ -114,7 +114,7 @@
 							<span>m<sup>2</sup></span>
 							<input type="text" name="areaRange" id="slider-range-area2-value" readonly class="adv-search-amount">
 							<div class="clearfix"></div>
-							<div id="slider-range-area2" data-min="0" data-max="180" class="slider-range"></div>
+							<div id="slider-range-area2" data-min="0" data-max="500" class="slider-range"></div>
 						</div>
 					</div>
 					<!-- /.col #area -->

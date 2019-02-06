@@ -36,6 +36,9 @@ public class WebController {
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
+		
+		modelMinPrice(model);
+		modelMaxPrice(model);
 
 		return "public/index";
 	}
@@ -49,15 +52,17 @@ public class WebController {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstatePropertySearchModel> result = new ArrayList<>();
 
+		System.out.println(transaction);
+		
 		result = rps.stream().map(rp -> {
 			RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
 			rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
 			return rpsm;
 		}).filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
-				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
+				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction().trim()))
 				.filter(rp -> !priceRange.isPresent()
 						|| (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim())
-								&& rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
+						&& rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
 				.filter(rp -> !areaRange.isPresent()
 						|| (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim())
 								&& rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))
@@ -69,14 +74,46 @@ public class WebController {
 								&& rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
 				.collect(Collectors.toList());
 
+		Integer searchMinPrice = result.stream().map(rp -> rp.getPrice()).min(Integer::min).orElse(0);
+		Integer searchMaxPrice = result.stream().map(rp -> rp.getPrice()).max(Integer::max).orElse(3500000);
+
 		if (result.size() == 0)
 			return "redirect:/empty-list";
 		else {
 			model.addAttribute("realstateProperties", result);
+
+			String searchTransaction = !transaction.isPresent() || transaction.get().contains(",")
+					? "en venta o en renta"
+					: transaction.get();
+			String searchPropertyType = !type.isPresent() ? "Casas o departamentos" : type.get();
+			model.addAttribute("searchTransaction", searchTransaction);
+			model.addAttribute("searchPropertyType", searchPropertyType);
+			model.addAttribute("searchMinPrice", searchMinPrice);
+			model.addAttribute("searchMaxPrice", searchMaxPrice);
+			modelMinPrice(model);
+			modelMaxPrice(model);
 			return "public/search-results";
 		}
 	}
 
+	private void modelMinPrice(Model model) {
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+
+		Integer price = rps.stream()
+				.mapToInt(rp -> rp.getPrice())
+				.min().orElse(0);
+		model.addAttribute("minPrice", price);
+	}
+	
+	private void modelMaxPrice(Model model) {
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+
+		Integer price = rps.stream()
+				.mapToInt(rp -> rp.getPrice())
+				.max().orElse(3500000);
+		model.addAttribute("maxPrice", price);
+	}
+	
 	@GetMapping(path = "/detail/{id}")
 	public String propertyDetails(@PathVariable("id") Integer id, Authentication auth, Model model) {
 		if (auth != null) {
@@ -88,6 +125,8 @@ public class WebController {
 		RealstatePropertySearchModel toScreen = new RealstatePropertySearchModel(fromDb);
 		toScreen.setImageUrls(amazonService.directoryContent(fromDb.getId().toString()));
 		model.addAttribute("propiedad", rpService.getRealstatePropertyById(id));
+		modelMinPrice(model);
+		modelMaxPrice(model);
 		return "public/detail";
 	}
 

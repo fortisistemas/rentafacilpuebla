@@ -28,8 +28,8 @@
 				<div class="col-xs-12 col-md-9 col-md-push-3">
 						<div class="row">
 							<div class="col-xs-12 col-lg-6">
-								<h5 class="subtitle-margin">Departamentos En Venta o En Renta</h5>
-								<h1>Propiedades Encontradas<span class="special-color">.</span></h1>
+								<h5 class="subtitle-margin">${searchPropertyType} ${searchTransaction}</h5>
+								<h1>${realstateProperties?size} Propiedades Encontradas<span class="special-color">.</span></h1>
 							</div>
 							<div class="col-xs-12 col-lg-6">											
 								<!--<div class="view-icons-container">
@@ -44,10 +44,7 @@
 										<option>Area Pequeña</option>
 									</select>
 								</div>	
-							</div>							
-							<!--<div class="col-xs-12">
-								<div class="title-separator-primary"></div>
-							</div>-->
+							</div>
 						</div>
 						<div class="row list-offer-row">
 							<div class="col-xs-12">
@@ -387,6 +384,7 @@
 <@endscripts.nav />
 
 <!-- PAGE SPECIFIC SCRIPT -->	
+<script type="text/javascript" src="/js/title-search.js"></script>
 <script type="text/javascript">
 /**
 * 
