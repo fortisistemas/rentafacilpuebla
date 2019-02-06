@@ -760,29 +760,21 @@ header.header3 .hover-menu::after {
 }
 
 html.no-pointerevents.no-touchevents #feature1:hover > .feature-text::after {
-	background: #3797dd url(/images/feature-bg1.jpg) no-repeat center center;
+	background: #3797dd url(/images/cri.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature2:hover > .feature-text::after {
-	background: #3797dd url(/images/feature-bg2.jpg) no-repeat center center;
+	background: #3797dd url(/images/mueble.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature3:hover > .feature-text::after {
-	background: #3797dd url(/images/feature-bg3.jpg) no-repeat center center;
-}
-
-html.no-pointerevents.no-touchevents #feature4:hover > .feature-text::after {
-	background: #3797dd url(/images/feature-bg4.jpg) no-repeat center center;
+	background: #3797dd url(/images/333.jpg) no-repeat center center;
 }
 
 html.no-pointerevents.no-touchevents #feature1.feature2:hover, 
 html.no-pointerevents.no-touchevents #feature2.feature2:hover, 
 html.no-pointerevents.no-touchevents #feature3.feature2:hover, 
-html.no-pointerevents.no-touchevents #feature4.feature2:hover,
-html.no-pointerevents.no-touchevents #feature5.feature2:hover,
-html.no-pointerevents.no-touchevents #feature6.feature2:hover {
-	background-color: rgba(62,155,222,0.8);
-}
+
 
 html.no-pointerevents.no-touchevents #feature1.feature2:hover::after {
 	background: url(/images/feature-bg1.jpg) no-repeat center center; 
@@ -800,20 +792,13 @@ html.no-pointerevents.no-touchevents #feature4.feature2:hover::after {
 	background: url(/images/feature-bg4.jpg) no-repeat center center;
 }
 
-html.no-pointerevents.no-touchevents #feature5.feature2:hover::after {
-	background: url(/images/feature-bg1.jpg) no-repeat center center;
-}
-
-html.no-pointerevents.no-touchevents #feature6.feature2:hover::after {
-	background: url(/images/feature-bg2.jpg) no-repeat center center;
-}
-
 section.featured-offers {
 	background: #183263 url(/images/featured-bg.jpg) no-repeat fixed 50% 0;
 }
 
 .testimonials {
-	background: #152560 url(/images/testimonials-bg.jpg) no-repeat fixed 50% 0;
+	background: #152560 url(/images/mom.jpg) no-repeat 50% 0;
+	background-size: cover;
 }
 
 section.blog-short-title {

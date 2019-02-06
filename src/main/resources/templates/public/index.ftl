@@ -460,13 +460,13 @@
 										<span class="team-icon-circle">
 											<i class="fa fa-phone"></i>
 										</span>
-										<span>+52-1-222-166-7972</span>
+										<span>-22 21-66-79-72</span>
 									</div>
 									<div class="team-desc-line">
 										<span class="team-icon-circle">
 											<i class="fa fa-envelope fa-sm"></i>
 										</span>
-										<span>rosario@rentafacil.com</span>
+										<span>rosario@rentafacilpuebla.com</span>
 									</div>
 									<div class="team-social-cont">
 										<div class="team-social">
@@ -670,13 +670,13 @@
 										<span class="team-icon-circle">
 											<i class="fa fa-phone"></i>
 										</span>
-										<span>(0)-123-456-789</span>
+										<span>22-25-12-83-65</span>
 									</div>
 									<div class="team-desc-line">
 										<span class="team-icon-circle">
 											<i class="fa fa-envelope fa-sm"></i>
 										</span>
-										<span>apartment@domain.tld</span>
+										<span></span>
 									</div>
 									<div class="team-social-cont">
 										<div class="team-social">
@@ -771,7 +771,7 @@
 		</div>
 	</section>
 	
-	<section class="testimonials parallax">
+	<section id="testimonials" class="testimonials">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9">
