@@ -630,6 +630,9 @@ jQuery(window).load(function() {
 			$('.parallax').parallax("50%", 0.2);
 		}
 		
+		if($("#testimonials").length && w_width > 991) {
+			$("#testimonials").parallax("5%", 0.2);
+		}
 				
 		
 /********** SMOOTH SCROLLING **********/
