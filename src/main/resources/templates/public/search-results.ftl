@@ -402,11 +402,12 @@ $(document).on("ready", function () {
 			<#list realstateProperties as rsp>
 				<#if rsp.lat?? && rsp.lng??>
 					<#assign rspHouseType=(rsp.type == "Casa")>
+					<#assign hasImages=rsp.imageUrls?size gt 0>
 					[${rsp.lat},${rsp.lng},
 					'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}',
 					'/detail/${rsp.id}',
-					'https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${rsp.id}/rfp-${rsp.id}-1.jpeg', 
-					'${rsp.cityStateZip}', '${rsp.price?string.currency}'],
+					'${hasImages?then("https://s3.us-east-2.amazonaws.com/rentafacilpuebla/" + rsp.imageUrls[0],"/images/propiedad.jpg")}', 
+					'<#if rsp.cityStateZip??>${rsp.cityStateZip}<#else>PUEBLA</#if>', '${rsp.price?string.currency}'],
 				</#if>
 			</#list>
 		];

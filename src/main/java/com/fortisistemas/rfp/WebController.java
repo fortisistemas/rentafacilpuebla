@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.fortisistemas.rfp.realstateProperty.RealstateProperty;
+import com.fortisistemas.rfp.realstateProperty.RealstatePropertySearchModel;
 import com.fortisistemas.rfp.realstateProperty.RealstatePropertyService;
 
 @Controller
@@ -47,10 +48,14 @@ public class WebController {
 			@RequestParam("roomRange") Optional<String> roomRange,
 			@RequestParam("bathRange") Optional<String> bathRange, Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
-		List<RealstateProperty> result = new ArrayList<>();
+		List<RealstatePropertySearchModel> result = new ArrayList<>();
 		
 		result = rps.stream()
-				.filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
+				.map(rp -> {
+					RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
+					rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
+					return rpsm;
+				}).filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
 				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
 				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim()) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
 				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim()) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))

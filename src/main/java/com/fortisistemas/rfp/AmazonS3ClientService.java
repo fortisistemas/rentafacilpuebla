@@ -3,6 +3,8 @@ package com.fortisistemas.rfp;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 
@@ -17,7 +19,10 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.CopyObjectRequest;
 import com.amazonaws.services.s3.model.DeleteObjectRequest;
+import com.amazonaws.services.s3.model.ListObjectsRequest;
+import com.amazonaws.services.s3.model.ObjectListing;
 import com.amazonaws.services.s3.model.PutObjectRequest;
+import com.amazonaws.services.s3.model.S3ObjectSummary;
 
 @Service
 public class AmazonS3ClientService {
@@ -80,6 +85,15 @@ public class AmazonS3ClientService {
 		DeleteObjectRequest deleteRequest = new DeleteObjectRequest(bucketName, source);
 		s3client.deleteObject(deleteRequest);
 		return "renamed";
+	}
+	
+	public List<String> directoryContent(String sourceDirectory) {
+		List<String> objectNames = new ArrayList<>();
+		ListObjectsRequest lor = new ListObjectsRequest().withBucketName(bucketName).withPrefix(sourceDirectory + "/");
+		ObjectListing objects = s3client.listObjects(lor);
+		List<S3ObjectSummary> summaries = objects.getObjectSummaries();
+		summaries.forEach(s -> objectNames.add(s.getKey()));
+		return objectNames;
 	}
 
 }
