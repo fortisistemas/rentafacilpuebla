@@ -19,9 +19,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 short-image-title">
-					<!--<h5 class="subtitle-margin second-color">Estar En Contacto</h5>-->
-					<!--<h1 class="second-color">Contactame</h1>-->
-					<div class="short-title-separator"></div>
+					<h1 class="subtitle-margin second-color">Contáctanos</h1>
 				</div>
 			</div>
 		</div>
@@ -32,7 +30,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 margin-top-45">
-					<p class="negative-margin">Los asesoramos en cualquier duda quetenga nuestro eficas equipo de asesores esta listo para ayudarte llena este formulario y re suelve todas tus dudas. tambien puedes dejar comentarios o sugerencias ya que apreciamos la opinion de nustros clientes   .</p>
+					<p class="negative-margin">Los asesoramos en cualquier duda quetenga nuestro eficáz equipo de asesores esta listo para ayudarte, llena este formulario y re suelve todas tus dudas. Tambien puedes dejar comentarios o sugerencias ya que apreciamos la opinion de nustros clientes.</p>
 					<img src="images/contact-image.jpg" alt="" class="pull-left margin-top-45" />
 					<address class="contact-info pull-left">
 						<!--<span><i class="fa fa-map-marker"></i>00456 Some Address line</span>-->

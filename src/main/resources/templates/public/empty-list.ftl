@@ -21,7 +21,6 @@
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 short-image-title">
 					<h5 class="subtitle-margin second-color">BÚSQUEDA FALLIDA</h5>
-					<div class="short-title-separator"></div>
 				</div>
 			</div>
 		</div>

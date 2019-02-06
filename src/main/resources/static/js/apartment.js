@@ -766,19 +766,11 @@ jQuery(window).load(function() {
 			gh += $(this).find('.grid-offer-params').outerHeight();
 			$(this).find('.grid-offer').stop(true, true).animate( { height: gh }, 0);
 			$(this).find('.grid-offer-back').stop(true, true).animate( { height: gh }, 0);
-			//console.log($(this).find('.grid-offer-photo').outerHeight());
-			//console.log($(this).find('.grid-offer-text').outerHeight());
-			//console.log($(this).find('.price-grid-cont').outerHeight());
-			//console.log($(this).find('.grid-offer-params').outerHeight());
-			//console.log(gh);
 		});
 		$('.list-offer-left').each( function () {
 			var gh = 0; 
 			gh += $(this).find('.list-offer-photo').outerHeight();
 			gh += $(this).find('.list-offer-params').outerHeight();
-			console.log($(this).find('.list-offer-photo img').innerHeight());
-			console.log($(this).find('.list-offer-params').innerHeight());
-			console.log(gh);
 			$(this).stop(true, true).animate( { height: gh - 30 }, 0);
 			$(this).find('.list-offer-back').stop(true, true).animate( { height: gh + 20 }, 0);
 		});	

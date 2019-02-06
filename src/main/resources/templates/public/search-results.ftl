@@ -385,29 +385,43 @@
 </div>	
 
 <@endscripts.nav />
+
+<!-- PAGE SPECIFIC SCRIPT -->	
+<script type="text/javascript">
+/**
+* 
+*/
+$(document).on("ready", function () {
+	// Google maps initialization
+	google.maps.event.addDomListener(window, 'load', init);
+	/**
+	* google maps dom listener on load
+	*/
+	function init() {
+		var locations = [
+			<#list realstateProperties as rsp>
+				<#if rsp.lat?? && rsp.lng??>
+					<#assign rspHouseType=(rsp.type == "Casa")>
+					[${rsp.lat},${rsp.lng},
+					'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}',
+					'/detail/${rsp.id}',
+					'https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${rsp.id}/rfp-${rsp.id}-1.jpeg', 
+					'${rsp.cityStateZip}', '${rsp.price?string.currency}'],
+				</#if>
+			</#list>
+		];
+		offersMapInit("offers-map",locations);
+		
+		mapInit(41.2693,-70.0874,"list-map1","images/pin-house.png", false);
+		mapInit(33.7544,-84.3857,"list-map2","images/pin-apartment.png", false);
+		mapInit(33.7337,-84.4443,"list-map3","images/pin-land.png", false);
+		mapInit(33.8588,-84.4858,"list-map4","images/pin-commercial.png", false);
+		mapInit(34.0254,-84.3560,"list-map5","images/pin-apartment.png", false);
+		mapInit(40.6128,-73.9976,"list-map6","images/pin-house.png", false);
+		mapInit(40.6128,-73.7903,"list-map7","images/pin-house.png", false);
+	}
+});
+</script>
 	
-<!-- google maps initialization -->
-	<script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', init);
-			function init() {		
-				var locations = [
-					[19.118742740060604,-98.26834974544067, "images/pin-apartment.png", "estate-details-right-sidebar.html", "images/infobox-offer1.jpg", "Fort Collins, Colorado 80523, USA", "$320 000"],
-					[19.118742740060604,-98.26834974544067, "images/pin-apartment.png", "estate-details-right-sidebar.html", "images/infobox-offer2.jpg", "West Fourth Street, New York 10003, USA", "$350 000"],
-					[19.115782, -98.256430, "images/pin-house.png", "estate-details-right-sidebar.html", "images/infobox-offer3.jpg", "E. Elwood St. Phoenix, AZ 85034, USA", "$300 000"],
-					[19.081434, -98.281536, "images/pin-house.png", "estate-details-right-sidebar.html", "images/infobox-offer4.jpg", "Fort Collins, Colorado 80523, USA", "$410 000"],
-					[19.078047, -98.272771, "images/pin-house.png", "estate-details-right-sidebar.html", "images/infobox-offer5.jpg", "West Fourth Street, New York 10003, USA", "$295 000"],
-				];
-				offersMapInit("offers-map",locations);
-				
-				mapInit(41.2693,-70.0874,"list-map1","images/pin-house.png", false);
-				mapInit(33.7544,-84.3857,"list-map2","images/pin-apartment.png", false);
-				mapInit(33.7337,-84.4443,"list-map3","images/pin-land.png", false);
-				mapInit(33.8588,-84.4858,"list-map4","images/pin-commercial.png", false);
-				mapInit(34.0254,-84.3560,"list-map5","images/pin-apartment.png", false);
-				mapInit(40.6128,-73.9976,"list-map6","images/pin-house.png", false);
-				mapInit(40.6128,-73.7903,"list-map7","images/pin-house.png", false);
-			}
-	</script>
-	
-	</body>
+</body>
 </html>
