@@ -7,15 +7,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<@head.nav pageTitle="Renta Facil Puebla - Detalle de propiedad" />
+	<@head.nav pageTitle="Renta Facil Puebla - Detalle de propiedad (${propiedad.id})" />
 </head>
 <body>
 <div class="loader-bg"></div>
 <div id="wrapper">
 
 <@ph.nav />
-	
-  			
+
     <section class="section-dark no-padding">
 		<!-- Slider main container -->
 		<div id="swiper-gallery" class="swiper-container">
@@ -32,8 +31,8 @@
 								<div class="gallery-slide-cont">
 									<div class="gallery-slide-cont-inner">	
 										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
+											<h5 class="subtitle-margin">${propiedad.type} ${propiedad.transaction}</h5>
+											<h3>${propiedad.cityStateZip}<span class="special-color">.</span></h3>
 										</div>
 										<div class="gallery-slide-estate pull-right hidden-xs">
 											<i class="fa fa-home"></i>
@@ -42,7 +41,7 @@
 									</div>
 									<div class="clearfix"></div>
 									<div class="gallery-slide-desc-price pull-right">
-										$320 000
+										${propiedad.price}
 									</div>	
 									<div class="clearfix"></div>
 								</div>	
@@ -411,7 +410,7 @@
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m1.jpg" alt="">
+								<img class="slide-thumb" src="/images/slides/m1.jpg" alt="">
 							</div>
 							<div class="swiper-slide">
 								<img class="slide-thumb" src="images/slides/m2.jpg" alt="">

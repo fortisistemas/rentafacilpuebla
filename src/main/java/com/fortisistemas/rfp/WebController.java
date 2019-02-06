@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -40,45 +41,53 @@ public class WebController {
 	}
 
 	@GetMapping(path = "/search")
-	public String search(
-			@RequestParam("transaction") Optional<String> transaction,
-			@RequestParam("type") Optional<String> type, 
-			@RequestParam("priceRange") Optional<String> priceRange,
+	public String search(@RequestParam("transaction") Optional<String> transaction,
+			@RequestParam("type") Optional<String> type, @RequestParam("priceRange") Optional<String> priceRange,
 			@RequestParam("areaRange") Optional<String> areaRange,
 			@RequestParam("roomRange") Optional<String> roomRange,
 			@RequestParam("bathRange") Optional<String> bathRange, Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstatePropertySearchModel> result = new ArrayList<>();
-		
-		result = rps.stream()
-				.map(rp -> {
-					RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
-					rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
-					return rpsm;
-				}).filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
+
+		result = rps.stream().map(rp -> {
+			RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
+			rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
+			return rpsm;
+		}).filter(rp -> !type.isPresent() || type.get().equals(rp.getType()))
 				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction()))
-				.filter(rp -> !priceRange.isPresent() || (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim()) && rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
-				.filter(rp -> !areaRange.isPresent() || (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim()) && rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))
-				.filter(rp -> !roomRange.isPresent() || (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0].trim()) && rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1].trim())))
-				.filter(rp -> !bathRange.isPresent() || (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0].trim()) && rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
+				.filter(rp -> !priceRange.isPresent()
+						|| (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim())
+								&& rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
+				.filter(rp -> !areaRange.isPresent()
+						|| (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim())
+								&& rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))
+				.filter(rp -> !roomRange.isPresent()
+						|| (rp.getBedrooms() >= Integer.parseInt(roomRange.get().split("-")[0].trim())
+								&& rp.getBedrooms() <= Integer.parseInt(roomRange.get().split("-")[1].trim())))
+				.filter(rp -> !bathRange.isPresent()
+						|| (rp.getBathrooms() >= Integer.parseInt(bathRange.get().split("-")[0].trim())
+								&& rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
 				.collect(Collectors.toList());
-		
-		System.out.println("FOUND " + result.size() + " PROPERTIES TO SHOW IN SEARCH");
-		if(result.size() == 0)
+
+		if (result.size() == 0)
 			return "redirect:/empty-list";
 		else {
 			model.addAttribute("realstateProperties", result);
-			return "public/search-results";			
+			return "public/search-results";
 		}
 	}
 
-	@GetMapping(path = "/detail")
-	public String propertyDetails(Authentication auth, Model model) {
+	@GetMapping(path = "/detail/{id}")
+	public String propertyDetails(@PathVariable("id") Integer id, Authentication auth, Model model) {
 		if (auth != null) {
 			User principal = (User) auth.getPrincipal();
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
+		RealstateProperty fromDb = rpService.getRealstatePropertyById(id);
+		RealstatePropertySearchModel toScreen = new RealstatePropertySearchModel(fromDb);
+		toScreen.setImageUrls(amazonService.directoryContent(fromDb.getId().toString()));
+		model.addAttribute("propiedad", rpService.getRealstatePropertyById(id));
 		return "public/detail";
 	}
 
@@ -124,7 +133,7 @@ public class WebController {
 			String fileName = model.getId() + "/rfp-" + model.getId() + "-" + i + "." + extension;
 			try {
 				amazonService.renameFileFromS3Bucket(tempFileName, fileName);
-			} catch(Exception e) {
+			} catch (Exception e) {
 				System.out.println("ERROR WHILE TRYING TO RENAME " + tempFileName + " to " + fileName);
 				e.printStackTrace();
 			}

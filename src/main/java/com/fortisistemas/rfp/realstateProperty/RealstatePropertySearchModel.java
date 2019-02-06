@@ -26,7 +26,6 @@ public class RealstatePropertySearchModel extends RealstateProperty {
 	}
 
 	public void setImageUrls(List<String> imageUrls) {
-		System.out.println(imageUrls);
 		this.imageUrls = imageUrls;
 	}
 
