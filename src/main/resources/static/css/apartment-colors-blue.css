@@ -793,7 +793,8 @@ html.no-pointerevents.no-touchevents #feature4.feature2:hover::after {
 }
 
 section.featured-offers {
-	background: #183263 url(/images/featured-bg.jpg) no-repeat fixed 50% 0;
+	background: #183263 url(/images/lanzer_angelopolis_noche.jpg) no-repeat fixed 80% 0;
+	background-size: 1800px;
 }
 
 .testimonials {

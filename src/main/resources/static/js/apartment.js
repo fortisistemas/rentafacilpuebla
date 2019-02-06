@@ -631,7 +631,11 @@ jQuery(window).load(function() {
 		}
 		
 		if($("#testimonials").length && w_width > 991) {
-			$("#testimonials").parallax("5%", 0.2);
+			$("#testimonials").parallax("5%", 0.3);
+		}
+
+		if($("#featured-offers").length && w_width > 991) {
+			$("#featured-offers").parallax("80%", 0.3);
 		}
 				
 		
