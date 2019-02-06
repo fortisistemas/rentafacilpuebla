@@ -467,15 +467,15 @@
 								<i class="fa fa-home"></i>
 							</div>
 							<div class="details-title pull-left">
-								<h5 class="subtitle-margin">${property.type} ${property.transaction}</h5>
+								<h5 class="subtitle-margin">${propiedad.type} ${propiedad.transaction}</h5>
 								<h3>${propiedad.cityStateZip}<span class="special-color">.</span></h3>
 							</div>
 							<div class="clearfix"></div>	
 							<div class="title-separator-primary"></div>
-							<p class="details-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							<p class="details-desc">Descripción De La Propiedad Alvento Residencial es un desarrollo privado, ubicado en la mejor zona de Apodaca. Cuenta con viviendas de 2 y 3 niveles con amplios espacios bien distribuidos, tiene un área social con casa club climatizada, terraza, asadores, hermosas áreas verdes, andadores, juegos infantiles y cancha de pasto sintético. Alvento Residencial es el lugar ideal para que tu familia viva con comodidad y tranquilidad .</p>
 						</div>
 						<div class="col-xs-12 col-sm-5 col-md-4">
-							<div class="details-parameters-price">${property.price}</div>
+							<div class="details-parameters-price">${propiedad.price}</div>
 							<div class="details-parameters">
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">area</div>
@@ -483,17 +483,17 @@
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
-									<div class="details-parameters-name">bedrooms</div>
+									<div class="details-parameters-name">Recamaras</div>
 									<div class="details-parameters-val">3</div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
-									<div class="details-parameters-name">bathrooms</div>
+									<div class="details-parameters-name">Baños</div>
 									<div class="details-parameters-val">1</div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
-									<div class="details-parameters-name">parking places</div>
+									<div class="details-parameters-name">Estacinamiento</div>
 									<div class="details-parameters-val">2</div>
 									<div class="clearfix"></div>	
 								</div>
@@ -518,27 +518,29 @@
 					<div class="row margin-top-45">
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
-								<li><i class="jfont">&#xe815;</i>Air conditioning</li>
+								<li><i class="jfont">&#xe815;</i>ATerraza</li>
 								<li><i class="jfont">&#xe815;</i>Internet</li>
 								<li><i class="jfont">&#xe815;</i>Cable TV</li>
-								<li><i class="jfont">&#xe815;</i>Balcony</li>
+								<li><i class="jfont">&#xe815;</i>Balcon</li>
+								<li><i class="jfont">&#xe815;</i>Cerrado</li>
 							</ul>
 						</div>
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
 								<li><i class="jfont">&#xe815;</i>Garage</li>
-								<li><i class="jfont">&#xe815;</i>Lift</li>
-								<li><i class="jfont">&#xe815;</i>High standard</li>
-								<li><i class="jfont">&#xe815;</i>City Centre</li>
+								<li><i class="jfont">&#xe815;</i>Elevador</li>
+								<li><i class="jfont">&#xe815;</i>Amueblado</li>
+								<li><i class="jfont">&#xe815;</i>Centrico</li>
+								<li><i class="jfont">&#xe815;</i>Seguridad</li>
 							</ul>
 						
 						</div>
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
-								<li><i class="jfont">&#xe815;</i>nostrud exercitation</li>
-								<li><i class="jfont">&#xe815;</i>nostrud exercitation</li>
-								<li><i class="jfont">&#xe815;</i>nostrud exercitation</li>
-								<li><i class="jfont">&#xe815;</i>nostrud exercitation</li>
+								<li><i class="jfont">&#xe815;</i>Ecotecnologias</li>
+								<li><i class="jfont">&#xe815;</i>Con Alberca</li>
+								<li><i class="jfont">&#xe815;</i>Cocina</li>
+								<li><i class="jfont">&#xe815;</i>Azotea</li>
 							</ul>
 						</div>
 					</div>
