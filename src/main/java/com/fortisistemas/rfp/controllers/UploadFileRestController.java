@@ -1,4 +1,4 @@
-package com.fortisistemas.rfp;
+package com.fortisistemas.rfp.controllers;
 
 import java.util.Date;
 
@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.fortisistemas.rfp.imageServices.AmazonS3ClientService;
 
 @RestController
 @RequestMapping("/admin/files/rest")

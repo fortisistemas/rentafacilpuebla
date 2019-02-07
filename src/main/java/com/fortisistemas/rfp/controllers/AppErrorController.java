@@ -1,4 +1,4 @@
-package com.fortisistemas.rfp;
+package com.fortisistemas.rfp.controllers;
 
 import org.springframework.boot.web.servlet.error.ErrorAttributes;
 import org.springframework.boot.web.servlet.error.ErrorController;

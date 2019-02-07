@@ -1,4 +1,4 @@
-package com.fortisistemas.rfp;
+package com.fortisistemas.rfp.imageServices;
 
 import java.io.File;
 import java.io.FileOutputStream;
