@@ -134,7 +134,7 @@ public class WebController {
 		RealstateProperty fromDb = rpService.getRealstatePropertyById(id);
 		RealstatePropertySearchModel toScreen = new RealstatePropertySearchModel(fromDb);
 		toScreen.setImageUrls(amazonService.directoryContent(fromDb.getId().toString()));
-		model.addAttribute("propiedad", rpService.getRealstatePropertyById(id));
+		model.addAttribute("propiedad", toScreen);
 		modelMinPrice(model);
 		modelMaxPrice(model);
 		return "public/detail";

@@ -58,7 +58,7 @@
 <div class="sidebar-featured-cont">
 	<div class="sidebar-featured">
 		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="images/sidebar-featured1.jpg" alt="" />
+			<img src="/images/sidebar-featured1.jpg" alt="" />
 			<div class="sidebar-featured-type">
 				<div class="sidebar-featured-estate">A</div>
 				<div class="sidebar-featured-transaction">S</div>
@@ -70,7 +70,7 @@
 	</div>
 	<div class="sidebar-featured">
 		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="images/sidebar-featured2.jpg" alt="" />
+			<img src="/images/sidebar-featured2.jpg" alt="" />
 			<div class="sidebar-featured-type">
 				<div class="sidebar-featured-estate">A</div>
 				<div class="sidebar-featured-transaction">S</div>
@@ -82,7 +82,7 @@
 	</div>
 	<div class="sidebar-featured">
 		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="images/sidebar-featured3.jpg" alt="" />
+			<img src="/images/sidebar-featured3.jpg" alt="" />
 			<div class="sidebar-featured-type">
 				<div class="sidebar-featured-estate">A</div>
 				<div class="sidebar-featured-transaction">S</div>
@@ -101,19 +101,19 @@
 <!-- /.LATEST NEWS TITLE -->
 <div class="sidebar-blog-cont">
 	<article>
-		<a href="blog-right-sidebar.html"><img src="images/footer-blog1.jpg" alt="" class="sidebar-blog-image" /></a>
+		<a href="blog-right-sidebar.html"><img src="/images/footer-blog1.jpg" alt="" class="sidebar-blog-image" /></a>
 		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
 		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
 		<div class="clearfix"></div>					
 	</article>
 	<article>
-		<a href="blog-right-sidebar.html"><img src="images/footer-blog2.jpg" alt="" class="sidebar-blog-image" /></a>
+		<a href="blog-right-sidebar.html"><img src="/images/footer-blog2.jpg" alt="" class="sidebar-blog-image" /></a>
 		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
 		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
 		<div class="clearfix"></div>					
 	</article>
 	<article>
-		<a href="blog-right-sidebar.html"><img src="images/footer-blog3.jpg" alt="" class="sidebar-blog-image" /></a>
+		<a href="blog-right-sidebar.html"><img src="/images/footer-blog3.jpg" alt="" class="sidebar-blog-image" /></a>
 		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
 		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
 		<div class="clearfix"></div>					

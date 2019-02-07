@@ -14,15 +14,17 @@
 <div id="wrapper">
 
 <@ph.nav />
-
     <section class="section-dark no-padding">
 		<!-- Slider main container -->
 		<div id="swiper-gallery" class="swiper-container">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
+				<#list propiedad.imageUrls as propImage>
 				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/1.jpg" data-sub-html="<strong>this is a caption 1</strong><br/>Second line of the caption"></div>
+					<div class="slide-bg swiper-lazy" 
+					data-background="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${propImage}" 
+					data-sub-html="<strong>${propiedad.type} ${propiedad.transaction}</strong><br/>${propiedad.cityStateZip}"></div>
 					<!-- Preloader image -->
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 					<div class="container">
@@ -48,344 +50,8 @@
 							</div>			
 						</div>
 					</div>
-					
 				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/2.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-2">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>	
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/3.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-3">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/4.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-4">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/5.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-5">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/6.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-6">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/7.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-7">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/8.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-8">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/9.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-9">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/10.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-10">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/11.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-11">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/12.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-12">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/13.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-9 col-lg-8 slide-desc-col animated gallery-slide-desc-13">
-								<div class="gallery-slide-cont">
-									<div class="gallery-slide-cont-inner">	
-										<div class="gallery-slide-title pull-right">
-											<h5 class="subtitle-margin">apartments for sale</h5>
-											<h3>Fort Collins, Colorado 80523, USA<span class="special-color">.</span></h3>
-										</div>
-										<div class="gallery-slide-estate pull-right hidden-xs">
-											<i class="fa fa-home"></i>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="clearfix"></div>
-									<div class="gallery-slide-desc-price pull-right">
-										$320 000
-									</div>	
-									<div class="clearfix"></div>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
+				</#list>
 			</div>
 			
 			<div class="slide-buttons slide-buttons-center">
@@ -409,45 +75,11 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
+							<#list propiedad.imageUrls as propImage>
 							<div class="swiper-slide">
-								<img class="slide-thumb" src="/images/slides/m1.jpg" alt="">
+								<img class="slide-thumb" style="height:80px" src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${propImage}" alt="">
 							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m2.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m3.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m4.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m5.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m6.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m7.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m8.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m9.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m10.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m11.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m12.jpg" alt="">
-							</div>
-							<div class="swiper-slide">
-								<img class="slide-thumb" src="images/slides/m13.jpg" alt="">
-							</div>
+							</#list>
 						</div>
 					</div>
 				</div>
@@ -472,44 +104,29 @@
 							</div>
 							<div class="clearfix"></div>	
 							<div class="title-separator-primary"></div>
-							<p class="details-desc">Descripción De La Propiedad Alvento Residencial es un desarrollo privado, ubicado en la mejor zona de Apodaca. Cuenta con viviendas de 2 y 3 niveles con amplios espacios bien distribuidos, tiene un área social con casa club climatizada, terraza, asadores, hermosas áreas verdes, andadores, juegos infantiles y cancha de pasto sintético. Alvento Residencial es el lugar ideal para que tu familia viva con comodidad y tranquilidad .</p>
+							<p class="details-desc">${propiedad.description}</p>
 						</div>
 						<div class="col-xs-12 col-sm-5 col-md-4">
 							<div class="details-parameters-price">${propiedad.price}</div>
 							<div class="details-parameters">
 								<div class="details-parameters-cont">
-									<div class="details-parameters-name">area</div>
-									<div class="details-parameters-val">54m<sup>2</sup></div>
+									<div class="details-parameters-name">Área</div>
+									<div class="details-parameters-val">${propiedad.area}m<sup>2</sup></div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">Recamaras</div>
-									<div class="details-parameters-val">3</div>
+									<div class="details-parameters-val">${propiedad.bedrooms}</div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">Baños</div>
-									<div class="details-parameters-val">1</div>
+									<div class="details-parameters-val">${propiedad.bathrooms}</div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
-									<div class="details-parameters-name">Estacinamiento</div>
-									<div class="details-parameters-val">2</div>
-									<div class="clearfix"></div>	
-								</div>
-								<div class="details-parameters-cont">
-									<div class="details-parameters-name">Lorem</div>
-									<div class="details-parameters-val">nostrud</div>
-									<div class="clearfix"></div>	
-								</div>
-								<div class="details-parameters-cont">
-									<div class="details-parameters-name">Ipsum</div>
-									<div class="details-parameters-val">tempor</div>
-									<div class="clearfix"></div>	
-								</div>
-								<div class="details-parameters-cont details-parameters-cont-last">
-									<div class="details-parameters-name">Consectetur</div>
-									<div class="details-parameters-val">eiusmod</div>
+									<div class="details-parameters-name">Estacionamiento</div>
+									<div class="details-parameters-val">${propiedad.garageSize}</div>
 									<div class="clearfix"></div>	
 								</div>
 							</div>
@@ -518,29 +135,85 @@
 					<div class="row margin-top-45">
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
-								<li><i class="jfont">&#xe815;</i>ATerraza</li>
-								<li><i class="jfont">&#xe815;</i>Internet</li>
-								<li><i class="jfont">&#xe815;</i>Cable TV</li>
-								<li><i class="jfont">&#xe815;</i>Balcon</li>
-								<li><i class="jfont">&#xe815;</i>Cerrado</li>
+								<#if propiedad.terrace?? && propiedad.terrace == "on">
+									<li><i class="jfont">&#xe815;</i>Terraza</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Terraza</li>
+								</#if>
+								<#if propiedad.internet?? && propiedad.internet == "on">
+									<li><i class="jfont">&#xe815;</i>Internet</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Internet</li>
+								</#if>
+								<#if propiedad.cableTv?? && propiedad.cableTv == "on">
+									<li><i class="jfont">&#xe815;</i>Cable TV</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Cable TV</li>
+								</#if>
+								<#if propiedad.balcony?? && propiedad.balcony == "on">
+									<li><i class="jfont">&#xe815;</i>Balcón</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Balcón</li>
+								</#if>
+								<#if propiedad.cluster?? && propiedad.cluster == "on">
+									<li><i class="jfont">&#xe815;</i>Cerrado</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Cerrado</li>
+								</#if>
 							</ul>
 						</div>
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
-								<li><i class="jfont">&#xe815;</i>Garage</li>
-								<li><i class="jfont">&#xe815;</i>Elevador</li>
-								<li><i class="jfont">&#xe815;</i>Amueblado</li>
-								<li><i class="jfont">&#xe815;</i>Centrico</li>
-								<li><i class="jfont">&#xe815;</i>Seguridad</li>
+								<#if propiedad.garage?? && propiedad.garage == "on">
+									<li><i class="jfont">&#xe815;</i>Garage</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Garage</li>
+								</#if>
+								<#if propiedad.lift?? && propiedad.lift == "on">
+									<li><i class="jfont">&#xe815;</i>Elevador</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Elevador</li>
+								</#if>
+								<#if propiedad.furniture?? && propiedad.furniture == "on">
+									<li><i class="jfont">&#xe815;</i>Amueblado</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Amueblado</li>
+								</#if>
+								<#if propiedad.cityCentre?? && propiedad.cityCentre == "on">
+									<li><i class="jfont">&#xe815;</i>Céntrico</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Céntrico</li>
+								</#if>
+								<#if propiedad.security?? && propiedad.security == "on">
+									<li><i class="jfont">&#xe815;</i>Seguridad</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Seguridad</li>
+								</#if>
 							</ul>
 						
 						</div>
 						<div class="col-xs-6 col-sm-4">
 							<ul class="details-ticks">
-								<li><i class="jfont">&#xe815;</i>Ecotecnologias</li>
-								<li><i class="jfont">&#xe815;</i>Con Alberca</li>
-								<li><i class="jfont">&#xe815;</i>Cocina</li>
-								<li><i class="jfont">&#xe815;</i>Azotea</li>
+								<#if propiedad.eco?? && propiedad.eco == "on">
+									<li><i class="jfont">&#xe815;</i>Ecotecnologías</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Ecotecnologías</li>
+								</#if>
+								<#if propiedad.swimmingPool?? && propiedad.swimmingPool == "on">
+									<li><i class="jfont">&#xe815;</i>Alberca</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Alberca</li>
+								</#if>
+								<#if propiedad.kitchen?? && propiedad.kitchen == "on">
+									<li><i class="jfont">&#xe815;</i>Cocina</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Cocina</li>
+								</#if>
+								<#if propiedad.roofTerrace?? && propiedad.roofTerrace == "on">
+									<li><i class="jfont">&#xe815;</i>Azotea</li>
+								<#else>
+									<li><i class="jfont">&#xe817;</i>Azotea</li>
+								</#if>
 							</ul>
 						</div>
 					</div>
@@ -583,7 +256,7 @@
 							<h5 class="subtitle-margin">Asesor</h5>
 							<h3 class="title-negative-margin">Rosario Rodriguez<span class="special-color">.</span></h3>
 							<a href="agent-right-sidebar.html" class="agent-photo">
-								<img src="images/agent3.jpg" alt="" class="img-responsive" />
+								<img src="/images/agent3.jpg" alt="" class="img-responsive" />
 							</a>
 						</div>
 						<div class="col-xs-12 col-sm-9">
@@ -663,7 +336,7 @@
 										<div class="grid-offer-front">
 										
 											<div class="grid-offer-photo">
-												<img src="images/grid-offer1.jpg" alt="" />
+												<img src="/images/grid-offer1.jpg" alt="" />
 												<div class="type-container">
 													<div class="estate-type">apartment</div>
 													<div class="transaction-type">sale</div>
@@ -685,13 +358,13 @@
 											</div>
 											<div class="grid-offer-params">
 												<div class="grid-area">
-													<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+													<img src="/images/area-icon.png" alt="" />54m<sup>2</sup>
 												</div>
 												<div class="grid-rooms">
-													<img src="images/rooms-icon.png" alt="" />3
+													<img src="/images/rooms-icon.png" alt="" />3
 												</div>
 												<div class="grid-baths">
-													<img src="images/bathrooms-icon.png" alt="" />1
+													<img src="/images/bathrooms-icon.png" alt="" />1
 												</div>							
 											</div>	
 											
@@ -713,7 +386,7 @@
 									<div class="grid-offer">
 										<div class="grid-offer-front">
 											<div class="grid-offer-photo">
-												<img src="images/grid-offer2.jpg" alt="" />
+												<img src="/images/grid-offer2.jpg" alt="" />
 												<div class="type-container">
 													<div class="estate-type">apartment</div>
 													<div class="transaction-type">sale</div>
@@ -735,13 +408,13 @@
 											</div>
 											<div class="grid-offer-params">
 												<div class="grid-area">
-													<img src="images/area-icon.png" alt="" />48m<sup>2</sup>
+													<img src="/images/area-icon.png" alt="" />48m<sup>2</sup>
 												</div>
 												<div class="grid-rooms">
-													<img src="images/rooms-icon.png" alt="" />2
+													<img src="/images/rooms-icon.png" alt="" />2
 												</div>
 												<div class="grid-baths">
-													<img src="images/bathrooms-icon.png" alt="" />1
+													<img src="/images/bathrooms-icon.png" alt="" />1
 												</div>							
 											</div>	
 										</div>
@@ -762,7 +435,7 @@
 									<div class="grid-offer">
 										<div class="grid-offer-front">
 											<div class="grid-offer-photo">
-												<img src="images/grid-offer3.jpg" alt="" />
+												<img src="/images/grid-offer3.jpg" alt="" />
 												<div class="type-container">
 													<div class="estate-type">apartment</div>
 													<div class="transaction-type">sale</div>
@@ -784,13 +457,13 @@
 											</div>
 											<div class="grid-offer-params">
 												<div class="grid-area">
-													<img src="images/area-icon.png" alt="" />93m<sup>2</sup>
+													<img src="/images/area-icon.png" alt="" />93m<sup>2</sup>
 												</div>
 												<div class="grid-rooms">
-													<img src="images/rooms-icon.png" alt="" />4
+													<img src="/images/rooms-icon.png" alt="" />4
 												</div>
 												<div class="grid-baths">
-													<img src="images/bathrooms-icon.png" alt="" />2
+													<img src="/images/bathrooms-icon.png" alt="" />2
 												</div>							
 											</div>	
 										</div>
@@ -811,7 +484,7 @@
 									<div class="grid-offer">
 										<div class="grid-offer-front">
 											<div class="grid-offer-photo">
-												<img src="images/grid-offer4.jpg" alt="" />
+												<img src="/images/grid-offer4.jpg" alt="" />
 												<div class="type-container">
 													<div class="estate-type">house</div>
 													<div class="transaction-type">sale</div>
@@ -833,13 +506,13 @@
 											</div>
 											<div class="grid-offer-params">
 												<div class="grid-area">
-													<img src="images/area-icon.png" alt="" />300m<sup>2</sup>
+													<img src="/images/area-icon.png" alt="" />300m<sup>2</sup>
 												</div>
 												<div class="grid-rooms">
-													<img src="images/rooms-icon.png" alt="" />8
+													<img src="/images/rooms-icon.png" alt="" />8
 												</div>
 												<div class="grid-baths">
-													<img src="images/bathrooms-icon.png" alt="" />3
+													<img src="/images/bathrooms-icon.png" alt="" />3
 												</div>							
 											</div>	
 										</div>
@@ -860,7 +533,7 @@
 									<div class="grid-offer">
 										<div class="grid-offer-front">
 											<div class="grid-offer-photo">
-												<img src="images/grid-offer5.jpg" alt="" />
+												<img src="/images/grid-offer5.jpg" alt="" />
 												<div class="type-container">
 													<div class="estate-type">apartment</div>
 													<div class="transaction-type">sale</div>
@@ -882,13 +555,13 @@
 											</div>
 											<div class="grid-offer-params">
 												<div class="grid-area">
-													<img src="images/area-icon.png" alt="" />50m<sup>2</sup>
+													<img src="/images/area-icon.png" alt="" />50m<sup>2</sup>
 												</div>
 												<div class="grid-rooms">
-													<img src="images/rooms-icon.png" alt="" />2
+													<img src="/images/rooms-icon.png" alt="" />2
 												</div>
 												<div class="grid-baths">
-													<img src="images/bathrooms-icon.png" alt="" />1
+													<img src="/images/bathrooms-icon.png" alt="" />1
 												</div>							
 											</div>	
 										</div>
@@ -909,7 +582,7 @@
 								<div class="grid-offer">
 									<div class="grid-offer-front">
 										<div class="grid-offer-photo">
-											<img src="images/grid-offer7.jpg" alt="" />
+											<img src="/images/grid-offer7.jpg" alt="" />
 											<div class="type-container">
 												<div class="estate-type">house</div>
 												<div class="transaction-type">sale</div>
@@ -931,13 +604,13 @@
 										</div>
 										<div class="grid-offer-params">
 											<div class="grid-area">
-												<img src="images/area-icon.png" alt="" />210m<sup>2</sup>
+												<img src="/images/area-icon.png" alt="" />210m<sup>2</sup>
 											</div>
 											<div class="grid-rooms">
-												<img src="images/rooms-icon.png" alt="" />6
+												<img src="/images/rooms-icon.png" alt="" />6
 											</div>
 											<div class="grid-baths">
-												<img src="images/bathrooms-icon.png" alt="" />2
+												<img src="/images/bathrooms-icon.png" alt="" />2
 											</div>							
 										</div>	
 									</div>
@@ -975,16 +648,17 @@
 <!-- google maps initialization -->
 	<script type="text/javascript">
             google.maps.event.addDomListener(window, 'load', init);
-			function init() {						
-				mapInit(39.6282,-86.1320,"estate-map","images/pin-house.png", true);
-				streetViewInit(39.6282,-86.1320,"estate-street-view");
+			function init() {
+				<#assign rspHouseType=(propiedad.type == "Casa")>
+				mapInit(${propiedad.lat},${propiedad.lng},"estate-map",'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', true);
+				streetViewInit(${propiedad.lat},${propiedad.lng},"estate-street-view");
 				
-				mapInit(41.2693,-70.0874,"grid-map1","images/pin-house.png", false);
-				mapInit(33.7544,-84.3857,"grid-map2","images/pin-apartment.png", false);
-				mapInit(33.7337,-84.4443,"grid-map3","images/pin-land.png", false);
-				mapInit(33.8588,-84.4858,"grid-map4","images/pin-commercial.png", false);
-				mapInit(34.0254,-84.3560,"grid-map5","images/pin-apartment.png", false);
-				mapInit(40.6128,-73.9976,"grid-map6","images/pin-house.png", false);
+				mapInit(41.2693,-70.0874,"grid-map1","/images/pin-house.png", false);
+				mapInit(33.7544,-84.3857,"grid-map2","/images/pin-apartment.png", false);
+				mapInit(33.7337,-84.4443,"grid-map3","/images/pin-land.png", false);
+				mapInit(33.8588,-84.4858,"grid-map4","/images/pin-commercial.png", false);
+				mapInit(34.0254,-84.3560,"grid-map5","/images/pin-apartment.png", false);
+				mapInit(40.6128,-73.9976,"grid-map6","/images/pin-house.png", false);
 			}
 	</script>
 	

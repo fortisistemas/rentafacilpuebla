@@ -7,7 +7,6 @@
 				<div class="footer-title-separator"></div>
 				<p class="footer-p">siempre al pendiente de nuestros clientes nuestra prioridad es su bienestar</p>
 				<address>
-					<!--<span><i class="fa fa-map-marker"></i>00456 Some Address line</span>-->
 					<div class="footer-separator"></div>
 					<span><i class="fa fa-envelope fa-sm"></i><a href="#">rosario@rentafacilpuebla.com</a></span>
 					<div class="footer-separator"></div>
@@ -31,7 +30,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6 small-cont">
-				<!--<img src="/images/logo-.png" alt="" class="img-responsive footer-logo" />-->
 			</div>
 			<div class="col-xs-12 col-md-6 footer-copyrights">
 				&copy; Copyright 2015 <a href="http://themeforest.net/user/johnnychaos?ref=johnnychaos" target="blank">Jan Skwara</a>. All rights reserved. Buy on <a href="http://themeforest.net/user/johnnychaos/portfolio?ref=johnnychaos" target="blank">Themeforest</a>
