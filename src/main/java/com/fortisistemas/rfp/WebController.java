@@ -31,33 +31,37 @@ public class WebController {
 
 	@GetMapping(path = "/")
 	public String index(Authentication auth, Model model) {
+		principalModel(auth, model);
+		modelMinPrice(model);
+		modelMaxPrice(model);
+		modelHighlighted(model);
+
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+		long housesCount = rps.stream().filter(r -> "Casa".equals(r.getType())).count();
+		long apartmentsCount = rps.stream().filter(r -> "Departamento".equals(r.getType())).count();
+
+		model.addAttribute("housesCount", housesCount);
+		model.addAttribute("apartmentsCount", apartmentsCount);
+
+		return "public/index";
+	}
+
+	private void principalModel(Authentication auth, Model model) {
 		if (auth != null) {
 			User principal = (User) auth.getPrincipal();
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
-
-		modelMinPrice(model);
-		modelMaxPrice(model);
-		modelHighlighted(model);
-		
-		List<RealstateProperty> rps = rpService.getRealstateProperties();
-		long housesCount = rps.stream().filter(r -> "Casa".equals(r.getType())).count();
-		long apartmentsCount = rps.stream().filter(r -> "Departamento".equals(r.getType())).count();
-		
-		model.addAttribute("housesCount", housesCount);
-		model.addAttribute("apartmentsCount", apartmentsCount);
-		
-		return "public/index";
 	}
-
+	
 	@GetMapping(path = "/search")
 	public String search(@RequestParam("transaction") Optional<String> transaction,
 			@RequestParam("type") Optional<String> type, @RequestParam("priceRange") Optional<String> priceRange,
 			@RequestParam("areaRange") Optional<String> areaRange,
 			@RequestParam("roomRange") Optional<String> roomRange,
 			@RequestParam("bathRange") Optional<String> bathRange, @RequestParam("page") Optional<Integer> page,
-			Model model) {
+			Authentication auth, Model model) {
+		principalModel(auth, model);
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstatePropertySearchModel> result = new ArrayList<>();
 
@@ -143,11 +147,7 @@ public class WebController {
 
 	@GetMapping(path = "/detail/{id}")
 	public String propertyDetails(@PathVariable("id") Integer id, Authentication auth, Model model) {
-		if (auth != null) {
-			User principal = (User) auth.getPrincipal();
-			if (principal != null)
-				model.addAttribute("principal", principal.getUsername());
-		}
+		principalModel(auth, model);
 		RealstateProperty fromDb = rpService.getRealstatePropertyById(id);
 		RealstatePropertySearchModel toScreen = new RealstatePropertySearchModel(fromDb);
 		toScreen.setImageUrls(amazonService.directoryContent(fromDb.getId().toString()));
@@ -169,21 +169,12 @@ public class WebController {
 
 	@GetMapping(path = "/admin")
 	public String admin(Authentication auth, Model model) {
-		if (auth != null) {
-			User principal = (User) auth.getPrincipal();
-			if (principal != null)
-				model.addAttribute("principal", principal.getUsername());
-		}
-		return "public/index";
+		return index(auth, model);
 	}
 
 	@GetMapping(path = "/admin/properties/create")
 	public String createRealstateProperty(Authentication auth, Model model) {
-		if (auth != null) {
-			User principal = (User) auth.getPrincipal();
-			if (principal != null)
-				model.addAttribute("principal", principal.getUsername());
-		}
+		principalModel(auth, model);
 		return "admin/submit-property";
 	}
 
