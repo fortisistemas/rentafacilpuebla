@@ -346,7 +346,7 @@
 						</div>
 						<div class="team-name">
 							<h5>specialista</h5>
-							<h4>Ruben Varradas<span class="special-color">.</span></h4>
+							<h4>Ruben Barradas<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
