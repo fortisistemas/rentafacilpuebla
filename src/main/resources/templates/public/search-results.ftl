@@ -29,7 +29,7 @@
 						<div class="row">
 							<div class="col-xs-12 col-lg-6">
 								<h5 class="subtitle-margin">${searchPropertyType} ${searchTransaction}</h5>
-								<h1>${realstateProperties?size} Propiedades Encontradas<span class="special-color">.</span></h1>
+								<h1>${resultSize} Propiedades Encontradas<span class="special-color">.</span></h1>
 							</div>
 							<div class="col-xs-12 col-lg-6">											
 								<div class="order-by-container">
@@ -50,7 +50,12 @@
 											<div class="list-offer-front">
 										
 												<div class="list-offer-photo">
-													<img src="images/grid-offer1.jpg" alt="" />
+													<#assign hasImages=propiedad.imageUrls?size gt 0>
+													<#if hasImages>
+														<img src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${propiedad.imageUrls[0]}" alt="" />
+													<#else>
+														<img src="/images/propiedad.jpg" alt="" />
+													</#if>
 													<div class="type-container">
 														<div class="estate-type">${propiedad.type}</div>
 														<div class="transaction-type">${propiedad.transaction}</div>
@@ -58,7 +63,7 @@
 												</div>
 												<div class="list-offer-params">
 													<div class="list-area">
-														<img src="/images/area-icon.png" alt="" />${propiedad.area}<sup>2</sup>
+														<img src="/images/area-icon.png" alt="" />${propiedad.area} M<sup>2</sup>
 													</div>
 													<div class="list-rooms">
 														<img src="images/rooms-icon.png" alt="" />${propiedad.bedrooms}
@@ -69,10 +74,10 @@
 												</div>	
 											</div>
 											<div class="list-offer-back">
-												<div id="list-map1" class="list-offer-map"></div>
+												<div id="list-map_${propiedad.id}" class="list-offer-map"></div>
 											</div>
 										</div>
-										<a class="list-offer-right" href="/detail">
+										<a class="list-offer-right" href="/detail/${propiedad.id}">
 											<div class="list-offer-text">
 												<i class="fa fa-map-marker list-offer-localization hidden-xs"></i>
 												<div class="list-offer-h4"><h4 class="list-offer-title"><#if propiedad.neighborghood??>${propiedad.neighborhood}</#if> <#if propiedad.cityStateZip??>${propiedad.cityStateZip}</#if></h4></div>
@@ -153,6 +158,14 @@ $(document).on("ready", function () {
 			</#list>
 		];
 		offersMapInit("offers-map",locations);
+		
+		<#list realstateProperties as rsp>
+			<#if rsp.lat?? && rsp.lng??>
+				<#assign rspHouseType=(rsp.type == "Casa")>
+				mapInit(${rsp.lat},${rsp.lng},'list-map_${rsp.id}','${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', false);
+			</#if>
+		</#list>
+		
 		/*
 		mapInit(41.2693,-70.0874,"list-map1","images/pin-house.png", false);
 		mapInit(33.7544,-84.3857,"list-map2","images/pin-apartment.png", false);

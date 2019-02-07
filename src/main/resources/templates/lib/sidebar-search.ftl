@@ -2,8 +2,11 @@
 <h3 class="sidebar-title">Personalizar Busqueda<span class="special-color">.</span></h3>
 <div class="title-separator-primary"></div>
 <form id="sidebarSearchForm" class="adv-search-form" action="/search" method="GET">
-<#if searchPropertyType != "Casas o departamentos">
+<#if searchPropertyType?? && searchPropertyType != "Casas o departamentos">
 <input type="hidden" name="type" value="${searchPropertyType}" />
+</#if>
+<#if propiedad??>
+	<input type="hidden" name="type" value="${propiedad.type}" />
 </#if>
 <div class="sidebar-select-cont">
 	<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
