@@ -291,7 +291,7 @@
 						</div>
 						<div class="team-name">
 							<h5>agente</h5>
-							<h4>Mari<span class="special-color">.</span></h4>
+							<h4>Marisol Rodriguez<span class="special-color">.</span></h4>
 						</div>
 					</div>
 				</div>
