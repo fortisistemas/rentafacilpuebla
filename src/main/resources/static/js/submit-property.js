@@ -33,6 +33,7 @@ $(document).on("ready", function () {
 		} else {
 			if(mapLoc.length < 5) {
 				alert('no olvide seleccionar localización en el mapa');
+				$(".loader-bg").fadeOut();
 			}
 			document.forms['realstatePropertyForm'].reportValidity();
 		}

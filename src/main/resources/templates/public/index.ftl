@@ -21,143 +21,53 @@
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
+				<#list highlightedProperties as highlighted>
 				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/jjj.jpg"></div>
+					<div class="slide-bg swiper-lazy" data-background="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${highlighted.imageUrls[0]}"></div>
 					<!-- Preloader image -->
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 					<div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-1">
+                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-${highlighted.id}">
 								<div class="slide-desc pull-right">
 									<div class="slide-desc-text">
 										
-										<div class="estate-type">departamentos</div>
-										<div class="transaction-type">se vende</div>
-										<h4>Chachapa, El Arenal</h4>
+										<div class="estate-type">${highlighted.type}</div>
+										<div class="transaction-type">${highlighted.transaction}</div>
+										<h4>${highlighted.cityStateZip}</h4>
 										<div class="clearfix"></div>
 										
-										<p>Cholul 7 es un desarrollo residencial de 7 casas que ofrece una gran comodidad  
-										</p>
+										<p>${highlighted.description[0..*350]}</p>
 									</div>
 									<div class="slide-desc-params">	
 										<div class="slide-desc-area">
-											<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+											<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
 										</div>
 										<div class="slide-desc-rooms">
-											<img src="images/rooms-icon.png" alt="" />3
+											<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
 										</div>
 										<div class="slide-desc-baths">
-											<img src="images/bathrooms-icon.png" alt="" />1
+											<img src="/images/bathrooms-icon.png" alt="" />${highlighted.bathrooms}
 										</div>	
 										<div class="slide-desc-parking">
-											<img src="images/parking-icon.png" alt="" />1
+											<img src="/images/parking-icon.png" alt="" />${highlighted.garageSize}
 										</div>	
 									</div>
 									<div class="slide-desc-price">
-										$ 320 000
+										${highlighted.price?string.currency}
 									</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="slide-buttons slide-buttons-right">
 									<a href="#" class="navigation-box navigation-box-next slide-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
-									<a href="estate-details-right-sidebar.html" class="navigation-box navigation-box-more slide-more"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont fa-lg">&#xe813;</i></div></a>
+									<a href="/detail/${highlighted.id}" class="navigation-box navigation-box-more slide-more"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont fa-lg">&#xe813;</i></div></a>
 									<a href="#" class="navigation-box navigation-box-prev slide-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/mnm.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 slide-desc-col animated slide-desc-2">
-								<div class="slide-desc pull-left">
-									<div class="slide-desc-text">
-										
-										<div class="estate-type">casa</div>
-										<div class="transaction-type">se vende</div>
-										<h4>Amozc, Amozoc De Mota</h4>
-										<div class="clearfix"></div>
-										
-										<p>Esta hermosa casa de 91 metros cuadrados de construcción cuenta con una sala-comedor, cocina, 3 recámaras, 2baños, patio de...</p>
-									</div>
-									<div class="slide-desc-params">	
-										<div class="slide-desc-area">
-											<img src="images/area-icon.png" alt="" />350m<sup>2</sup>
-										</div>
-										<div class="slide-desc-rooms">
-											<img src="images/rooms-icon.png" alt="" />8
-										</div>
-										<div class="slide-desc-baths">
-											<img src="images/bathrooms-icon.png" alt="" />3
-										</div>	
-										<div class="slide-desc-parking">
-											<img src="images/parking-icon.png" alt="" />2
-										</div>	
-									</div>
-									<div class="slide-desc-price">
-										$ 650 000
-									</div>		
-									<div class="clearfix"></div>										
-								</div>
-								<div class="slide-buttons slide-buttons-left">
-									<a href="#" class="navigation-box navigation-box-next slide-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
-									<a href="estate-details-right-sidebar.html" class="navigation-box navigation-box-more slide-more"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont fa-lg">&#xe813;</i></div></a>
-									<a href="#" class="navigation-box navigation-box-prev slide-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="slide-bg swiper-lazy" data-background="images/slides/kkk.jpg"></div>
-					<!-- Preloader image -->
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-					<div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3 slide-desc-col animated slide-desc-3">
-								<div class="slide-desc center-block">
-									<div class="slide-desc-text">
-										
-										<div class="estate-type">departamento</div>
-										<div class="transaction-type">se renta</div>
-										<h4>Amalucan, Clavijero</h4>
-										<div class="clearfix"></div>
-										
-										<p>Privada Campocielo, un desarrollo habitacional cuenta con vigilancia, amplias avenidas, áreas verdes, jardines con juegos...
-										</p>
-									</div>
-									<div class="slide-desc-params">	
-										<div class="slide-desc-area">
-											<img src="images/area-icon.png" alt="" />70m<sup>2</sup>
-										</div>
-										<div class="slide-desc-rooms">
-											<img src="images/rooms-icon.png" alt="" />4
-										</div>
-										<div class="slide-desc-baths">
-											<img src="images/bathrooms-icon.png" alt="" />1
-										</div>	
-										<div class="slide-desc-parking">
-											<img src="images/parking-icon.png" alt="" />1
-										</div>	
-									</div>
-									<div class="slide-desc-price">
-										$ 350 000
-									</div>		
-									<div class="clearfix"></div>									
-								</div>
-								<div class="slide-buttons slide-buttons-center">
-									<a href="#" class="navigation-box navigation-box-next slide-next"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe802;</i></div></a>
-									<a href="estate-details-right-sidebar.html" class="navigation-box navigation-box-more slide-more"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont fa-lg">&#xe813;</i></div></a>
-									<a href="#" class="navigation-box navigation-box-prev slide-prev"><div class="navigation-triangle"></div><div class="navigation-box-icon"><i class="jfont">&#xe800;</i></div></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				</#list>
 			</div>
 		</div>
 		<@titleSearch.nav />
@@ -221,120 +131,39 @@
 		</div>
 		<div class="featured-offers-container">
 			<div class="owl-carousel" id="featured-offers-owl">
+				<#list highlightedProperties as highlighted>
 				<div class="featured-offer-col">
 					<div class="featured-offer-front">
 						<div class="featured-offer-photo">
-							<img src="images/featured-offer1.jpg" alt="" />
+							<img src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${highlighted.imageUrls[0]}" alt="" />
 							<div class="type-container">
-								<div class="estate-type">Departamento</div>
-								<div class="transaction-type">En Renta</div>
+								<div class="estate-type">${highlighted.type}</div>
+								<div class="transaction-type">${highlighted.transaction}</div>
 							</div>
 						</div>
 						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">El Carmen Al mada</h4>
-							<p>cuenta con un servicio de limpieza gratuito y una terraza.</p>
+							<h4 class="featured-offer-title">${highlighted.cityStateZip}</h4>
+							<p>${highlighted.description[0..*350]}</p>
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+								<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
 							</div>
 							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />3
+								<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
 							</div>
 							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
+								<img src="/images/bathrooms-icon.png" alt="" />${highlighted.bathrooms}
 							</div>							
 						</div>
 						<div class="featured-price">
-							$ 320 000
+							${highlighted.price?string.currency}
 						</div>
 					</div>
 					<div class="featured-offer-back">
-						<div id="featured-map1" class="featured-offer-map"></div>
+						<div id="featured-map${highlighted.id}" class="featured-offer-map"></div>
 						<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-					
-				</div>
-				<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer2.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">Departamento</div>
-								<div class="transaction-type">En Renta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">Puebla la Noria </h4>
-							<p>cuenta con una terrasa y elevador privado.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />70m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />4
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 350 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map2" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-					
-				</div>
-				<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer3.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">casa</div>
-								<div class="transaction-type">En Venta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">Las vegas Amozoc</h4>
-							<p>casa rustica en muy buen estado a muy buen precio.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />250m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />7
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />3
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 650 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map3" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
+							<a href="/detail/${highlighted.id}" class="button-primary">
 								<span>read more</span>
 								<div class="button-triangle"></div>
 								<div class="button-triangle2"></div>
@@ -343,88 +172,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer6.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">Departamento</div>
-								<div class="transaction-type">En Renta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">Puebla la paz</h4>
-							<p>departamento acsesible y amueblado.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />3
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 320 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map6" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-
-				</div>
-				<div class="featured-offer-col">
-					<div class="featured-offer-front">
-						<div class="featured-offer-photo">
-							<img src="images/featured-offer7.jpg" alt="" />
-							<div class="type-container">
-								<div class="estate-type">Casa</div>
-								<div class="transaction-type">En Venta</div>
-							</div>
-						</div>
-						<div class="featured-offer-text">
-							<h4 class="featured-offer-title">20 sur la paz</h4>
-							<p>casa hurbana en muy buen estado.</p>
-						</div>
-						<div class="featured-offer-params">
-							<div class="featured-area">
-								<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
-							</div>
-							<div class="featured-rooms">
-								<img src="images/rooms-icon.png" alt="" />3
-							</div>
-							<div class="featured-baths">
-								<img src="images/bathrooms-icon.png" alt="" />1
-							</div>							
-						</div>
-						<div class="featured-price">
-							$ 320 000
-						</div>
-					</div>
-					<div class="featured-offer-back">
-						<div id="featured-map7" class="featured-offer-map"></div>
-							<div class="button">	
-							<a href="estate-details-right-sidebar.html" class="button-primary">
-								<span>read more</span>
-								<div class="button-triangle"></div>
-								<div class="button-triangle2"></div>
-								<div class="button-icon"><i class="fa fa-search"></i></div>
-							</a>
-						</div>
-					</div>
-
-				</div>
+				</#list>
 			</div>
 		</div>
     </section>
@@ -1070,12 +818,11 @@
             google.maps.event.addDomListener(window, 'load', init);
 			function init() {
 				
-				mapInitAddress("narodowa 18 Pruszków","featured-map1","images/pin-house.png", false);
-				
-				mapInit(40.7222,-73.7903,"featured-map2","images/pin-apartment.png", false);
-				mapInit(41.0306,-73.7669,"featured-map3","images/pin-land.png", false);
-				mapInit(38.8974,-77.0365,"featured-map6","images/pin-apartment.png", false);
-				mapInit(38.7860,-77.0129,"featured-map7","images/pin-house.png", false);
+				//mapInitAddress("narodowa 18 Pruszków","featured-map1","images/pin-house.png", false);
+				<#list highlightedProperties as highlighted>
+				<#assign rspHouseType=(highlighted.type == "Casa")>
+				mapInit(${highlighted.lat},${highlighted.lng},"featured-map${highlighted.id}",'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', false);
+				</#list>
 				
 				mapInit(41.2693,-70.0874,"grid-map1","images/pin-house.png", false);
 				mapInit(33.7544,-84.3857,"grid-map2","images/pin-apartment.png", false);

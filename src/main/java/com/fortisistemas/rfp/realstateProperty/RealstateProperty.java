@@ -45,6 +45,7 @@ public class RealstateProperty implements Serializable {
 	private String eco;
 	private String lat;
 	private String lng;
+	private String highlight;
 
 	public Integer getId() {
 		return id;
@@ -276,6 +277,39 @@ public class RealstateProperty implements Serializable {
 
 	public void setEco(String eco) {
 		this.eco = eco;
+	}
+
+	public String getHighlight() {
+		return highlight;
+	}
+
+	public void setHighlight(String highlight) {
+		this.highlight = highlight;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		RealstateProperty other = (RealstateProperty) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
 	}
 
 }

@@ -80,14 +80,14 @@
 										<a class="list-offer-right" href="/detail/${propiedad.id}">
 											<div class="list-offer-text">
 												<i class="fa fa-map-marker list-offer-localization hidden-xs"></i>
-												<div class="list-offer-h4"><h4 class="list-offer-title"><#if propiedad.neighborghood??>${propiedad.neighborhood}</#if> <#if propiedad.cityStateZip??>${propiedad.cityStateZip}</#if></h4></div>
+												<div class="list-offer-h4"><h4 class="list-offer-title"><#if propiedad.neighborghood??>${propiedad.neighborghood}</#if> <#if propiedad.cityStateZip??>${propiedad.cityStateZip}</#if></h4></div>
 												<div class="clearfix"></div>
 												 ${propiedad.description}
 												<div class="clearfix"></div>
 											</div>
 											<div class="price-list-cont">
 												<div class="list-price">
-													${propiedad.price}
+													${propiedad.price?string.currency}
 												</div>	
 											</div>
 										</a>

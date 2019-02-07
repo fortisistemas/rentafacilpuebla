@@ -38,6 +38,7 @@ public class RealstatePropertySearchModel extends RealstateProperty {
 		setEco(property.getEco());
 		setLat(property.getLat());
 		setLng(property.getLng());
+		setHighlight(property.getHighlight());
 	}
 
 	public List<String> getImageUrls() {

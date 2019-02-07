@@ -73,7 +73,7 @@
 									<input name="neighborghood" type="text" class="input-full main-input" placeholder="Colonia" />
 								</div>
 								<div class="col-xs-12 col-sm-12">
-									<input name="cityStateZip" type="text" class="input-full main-input" placeholder="Ciudad, Estado y C.P." />
+									<input required name="cityStateZip" type="text" class="input-full main-input" placeholder="Ciudad, Estado y C.P." />
 								</div>
 							</div>
 							<textarea name="description" class="input-full main-input property-textarea" placeholder="Descripcion"></textarea>
@@ -113,6 +113,8 @@
 									<label for="cluster"><span></span>Cerrado</label><br/>
 									<input type="checkbox" id="eco" name="eco" class="main-checkbox" />
 									<label for="eco"><span></span>Ecotecnologias</label><br/>
+									<input type="checkbox" id="highlight" name="highlight" class="main-checkbox" />
+									<label for="highlight"><span></span>DESTACADO!</label><br/>
 								</div>
 							</div>
 						</div>				

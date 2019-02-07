@@ -39,7 +39,7 @@ public class WebController {
 
 		modelMinPrice(model);
 		modelMaxPrice(model);
-
+		modelHighlighted(model);
 		return "public/index";
 	}
 
@@ -48,8 +48,7 @@ public class WebController {
 			@RequestParam("type") Optional<String> type, @RequestParam("priceRange") Optional<String> priceRange,
 			@RequestParam("areaRange") Optional<String> areaRange,
 			@RequestParam("roomRange") Optional<String> roomRange,
-			@RequestParam("bathRange") Optional<String> bathRange, 
-			@RequestParam("page") Optional<Integer> page,
+			@RequestParam("bathRange") Optional<String> bathRange, @RequestParam("page") Optional<Integer> page,
 			Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstatePropertySearchModel> result = new ArrayList<>();
@@ -80,17 +79,17 @@ public class WebController {
 		if (result.size() == 0)
 			return "redirect:/empty-list";
 		else {
-			
+
 			if (result.size() < pageStart)
 				return "redirect:/empty-list";
 
 			if (pageEnd > result.size()) {
 				pageEnd = result.size();
 			}
-			
+
 			Integer searchMinPrice = result.stream().map(rp -> rp.getPrice()).min(Integer::min).orElse(0);
 			Integer searchMaxPrice = result.stream().map(rp -> rp.getPrice()).max(Integer::max).orElse(3500000);
-			
+
 			List<RealstatePropertySearchModel> pagedResult = result.subList(pageStart, pageEnd);
 			model.addAttribute("realstateProperties", pagedResult);
 
@@ -108,6 +107,16 @@ public class WebController {
 			modelMaxPrice(model);
 			return "public/search-results";
 		}
+	}
+
+	private void modelHighlighted(Model model) {
+		List<RealstateProperty> rps = rpService.getHighlightedProperties().stream().map(rp -> {
+			RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
+			rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
+			return rpsm;
+		}).collect(Collectors.toList());
+
+		model.addAttribute("highlightedProperties", rps);
 	}
 
 	private void modelMinPrice(Model model) {

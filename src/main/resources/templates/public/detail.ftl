@@ -43,7 +43,7 @@
 									</div>
 									<div class="clearfix"></div>
 									<div class="gallery-slide-desc-price pull-right">
-										${propiedad.price}
+										${propiedad.price?string.currency}
 									</div>	
 									<div class="clearfix"></div>
 								</div>	
@@ -107,7 +107,7 @@
 							<p class="details-desc">${propiedad.description}</p>
 						</div>
 						<div class="col-xs-12 col-sm-5 col-md-4">
-							<div class="details-parameters-price">${propiedad.price}</div>
+							<div class="details-parameters-price">${propiedad.price?string.currency}</div>
 							<div class="details-parameters">
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">Área</div>
