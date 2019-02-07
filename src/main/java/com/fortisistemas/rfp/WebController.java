@@ -40,6 +40,14 @@ public class WebController {
 		modelMinPrice(model);
 		modelMaxPrice(model);
 		modelHighlighted(model);
+		
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+		long housesCount = rps.stream().filter(r -> "Casa".equals(r.getType())).count();
+		long apartmentsCount = rps.stream().filter(r -> "Departamento".equals(r.getType())).count();
+		
+		model.addAttribute("housesCount", housesCount);
+		model.addAttribute("apartmentsCount", apartmentsCount);
+		
 		return "public/index";
 	}
 

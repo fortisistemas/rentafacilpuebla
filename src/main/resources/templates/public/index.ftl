@@ -433,8 +433,7 @@
 							<img src="images/testimonials1.jpg" alt="" class="testimonials-photo" />	
 							<div class="testimonials-content">							
 								<p class="lead">Familia Torres Romero</p>
-								<p>El servicio de rentafacilpuebla.com y su personal es sumamente profecional,ellos se ajustaron a nuestro presupuesto y necisidades de vivienda. Nos consigueron casa muy rapido y en la sona apropiada. Nosotrros nos encontrabamos afueras de puebla y el personal de rentafacilpuebla.com nos asesoro para cuando llegaramos apuebla tuvieramos casa  .</p>
-								
+								<p>El servicio de rentafacilpuebla.com y su personal es sumamente profesional, ellos se ajustaron a nuestro presupuesto y necisidades de vivienda. Nos consigueron casa muy rapido y en la zona apropiada. Nosotrros nos encontrábamos fuera de Puebla y el personal de rentafacilpuebla.com nos asesoró para cuando llegaramos a Puebla tuviéramos casa.</p>								
 							</div>
 							<div class="big-triangle">							
 								</div>
@@ -443,7 +442,7 @@
 						<div class="testimonial">
 							<img src="images/testimonials2.jpg" alt="" class="testimonials-photo" />	
 							<div class="testimonials-content">
-								<p class="lead">Vargas Muños Gilverto</p>
+								<p class="lead">Vargas Muños Gilberto</p>
 								<p>la señora rosario conseguira testimonio.</p>
 								<div class="big-triangle">							
 								</div>
@@ -792,7 +791,7 @@
 							<i class="fa fa-building"></i>
 						</div>
 						<span class="number-label text-color2">APARTMENTS</span>
-						<span class="number-big text-color3 count" data-from="0" data-to="130" data-speed="2000"></span>
+						<span class="number-big text-color3 count" data-from="0" data-to="${apartmentsCount}" data-speed="20"></span>
 					</div>
 				</div>
 				<div class="col-xs-6 col-lg-6 number_border">
@@ -801,7 +800,7 @@
 							<i class="fa fa-home"></i>	
 						</div>			
 						<span class="number-label text-color2">HOUSES</span>
-						<span class="number-big text-color3 count" data-from="0" data-to="107" data-speed="2000"></span>
+						<span class="number-big text-color3 count" data-from="0" data-to="${housesCount}" data-speed="20"></span>
 					</div>
 				</div>
 			</div>
