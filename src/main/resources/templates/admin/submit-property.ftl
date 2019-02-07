@@ -70,7 +70,7 @@
 									<input name="street" type="text" class="input-full main-input" placeholder="Calle y número" />
 								</div>
 								<div class="col-xs-12 col-sm-12">
-									<input name="neighborhood" type="text" class="input-full main-input" placeholder="Colonia" />
+									<input name="neighborghood" type="text" class="input-full main-input" placeholder="Colonia" />
 								</div>
 								<div class="col-xs-12 col-sm-12">
 									<input name="cityStateZip" type="text" class="input-full main-input" placeholder="Ciudad, Estado y C.P." />
