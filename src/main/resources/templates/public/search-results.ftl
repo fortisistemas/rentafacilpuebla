@@ -94,7 +94,21 @@
 						</div>
 						
 						<div class="offer-pagination margin-top-30">
-							<a href="#" class="prev"><i class="jfont">&#xe800;</i></a><a class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#" class="next"><i class="jfont">&#xe802;</i></a>
+							<#assign _m = resultSize % 5>
+							<#assign _d = resultSize / 5>
+							<#assign x = _d?ceiling + _m + 1>
+							<#if x gt 1>
+								<a href="#" class="prev"><i class="jfont">&#xe800;</i></a>
+								<#list 1..x as i>
+									<#if currentPage == i>
+										<a class="active">${i}</a>
+									<#else>
+										<a>${i}</a>
+									</#if>
+								</#list>
+								<a href="#" class="next"><i class="jfont">&#xe802;</i></a>
+							</#if>
+							
 							<div class="clearfix"></div>
 						</div>
 				</div>

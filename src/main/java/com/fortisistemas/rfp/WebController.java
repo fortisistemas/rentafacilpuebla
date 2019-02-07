@@ -36,7 +36,7 @@ public class WebController {
 			if (principal != null)
 				model.addAttribute("principal", principal.getUsername());
 		}
-		
+
 		modelMinPrice(model);
 		modelMaxPrice(model);
 
@@ -48,12 +48,15 @@ public class WebController {
 			@RequestParam("type") Optional<String> type, @RequestParam("priceRange") Optional<String> priceRange,
 			@RequestParam("areaRange") Optional<String> areaRange,
 			@RequestParam("roomRange") Optional<String> roomRange,
-			@RequestParam("bathRange") Optional<String> bathRange, Model model) {
+			@RequestParam("bathRange") Optional<String> bathRange, 
+			@RequestParam("page") Optional<Integer> page,
+			Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 		List<RealstatePropertySearchModel> result = new ArrayList<>();
 
-		System.out.println(transaction);
-		
+		int pageStart = page.orElse(1) * 5 - 5;
+		int pageEnd = page.orElse(1) * 5;
+
 		result = rps.stream().map(rp -> {
 			RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
 			rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
@@ -62,7 +65,7 @@ public class WebController {
 				.filter(rp -> !transaction.isPresent() || transaction.get().contains(rp.getTransaction().trim()))
 				.filter(rp -> !priceRange.isPresent()
 						|| (rp.getPrice() >= Integer.parseInt(priceRange.get().split("-")[0].trim())
-						&& rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
+								&& rp.getPrice() <= Integer.parseInt(priceRange.get().split("-")[1].trim())))
 				.filter(rp -> !areaRange.isPresent()
 						|| (rp.getArea() >= Integer.parseInt(areaRange.get().split("-")[0].trim())
 								&& rp.getArea() <= Integer.parseInt(areaRange.get().split("-")[1].trim())))
@@ -74,18 +77,29 @@ public class WebController {
 								&& rp.getBathrooms() <= Integer.parseInt(bathRange.get().split("-")[1].trim())))
 				.collect(Collectors.toList());
 
-		Integer searchMinPrice = result.stream().map(rp -> rp.getPrice()).min(Integer::min).orElse(0);
-		Integer searchMaxPrice = result.stream().map(rp -> rp.getPrice()).max(Integer::max).orElse(3500000);
-
 		if (result.size() == 0)
 			return "redirect:/empty-list";
 		else {
-			model.addAttribute("realstateProperties", result);
+			
+			if (result.size() < pageStart)
+				return "redirect:/empty-list";
+
+			if (pageEnd > result.size()) {
+				pageEnd = result.size();
+			}
+			
+			Integer searchMinPrice = result.stream().map(rp -> rp.getPrice()).min(Integer::min).orElse(0);
+			Integer searchMaxPrice = result.stream().map(rp -> rp.getPrice()).max(Integer::max).orElse(3500000);
+			
+			List<RealstatePropertySearchModel> pagedResult = result.subList(pageStart, pageEnd);
+			model.addAttribute("realstateProperties", pagedResult);
 
 			String searchTransaction = !transaction.isPresent() || transaction.get().contains(",")
 					? "en venta o en renta"
 					: transaction.get();
 			String searchPropertyType = !type.isPresent() ? "Casas o departamentos" : type.get();
+			model.addAttribute("resultSize", result.size());
+			model.addAttribute("currentPage", page.orElse(1));
 			model.addAttribute("searchTransaction", searchTransaction);
 			model.addAttribute("searchPropertyType", searchPropertyType);
 			model.addAttribute("searchMinPrice", searchMinPrice);
@@ -99,21 +113,17 @@ public class WebController {
 	private void modelMinPrice(Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 
-		Integer price = rps.stream()
-				.mapToInt(rp -> rp.getPrice())
-				.min().orElse(0);
+		Integer price = rps.stream().mapToInt(rp -> rp.getPrice()).min().orElse(0);
 		model.addAttribute("minPrice", price);
 	}
-	
+
 	private void modelMaxPrice(Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 
-		Integer price = rps.stream()
-				.mapToInt(rp -> rp.getPrice())
-				.max().orElse(3500000);
+		Integer price = rps.stream().mapToInt(rp -> rp.getPrice()).max().orElse(3500000);
 		model.addAttribute("maxPrice", price);
 	}
-	
+
 	@GetMapping(path = "/detail/{id}")
 	public String propertyDetails(@PathVariable("id") Integer id, Authentication auth, Model model) {
 		if (auth != null) {
