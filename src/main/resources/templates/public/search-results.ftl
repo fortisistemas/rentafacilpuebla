@@ -176,6 +176,79 @@ $(document).on("ready", function () {
 		mapInit(40.6128,-73.7903,"list-map7","images/pin-house.png", false);
 		*/
 	}
+
+	$('#titleSearchApartmentTransaction').change( function() {
+		if ( !$(this).val() ) {
+			console.log('precios generales: [' + ${minPrice?c} + '/' + ${maxPrice?c} + ']')
+			$('#slider-range-price1').attr('data-min', ${minPrice?c});
+			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		} else if ($(this).val().length == 2) {
+			console.log('precios generales: [' + ${minPrice} + '/' + ${maxPrice?c} + ']')
+			$('#slider-range-price1').attr('data-min', ${minPrice?c});
+			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		} else if ('En Renta' == $(this).val()[0]) {
+			console.log('precios en renta: [' + ${minLeasePrice?c} + '/' + ${maxLeasePrice?c} + ']')
+			$('#slider-range-price1').attr('data-min', ${minLeasePrice?c});
+			$('#slider-range-price1').attr('data-max', ${maxLeasePrice?c});
+			$('#slider-range-price1').slider("option", "min", ${minLeasePrice?c});
+			$('#slider-range-price1').slider("option", "max", ${maxLeasePrice?c});
+			$('#slider-range-price1-value').val(${minLeasePrice?c} + ' - ' + ${maxLeasePrice?c});
+		} else if ('En Venta' == $(this).val()[0]){
+			console.log('precios en venta: [' + ${minSalePrice?c} + '/' + ${maxSalePrice?c} + ']')
+			$('#slider-range-price1').attr('data-min', ${minSalePrice?c});
+			$('#slider-range-price1').attr('data-max', ${maxSalePrice?c});
+			$('#slider-range-price1').slider("option", "min", ${minSalePrice?c});
+			$('#slider-range-price1').slider("option", "max", ${maxSalePrice?c});
+			$('#slider-range-price1-value').val(${minSalePrice?c} + ' - ' + ${maxSalePrice?c});
+		} else {
+			console.log('precios generales 2: [' + ${minPrice?c} + '/' + ${maxPrice?c} + ']')
+			$('#slider-range-price1').attr('data-min', ${minPrice?c});
+			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		}
+	});
+
+	$('#titleSearchHouseTransaction').change( function() {
+		if( !$(this).val() ) {
+			$('#slider-range-price2').attr('data-min', ${minPrice?c});
+			$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		} else if($(this).val().length == 2) {
+			$('#slider-range-price2').attr('data-min', ${minPrice?c});
+			$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		} else if ('En Renta' == $(this).val()[0]) {
+			$('#slider-range-price2').attr('data-min', ${minLeasePrice?c});
+			$('#slider-range-price2').attr('data-max', ${maxLeasePrice?c});
+			$('#slider-range-price2').slider("option", "min", ${minLeasePrice?c});
+			$('#slider-range-price2').slider("option", "max", ${maxLeasePrice?c});
+			$('#slider-range-price2-value').val(${minLeasePrice?c} + ' - ' + ${maxLeasePrice?c});
+		} else if ('En Venta' == $(this).val()[0]){
+			$('#slider-range-price2').attr('data-min', ${minSalePrice?c});
+			$('#slider-range-price2').attr('data-max', ${maxSalePrice?c});
+			$('#slider-range-price2').slider("option", "min", ${minSalePrice?c});
+			$('#slider-range-price2').slider("option", "max", ${maxSalePrice?c});
+			$('#slider-range-price2-value').val(${minSalePrice?c} + ' - ' + ${maxSalePrice?c});
+		} else {
+			$('#slider-range-price2').attr('data-min', ${minPrice?c});
+			$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+			$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+			$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+			$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+		}
+	});
 });
 </script>
 	

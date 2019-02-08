@@ -271,7 +271,7 @@
 									<span class="agent-icon-circle">
 										<i class="fa fa-envelope fa-sm"></i>
 									</span>
-									<span class="agent-bar-text">rosario@rentafacilpuebla.com</span>
+									<span class="agent-bar-text">gerencia@rentafacilpuebla.com</span>
 								</div>
 								<div class="pull-right">
 									<div class="pull-right">

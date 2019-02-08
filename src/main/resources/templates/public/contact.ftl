@@ -34,9 +34,9 @@
 					<img src="images/contact-image.jpg" alt="" class="pull-left margin-top-45" />
 					<address class="contact-info pull-left">
 						<!--<span><i class="fa fa-map-marker"></i>00456 Some Address line</span>-->
-						<span><i class="fa fa-envelope"></i><a href="#"><rosario@rentafacilpuebla.com class="com">rosario@rentafacilpuebla.com</a></span>
+						<span><i class="fa fa-envelope"></i><a href="gerencia@rentafacilpuebla.com">gerencia@rentafacilpuebla.com</a></span>
 						<span><i class="fa fa-phone"></i>22-21-66-79-72</span>
-						<span><i class="fa fa-globe"></i><a href="#">http:/rentafacailpuebla.com</a></span>
+						<span><i class="fa fa-globe"></i><a href="#">http:/rentafacilpuebla.com</a></span>
 						<span><i class="fa fa-clock-o"></i>lun-vie: 8:00 - 18:00</span>
 						<span class="span-last">sab: 10:00 - 16:00</span>
 					</address>

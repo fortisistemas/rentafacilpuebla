@@ -14,6 +14,12 @@ public class IndexWebController extends AbstractWebController {
 	
 	@GetMapping(path = {"/", "/admin"})
 	public String index(Authentication auth, Model model) {
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+		
+		// TODO: Return "comming soon page with admin button"
+		//if(rps.size() == 0)
+			
+		
 		principalModel(auth, model);
 		modelMinPrice(model);
 		modelMaxPrice(model);
@@ -22,8 +28,9 @@ public class IndexWebController extends AbstractWebController {
 		modelMinLeasePrice(model);
 		modelMaxLeasePrice(model);
 		modelHighlighted(model);
+		modelNewArrivals(model);
 
-		List<RealstateProperty> rps = rpService.getRealstateProperties();
+		
 		long housesCount = rps.stream().filter(r -> "Casa".equals(r.getType())).count();
 		long apartmentsCount = rps.stream().filter(r -> "Departamento".equals(r.getType())).count();
 

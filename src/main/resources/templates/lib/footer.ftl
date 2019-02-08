@@ -8,7 +8,7 @@
 				<p class="footer-p">siempre al pendiente de nuestros clientes nuestra prioridad es su bienestar</p>
 				<address>
 					<div class="footer-separator"></div>
-					<span><i class="fa fa-envelope fa-sm"></i><a href="#">rosario@rentafacilpuebla.com</a></span>
+					<span><i class="fa fa-envelope fa-sm"></i><a href="#">gerencia@rentafacilpuebla.com</a></span>
 					<div class="footer-separator"></div>
 					<span><i class="fa fa-phone"></i>22-21-66-79-72</span>
 				</address>

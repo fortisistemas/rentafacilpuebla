@@ -9,7 +9,7 @@
 						<span class="top-icon-circle">
 							<i class="fa fa-envelope fa-sm"></i>
 						</span>
-						<span class="top-bar-text">rosario@rentafacilpuebla.com</span>
+						<span class="top-bar-text">gerencia@rentafacilpuebla.com</span>
 					</div>
 					<div class="top-phone pull-left hidden-xxs">
 						<span class="top-icon-circle">

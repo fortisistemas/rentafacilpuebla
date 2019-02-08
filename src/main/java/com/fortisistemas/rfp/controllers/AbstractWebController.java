@@ -1,5 +1,6 @@
 package com.fortisistemas.rfp.controllers;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,13 +31,24 @@ public abstract class AbstractWebController {
 	}
 
 	protected void modelHighlighted(Model model) {
-		List<RealstateProperty> rps = rpService.getHighlightedProperties().stream().map(rp -> {
-			RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
-			rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
-			return rpsm;
-		}).collect(Collectors.toList());
+		model.addAttribute("highlightedProperties", rpService.getHighlightedProperties().stream()
+				.map(rp -> castToSearchModel(rp)).collect(Collectors.toList()));
+	}
 
-		model.addAttribute("highlightedProperties", rps);
+	protected void modelNewArrivals(Model model) {
+		List<RealstateProperty> all = rpService.getRealstateProperties();
+		Collections.reverse(all);
+		int uLimit = 5;
+		if (all.size() < uLimit)
+			uLimit = all.size();
+		model.addAttribute("newArrivals",
+				all.subList(0, uLimit).stream().map(rp -> castToSearchModel(rp)).collect(Collectors.toList()));
+	}
+
+	private RealstatePropertySearchModel castToSearchModel(RealstateProperty rp) {
+		RealstatePropertySearchModel rpsm = new RealstatePropertySearchModel(rp);
+		rpsm.setImageUrls(amazonService.directoryContent(rp.getId().toString()));
+		return rpsm;
 	}
 
 	protected void modelMinPrice(Model model) {
@@ -60,16 +72,15 @@ public abstract class AbstractWebController {
 				.min().orElse(0);
 		model.addAttribute("minLeasePrice", price);
 	}
-	
+
 	protected void modelMaxLeasePrice(Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 
 		Integer price = rps.stream().filter(rp -> "En Renta".equals(rp.getTransaction())).mapToInt(rp -> rp.getPrice())
 				.max().orElse(25000);
-		model.addAttribute("minLeasePrice", price);
+		model.addAttribute("maxLeasePrice", price);
 	}
-	
-	
+
 	protected void modelMinSalePrice(Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 
@@ -77,7 +88,7 @@ public abstract class AbstractWebController {
 				.min().orElse(0);
 		model.addAttribute("minSalePrice", price);
 	}
-	
+
 	protected void modelMaxSalePrice(Model model) {
 		List<RealstateProperty> rps = rpService.getRealstateProperties();
 
@@ -85,6 +96,5 @@ public abstract class AbstractWebController {
 				.max().orElse(8000000);
 		model.addAttribute("maxSalePrice", price);
 	}
-	
 
 }

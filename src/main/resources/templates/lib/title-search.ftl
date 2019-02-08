@@ -30,7 +30,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-lg-3">
-					<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
+					<select id="titleSearchApartmentTransaction" name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
 						<option value="En Venta">En Venta</option>
 						<option value="En Renta">En Renta</option>
 					</select>
@@ -90,7 +90,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-lg-3">
-					<select name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
+					<select id="titleSearchHouseTransaction" name="transaction" class="bootstrap-select" title="Transaccion:" multiple>
 						<option value="En Venta">En Venta</option>
 						<option value="En Renta">En Renta</option>
 					</select>

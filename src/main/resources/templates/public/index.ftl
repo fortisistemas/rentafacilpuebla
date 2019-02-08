@@ -198,7 +198,52 @@
 				<div class="team-member-cont">
 					<div class="team-member">
 						<div class="team-photo">
-							<img src="images/agent1.jpg" alt="" />
+							<img src="/images/rosario.jpg" style="height:323px;" alt="" />
+							<div class="big-triangle"></div>
+							<div class="big-triangle2"></div>
+							<a class="big-icon big-icon-plus" href="#"><i class="jfont">&#xe804;</i></a>
+							<div class="team-description">
+								<div>
+									<div class="team-desc-line">
+										<span class="team-icon-circle">
+											<i class="fa fa-phone"></i>
+										</span>
+										<span>22-21-66-79-72</span>
+									</div>
+									<div class="team-desc-line">
+										<span class="team-icon-circle">
+											<i class="fa fa-envelope fa-sm"></i>
+										</span>
+										<span style="font-size:11px;">gerencia@rentafacilpuebla.com</span>
+									</div>
+									<div class="team-social-cont">
+										<div class="team-social">
+											<a class="team-icon-circle" href="#">
+												 <i class="fa fa-facebook"></i>
+											</a>
+										</div>
+										<div class="team-social">
+											<a class="team-icon-circle" href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</div>
+									<p class="team-text">
+									Siempre buscando el bienestar de los clientes, siempre al pendiente del teléfono para ayudar, llame a Rosario para encontrar las mejores ofertas en casas, departamentos y seguros.
+									</p>
+							  </div>
+							</div>
+						</div>
+						<div class="team-name">
+							<h5>propetario</h5>
+							<h4>Rosario Rodriguez<span class="special-color">.</span></h4>
+						</div>
+					</div>
+				</div>
+				<div class="team-member-cont">
+					<div class="team-member">
+						<div class="team-photo">
+							<img src="/images/agent3.jpg" alt="" />
 							<div class="big-triangle"></div>
 							<div class="big-triangle2"></div>
 							<a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
@@ -214,52 +259,7 @@
 										<span class="team-icon-circle">
 											<i class="fa fa-envelope fa-sm"></i>
 										</span>
-										<span>rosario@rentafacilpuebla.com</span>
-									</div>
-									<div class="team-social-cont">
-										<div class="team-social">
-											<a class="team-icon-circle" href="#">
-												 <i class="fa fa-facebook"></i>
-											</a>
-										</div>
-										<div class="team-social">
-											<a class="team-icon-circle" href="#">
-												<i class="fa fa-twitter"></i>
-											</a>
-										</div>
-									</div>
-									<p class="team-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									</p>
-							  </div>
-							</div>
-						</div>
-						<div class="team-name">
-							<h5>propetario</h5>
-							<h4>Rosario Rodriguez<span class="special-color">.</span></h4>
-						</div>
-					</div>
-				</div>
-				<div class="team-member-cont">
-					<div class="team-member">
-						<div class="team-photo">
-							<img src="images/agent2.jpg" alt="" />
-							<div class="big-triangle"></div>
-							<div class="big-triangle2"></div>
-							<a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
-							<div class="team-description">
-								<div>
-									<div class="team-desc-line">
-										<span class="team-icon-circle">
-											<i class="fa fa-phone"></i>
-										</span>
-										<span>(0)-123-456-789</span>
-									</div>
-									<div class="team-desc-line">
-										<span class="team-icon-circle">
-											<i class="fa fa-envelope fa-sm"></i>
-										</span>
-										<span>apartment@domain.tld</span>
+										<span style="font-size:11px;">gerencia@rentafacilpuebla.com</span>
 									</div>
 									<div class="team-social-cont">
 										<div class="team-social">
@@ -298,7 +298,7 @@
 				<div class="team-member-cont">
 					<div class="team-member">
 						<div class="team-photo">
-							<img src="images/agent3.jpg" alt="" />
+							<img src="/images/ruben.jpg" style="height:323px;"  alt="" />
 							<div class="big-triangle"></div>
 							<div class="big-triangle2"></div>
 							<a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
@@ -308,13 +308,13 @@
 										<span class="team-icon-circle">
 											<i class="fa fa-phone"></i>
 										</span>
-										<span>(0)-123-456-789</span>
+										<span>22-21-66-79-72</span>
 									</div>
 									<div class="team-desc-line">
 										<span class="team-icon-circle">
 											<i class="fa fa-envelope fa-sm"></i>
 										</span>
-										<span>apartment@domain.tld</span>
+										<span style="font-size:11px;">gerencia@rentafacilpuebla.com</span>
 									</div>
 									<div class="team-social-cont">
 										<div class="team-social">
@@ -339,7 +339,7 @@
 										</div>
 									</div>
 									<p class="team-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Siempre amigo, siempre listo, Don Rubén le asesora en seguros y propiedades junto a su esposa Rosario, una mano firme al saludar y su palabra es su garantía.
 									</p>
 							  </div>
 							</div>
@@ -353,10 +353,10 @@
 				<div class="team-member-cont">
 					<div class="team-member">
 						<div class="team-photo">
-							<img src="images/agent4.jpg" alt="" />
+							<img src="/images/cristofer.jpg" style="height:323px;" alt="" />
 							<div class="big-triangle"></div>
 							<div class="big-triangle2"></div>
-							<a class="big-icon big-icon-plus" href="agent-right-sidebar.html"><i class="jfont">&#xe804;</i></a>
+							<a class="big-icon big-icon-plus" href="#"><i class="jfont">&#xe804;</i></a>
 							<div class="team-description">
 								<div>
 									<div class="team-desc-line">
@@ -394,13 +394,13 @@
 										</div>
 									</div>
 									<p class="team-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Diseño de páginas web y soporte a alta, baja y búsqueda de las propiedades de este sitio.
 									</p>
 							  </div>
 							</div>
 						</div>
 						<div class="team-name">
-							<h5>sistemas</h5>
+							<h5>Página Web</h5>
 							<h4>Cristofer Arzaluz<span class="special-color">.</span></h4>
 						</div>
 					</div>
@@ -430,7 +430,7 @@
 				<div class="row">
 					<div class="col-xs-12 owl-carousel" id="testimonials-owl">
 						<div class="testimonial">
-							<img src="images/testimonials1.jpg" alt="" class="testimonials-photo" />	
+							<img src="/images/fam_torres_romero.jpg" alt="" class="testimonials-photo" />	
 							<div class="testimonials-content">							
 								<p class="lead">Familia Torres Romero</p>
 								<p>El servicio de rentafacilpuebla.com y su personal es sumamente profesional, ellos se ajustaron a nuestro presupuesto y necisidades de vivienda. Nos consigueron casa muy rapido y en la zona apropiada. Nosotrros nos encontrábamos fuera de Puebla y el personal de rentafacilpuebla.com nos asesoró para cuando llegaramos a Puebla tuviéramos casa.</p>								
@@ -483,47 +483,48 @@
 		</div>
 		<div class="grid-offers-container">
 			<div class="owl-carousel" id="grid-offers-owl">
+				<#list newArrivals as newProperty>
 				<div class="grid-offer-col">
 					<div class="grid-offer">
 						<div class="grid-offer-front">				
 							<div class="grid-offer-photo">
-								<img src="images/grid-offer1.jpg" alt="" />
+								<img src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${newProperty.imageUrls[0]}" alt="" />
 								<div class="type-container">
-									<div class="estate-type">apartment</div>
-									<div class="transaction-type">sale</div>
+									<div class="estate-type">${newProperty.type}</div>
+									<div class="transaction-type">${newProperty.transaction}</div>
 								</div>
 							</div>
 							<div class="grid-offer-text">
 								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">34 Fort Collins, Colorado 80523, USA</h4></div>
+								<div class="grid-offer-h4"><h4 class="grid-offer-title"><#if newProperty.street??>${newProperty.street}</#if>, <#if newProperty.neighborghood??>${newProperty.neighborghood}</#if></h4></div>
 								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
+								<p><#if newProperty.description??>${newProperty.description[0..*110]}</#if>[...]</p>
 								<div class="clearfix"></div>
 							</div>
 							<div class="price-grid-cont">
 								<div class="grid-price-label pull-left">Price:</div>
 								<div class="grid-price pull-right">
-									$ 320 000
+									${newProperty.price?string.currency}
 								</div>
 								<div class="clearfix"></div>
 							</div>
 							<div class="grid-offer-params">
 								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />54m<sup>2</sup>
+									<img src="/images/area-icon.png" alt="" />${newProperty.area}m<sup>2</sup>
 								</div>
 								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />3
+									<img src="/images/rooms-icon.png" alt="" />${newProperty.bedrooms}
 								</div>
 								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />1
+									<img src="/images/bathrooms-icon.png" alt="" />${newProperty.bathrooms}
 								</div>							
 							</div>	
 							
 						</div>
 						<div class="grid-offer-back">
-							<div id="grid-map1" class="grid-offer-map"></div>
+							<div id="grid-map-np${newProperty.id}" class="grid-offer-map"></div>
 							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
+								<a href="/detail/${newProperty.id}" class="button-primary">
 									<span>read more</span>
 									<div class="button-triangle"></div>
 									<div class="button-triangle2"></div>
@@ -532,252 +533,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="grid-offer-col">
-					<div class="grid-offer">
-						<div class="grid-offer-front">
-							<div class="grid-offer-photo">
-								<img src="images/grid-offer2.jpg" alt="" />
-								<div class="type-container">
-									<div class="estate-type">apartment</div>
-									<div class="transaction-type">sale</div>
-								</div>
-							</div>
-							<div class="grid-offer-text">
-								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">West Fourth Street, New York 10003, USA</h4></div>
-								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="price-grid-cont">
-								<div class="grid-price-label pull-left">Price:</div>
-								<div class="grid-price pull-right">
-									$ 299 000
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="grid-offer-params">
-								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />48m<sup>2</sup>
-								</div>
-								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />2
-								</div>
-								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />1
-								</div>							
-							</div>	
-						</div>
-						<div class="grid-offer-back">
-							<div id="grid-map2" class="grid-offer-map"></div>
-							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
-									<span>read more</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-search"></i></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid-offer-col">
-					<div class="grid-offer">
-						<div class="grid-offer-front">
-							<div class="grid-offer-photo">
-								<img src="images/grid-offer3.jpg" alt="" />
-								<div class="type-container">
-									<div class="estate-type">apartment</div>
-									<div class="transaction-type">sale</div>
-								</div>
-							</div>
-							<div class="grid-offer-text">
-								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">E. Elwood St. Phoenix, AZ 85034, USA</h4></div>
-								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="price-grid-cont">
-								<div class="grid-price-label pull-left">Price:</div>
-								<div class="grid-price pull-right">
-									$ 400 000
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="grid-offer-params">
-								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />93m<sup>2</sup>
-								</div>
-								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />4
-								</div>
-								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />2
-								</div>							
-							</div>	
-						</div>
-						<div class="grid-offer-back">
-							<div id="grid-map3" class="grid-offer-map"></div>
-							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
-									<span>read more</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-search"></i></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid-offer-col">
-					<div class="grid-offer">
-						<div class="grid-offer-front">
-							<div class="grid-offer-photo">
-								<img src="images/grid-offer4.jpg" alt="" />
-								<div class="type-container">
-									<div class="estate-type">house</div>
-									<div class="transaction-type">sale</div>
-								</div>
-							</div>
-							<div class="grid-offer-text">
-								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">N. Willamette Blvd., Portland, OR 97203, USA</h4></div>
-								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="price-grid-cont">
-								<div class="grid-price-label pull-left">Price:</div>
-								<div class="grid-price pull-right">
-									$ 800 000
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="grid-offer-params">
-								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />300m<sup>2</sup>
-								</div>
-								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />8
-								</div>
-								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />3
-								</div>							
-							</div>	
-						</div>
-						<div class="grid-offer-back">
-							<div id="grid-map4" class="grid-offer-map"></div>
-							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
-									<span>read more</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-search"></i></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid-offer-col">
-					<div class="grid-offer">
-						<div class="grid-offer-front">
-							<div class="grid-offer-photo">
-								<img src="images/grid-offer5.jpg" alt="" />
-								<div class="type-container">
-									<div class="estate-type">apartment</div>
-									<div class="transaction-type">sale</div>
-								</div>
-							</div>
-							<div class="grid-offer-text">
-								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">One Brookings Drive St. Louis, Missouri 63130, USA</h4></div>
-								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="price-grid-cont">
-								<div class="grid-price-label pull-left">Price:</div>
-								<div class="grid-price pull-right">
-									$ 320 000
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="grid-offer-params">
-								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />50m<sup>2</sup>
-								</div>
-								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />2
-								</div>
-								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />1
-								</div>							
-							</div>	
-						</div>
-						<div class="grid-offer-back">
-							<div id="grid-map5" class="grid-offer-map"></div>
-							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
-									<span>read more</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-search"></i></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="grid-offer-col">
-					<div class="grid-offer">
-						<div class="grid-offer-front">
-							<div class="grid-offer-photo">
-								<img src="images/grid-offer7.jpg" alt="" />
-								<div class="type-container">
-									<div class="estate-type">house</div>
-									<div class="transaction-type">sale</div>
-								</div>
-							</div>
-							<div class="grid-offer-text">
-								<i class="fa fa-map-marker grid-offer-localization"></i>
-								<div class="grid-offer-h4"><h4 class="grid-offer-title">One Neumann Drive Aston, Philadelphia 19014, USA</h4></div>
-								<div class="clearfix"></div>
-								<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et [...]</p>
-								<div class="clearfix"></div>
-							</div>
-							<div class="price-grid-cont">
-								<div class="grid-price-label pull-left">Price:</div>
-								<div class="grid-price pull-right">
-									$ 500 000
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="grid-offer-params">
-								<div class="grid-area">
-									<img src="images/area-icon.png" alt="" />210m<sup>2</sup>
-								</div>
-								<div class="grid-rooms">
-									<img src="images/rooms-icon.png" alt="" />6
-								</div>
-								<div class="grid-baths">
-									<img src="images/bathrooms-icon.png" alt="" />2
-								</div>							
-							</div>	
-						</div>
-						<div class="grid-offer-back">
-							<div id="grid-map6" class="grid-offer-map"></div>
-							<div class="button">	
-								<a href="estate-details-right-sidebar.html" class="button-primary">
-									<span>read more</span>
-									<div class="button-triangle"></div>
-									<div class="button-triangle2"></div>
-									<div class="button-icon"><i class="fa fa-search"></i></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				</div>	
+				</#list>
 			</div>
 		</div>
 	</section>
@@ -790,7 +547,7 @@
 						<div class="number-img">	
 							<i class="fa fa-building"></i>
 						</div>
-						<span class="number-label text-color2">APARTMENTS</span>
+						<span class="number-label text-color2">DEPARTAMENTOS</span>
 						<span class="number-big text-color3 count" data-from="0" data-to="${apartmentsCount}" data-speed="20"></span>
 					</div>
 				</div>
@@ -799,7 +556,7 @@
 						<div class="number-img">	
 							<i class="fa fa-home"></i>	
 						</div>			
-						<span class="number-label text-color2">HOUSES</span>
+						<span class="number-label text-color2">CASAS</span>
 						<span class="number-big text-color3 count" data-from="0" data-to="${housesCount}" data-speed="20"></span>
 					</div>
 				</div>
@@ -823,13 +580,81 @@
 				mapInit(${highlighted.lat},${highlighted.lng},"featured-map${highlighted.id}",'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', false);
 				</#list>
 				
-				mapInit(41.2693,-70.0874,"grid-map1","images/pin-house.png", false);
-				mapInit(33.7544,-84.3857,"grid-map2","images/pin-apartment.png", false);
-				mapInit(33.7337,-84.4443,"grid-map3","images/pin-land.png", false);
-				mapInit(33.8588,-84.4858,"grid-map4","images/pin-commercial.png", false);
-				mapInit(34.0254,-84.3560,"grid-map5","images/pin-apartment.png", false);
-				mapInit(40.6128,-73.9976,"grid-map6","images/pin-house.png", false);
+				<#list newArrivals as newProperty>
+				<#assign rspHouseType=(newProperty.type == "Casa")>
+				mapInit(${newProperty.lat},${newProperty.lng},"grid-map-np${newProperty.id}",'${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', false);
+				</#list>
 			}
+
+			$(document).on("ready", function () {
+				$('#titleSearchApartmentTransaction').change( function() {
+					if( !$(this).val() ) {
+						$('#slider-range-price1').attr('data-min', ${minPrice?c});
+						$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					} else if($(this).val().length == 2) {
+						$('#slider-range-price1').attr('data-min', ${minPrice?c});
+						$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					} else if ('En Renta' == $(this).val()[0]) {
+						$('#slider-range-price1').attr('data-min', ${minLeasePrice?c});
+						$('#slider-range-price1').attr('data-max', ${maxLeasePrice?c});
+						$('#slider-range-price1').slider("option", "min", ${minLeasePrice?c});
+						$('#slider-range-price1').slider("option", "max", ${maxLeasePrice?c});
+						$('#slider-range-price1-value').val(${minLeasePrice?c} + ' - ' + ${maxLeasePrice?c});
+					} else if ('En Venta' == $(this).val()[0]){
+						$('#slider-range-price1').attr('data-min', ${minSalePrice?c});
+						$('#slider-range-price1').attr('data-max', ${maxSalePrice?c});
+						$('#slider-range-price1').slider("option", "min", ${minSalePrice?c});
+						$('#slider-range-price1').slider("option", "max", ${maxSalePrice?c});
+						$('#slider-range-price1-value').val(${minSalePrice?c} + ' - ' + ${maxSalePrice?c});
+					} else {
+						$('#slider-range-price1').attr('data-min', ${minPrice?c});
+						$('#slider-range-price1').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price1').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					}
+				});
+
+				$('#titleSearchHouseTransaction').change( function() {
+					if( !$(this).val() ) {
+						$('#slider-range-price2').attr('data-min', ${minPrice?c});
+						$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					} else if($(this).val().length == 2) {
+						$('#slider-range-price2').attr('data-min', ${minPrice?c});
+						$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					} else if ('En Renta' == $(this).val()[0]) {
+						$('#slider-range-price2').attr('data-min', ${minLeasePrice?c});
+						$('#slider-range-price2').attr('data-max', ${maxLeasePrice?c});
+						$('#slider-range-price2').slider("option", "min", ${minLeasePrice?c});
+						$('#slider-range-price2').slider("option", "max", ${maxLeasePrice?c});
+						$('#slider-range-price2-value').val(${minLeasePrice?c} + ' - ' + ${maxLeasePrice?c});
+					} else if ('En Venta' == $(this).val()[0]){
+						$('#slider-range-price2').attr('data-min', ${minSalePrice?c});
+						$('#slider-range-price2').attr('data-max', ${maxSalePrice?c});
+						$('#slider-range-price2').slider("option", "min", ${minSalePrice?c});
+						$('#slider-range-price2').slider("option", "max", ${maxSalePrice?c});
+						$('#slider-range-price2-value').val(${minSalePrice?c} + ' - ' + ${maxSalePrice?c});
+					} else {
+						$('#slider-range-price2').attr('data-min', ${minPrice?c});
+						$('#slider-range-price2').attr('data-max', ${maxPrice?c});
+						$('#slider-range-price2').slider("option", "min", ${minPrice?c});
+						$('#slider-range-price2').slider("option", "max", ${maxPrice?c});
+						$('#slider-range-price2-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
+					}
+				});
+			});
 
 	
 	</script>
