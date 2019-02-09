@@ -44,7 +44,7 @@
 					<span class="icon-bar icon-bar3"></span>
 				</button>
 				<a href="/"title=""class="navbar-brand">
-					<img src="/images/logo_rfp.png" style="height: 50px;" alt="Apartment - Premium Real Estate Template" />
+					<img src="/images/logo_rfp.png" style="height: 50px;" alt="rentafacilpuebla" />
 				</a>
 			</div>
 			<!--  -->

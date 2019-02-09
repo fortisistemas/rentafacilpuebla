@@ -11,8 +11,8 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">    
-<!-- Font awesome styles -->    
-<link rel="stylesheet" href="/apartment-font/css/font-awesome.min.css">  
+<!-- Font awesome styles -->
+<link rel="stylesheet" href="/apartment-font/css/font-awesome.min.css">
 <!-- Custom styles -->
 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,500italic,700,700italic&amp;subset=latin,latin-ext'>
 <link rel="stylesheet" type="text/css" href="/css/plugins.css">

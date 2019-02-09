@@ -11,16 +11,17 @@ import com.fortisistemas.rfp.realstateProperty.RealstateProperty;
 
 @Controller
 public class IndexWebController extends AbstractWebController {
-	
-	@GetMapping(path = {"/", "/admin"})
+
+	@GetMapping(path = { "/", "/admin" })
 	public String index(Authentication auth, Model model) {
-		List<RealstateProperty> rps = rpService.getRealstateProperties();
-		
-		// TODO: Return "comming soon page with admin button"
-		//if(rps.size() == 0)
-			
-		
 		principalModel(auth, model);
+
+		List<RealstateProperty> rps = rpService.getRealstateProperties();
+
+		if (rps.size() == 0) {
+			return "public/new-site";
+		}
+
 		modelMinPrice(model);
 		modelMaxPrice(model);
 		modelMinSalePrice(model);
@@ -30,7 +31,6 @@ public class IndexWebController extends AbstractWebController {
 		modelHighlighted(model);
 		modelNewArrivals(model);
 
-		
 		long housesCount = rps.stream().filter(r -> "Casa".equals(r.getType())).count();
 		long apartmentsCount = rps.stream().filter(r -> "Departamento".equals(r.getType())).count();
 
