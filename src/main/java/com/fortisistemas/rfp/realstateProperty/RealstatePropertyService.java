@@ -18,6 +18,10 @@ public class RealstatePropertyService {
 	public void updateRealstateProperty(RealstateProperty property) {
 		propRepo.save(property);
 	}
+	
+	public void deleteRealstateProperty(Integer id) {
+		propRepo.deleteById(id);
+	}
 
 	public RealstateProperty getRealstatePropertyById(Integer id) {
 		return propRepo.findById(id).orElse(null);

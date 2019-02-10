@@ -406,20 +406,39 @@
 		<#if propiedad.highlight?? && propiedad.highlight == "on">
 		$('#unhighlight-btn').on('click', function() {
 			$.ajax({
-				url: '/admin/properties/rest/unhighlight/${propiedad.id}',
-				type: 'PUT',
-				success: function(result) {
-					console.log(result);
-				},
-				error: function(err){
-					console.log(err);
+				url: '/admin/estate/rest/unhighlight/${propiedad.id}',
+				type: 'GET',
+				xhrFields: { withCredentials:true },
+				complete: function() {
+					window.location.href="/";
 				}
 			});
 		});
 		<#else>
-		$('#highlight-btn').on('click', function(){});
+		$('#highlight-btn').on('click', function(){
+			$.ajax({
+				url: '/admin/estate/rest/highlight/${propiedad.id}',
+				type: 'GET',
+				xhrFields: { withCredentials:true },
+				complete: function() {
+					window.location.href="/";
+				}
+			});
+		});
 		</#if>
-		$('#delete-btn').on('click', function(){});
+		$('#delete-btn').on('click', function(){
+			var folio = prompt("Para borrar la imágen, por favor confirme el número de folio", "Folio");
+			if (folio == ${propiedad.id}) {
+				$.ajax({
+					url: '/admin/estate/rest/delete/${propiedad.id}',
+					type: 'GET',
+					xhrFields: { withCredentials:true },
+					complete: function() {
+						window.location.href="/";
+					}
+				});
+			}
+		});
 		</#if>
 	});
 	</script>

@@ -71,9 +71,11 @@ public class AmazonS3ClientService {
 				new PutObjectRequest(bucketName, fileName, file).withCannedAcl(CannedAccessControlList.PublicRead));
 	}
 
-	public String deleteFileFromS3Bucket(String fileUrl) {
-		String fileName = fileUrl.substring(fileUrl.lastIndexOf("/") + 1);
-		s3client.deleteObject(new DeleteObjectRequest(bucketName, fileName));
+	public String deleteFileFromS3Bucket(Integer id) {
+		for (String key : directoryContent(id.toString())) {
+			s3client.deleteObject(new DeleteObjectRequest(bucketName, key));
+		}
+
 		return "Successfully deleted";
 	}
 
@@ -86,7 +88,7 @@ public class AmazonS3ClientService {
 		s3client.deleteObject(deleteRequest);
 		return "renamed";
 	}
-	
+
 	public List<String> directoryContent(String sourceDirectory) {
 		List<String> objectNames = new ArrayList<>();
 		ListObjectsRequest lor = new ListObjectsRequest().withBucketName(bucketName).withPrefix(sourceDirectory + "/");
