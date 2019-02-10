@@ -63,7 +63,7 @@
 												</div>
 												<div class="list-offer-params">
 													<div class="list-area">
-														<img src="/images/area-icon.png" alt="" />${propiedad.area} M<sup>2</sup>
+														<img src="/images/area-icon.png" alt="" /><#if propiedad.area??>${propiedad.area}<#else>0</#if>M<sup>2</sup>
 													</div>
 													<div class="list-rooms">
 														<img src="images/rooms-icon.png" alt="" />${propiedad.bedrooms}

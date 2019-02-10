@@ -111,7 +111,7 @@
 							<div class="details-parameters">
 								<div class="details-parameters-cont">
 									<div class="details-parameters-name">Área</div>
-									<div class="details-parameters-val">${propiedad.area}m<sup>2</sup></div>
+									<div class="details-parameters-val"><#if propiedad.area??>${propiedad.area}<#else>0</#if>m<sup>2</sup></div>
 									<div class="clearfix"></div>	
 								</div>
 								<div class="details-parameters-cont">
@@ -346,7 +346,7 @@
 										</div>
 										<div class="grid-offer-params">
 											<div class="grid-area">
-												<img src="/images/area-icon.png" alt="" />${hProperty.area}m<sup>2</sup>
+												<img src="/images/area-icon.png" alt="" /><#if hProperty.area??>${hProperty.area}<#else>0</#if>m<sup>2</sup>
 											</div>
 											<div class="grid-rooms">
 												<img src="/images/rooms-icon.png" alt="" />${hProperty.bedrooms}

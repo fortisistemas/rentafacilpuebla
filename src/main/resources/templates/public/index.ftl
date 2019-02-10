@@ -28,7 +28,7 @@
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 					<div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-${highlighted.id}">
+                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-${highlighted?counter}">
 								<div class="slide-desc pull-right">
 									<div class="slide-desc-text">
 										
@@ -41,7 +41,7 @@
 									</div>
 									<div class="slide-desc-params">	
 										<div class="slide-desc-area">
-											<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
+											<img src="/images/area-icon.png" alt="" /><#if highlighted.area??>${highlighted.area}<#else>0</#if>m<sup>2</sup>
 										</div>
 										<div class="slide-desc-rooms">
 											<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
@@ -147,7 +147,7 @@
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
-								<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
+								<img src="/images/area-icon.png" alt="" /><#if highlighted.area??>${highlighted.area}<#else>o</#if>m<sup>2</sup>
 							</div>
 							<div class="featured-rooms">
 								<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
@@ -510,7 +510,7 @@
 							</div>
 							<div class="grid-offer-params">
 								<div class="grid-area">
-									<img src="/images/area-icon.png" alt="" />${newProperty.area}m<sup>2</sup>
+									<img src="/images/area-icon.png" alt="" /><#if newProperty.area??>${newProperty.area}<#else>0</#if>m<sup>2</sup>
 								</div>
 								<div class="grid-rooms">
 									<img src="/images/rooms-icon.png" alt="" />${newProperty.bedrooms}
@@ -525,7 +525,7 @@
 							<div id="grid-map-np${newProperty.id}" class="grid-offer-map"></div>
 							<div class="button">	
 								<a href="/detail/${newProperty.id}" class="button-primary">
-									<span>read more</span>
+									<span>conoce mas</span>
 									<div class="button-triangle"></div>
 									<div class="button-triangle2"></div>
 									<div class="button-icon"><i class="fa fa-search"></i></div>
