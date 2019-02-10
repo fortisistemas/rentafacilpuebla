@@ -525,7 +525,7 @@
 							<div id="grid-map-np${newProperty.id}" class="grid-offer-map"></div>
 							<div class="button">	
 								<a href="/detail/${newProperty.id}" class="button-primary">
-									<span>read more</span>
+									<span>conoce mas</span>
 									<div class="button-triangle"></div>
 									<div class="button-triangle2"></div>
 									<div class="button-icon"><i class="fa fa-search"></i></div>
