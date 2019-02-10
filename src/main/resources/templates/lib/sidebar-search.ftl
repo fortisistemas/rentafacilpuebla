@@ -56,42 +56,20 @@
 </div>
 <!-- /.FEATURE OFFERS TITLE -->
 <div class="sidebar-featured-cont">
+	<#list highlightedProperties as hProperty>
 	<div class="sidebar-featured">
 		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="/images/sidebar-featured1.jpg" alt="" />
+			<img src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${hProperty.imageUrls[0]}" alt="" />
 			<div class="sidebar-featured-type">
-				<div class="sidebar-featured-estate">A</div>
-				<div class="sidebar-featured-transaction">S</div>
+				<div class="sidebar-featured-estate">${hProperty.type[0..*1]?upper_case}</div>
+				<div class="sidebar-featured-transaction">${hProperty.transaction[3..*1]?upper_case}</div>
 			</div>
 		</a>
-		<div class="sidebar-featured-title"><a href="estate-details-right-sidebar.html">Fort Collins, Colorado 80523, USA</a></div>
-		<div class="sidebar-featured-price">$ 320 000</div>
-		<div class="clearfix"></div>						
+		<div class="sidebar-featured-title"><a href="estate-details-right-sidebar.html">${hProperty.cityStateZip}</a></div>
+		<div class="sidebar-featured-price">${hProperty.price?string.currency}</div>
+		<div class="clearfix"></div>
 	</div>
-	<div class="sidebar-featured">
-		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="/images/sidebar-featured2.jpg" alt="" />
-			<div class="sidebar-featured-type">
-				<div class="sidebar-featured-estate">A</div>
-				<div class="sidebar-featured-transaction">S</div>
-			</div>
-		</a>
-		<div class="sidebar-featured-title"><a href="estate-details-right-sidebar.html">West Fourth Street, New York 10003, USA</a></div>
-		<div class="sidebar-featured-price">$ 350 000</div>
-		<div class="clearfix"></div>						
-	</div>
-	<div class="sidebar-featured">
-		<a class="sidebar-featured-image" href="estate-details-right-sidebar.html">
-			<img src="/images/sidebar-featured3.jpg" alt="" />
-			<div class="sidebar-featured-type">
-				<div class="sidebar-featured-estate">A</div>
-				<div class="sidebar-featured-transaction">S</div>
-			</div>
-		</a>
-		<div class="sidebar-featured-title"><a href="estate-details-right-sidebar.html">E. Elwood St. Phoenix, AZ 85034, USA</a></div>
-		<div class="sidebar-featured-price">$ 410 000</div>
-		<div class="clearfix"></div>					
-	</div>
+	</#list>
 </div>
 <!-- /.FEATURE OFFERS CONTENT -->
 <div class="sidebar-title-cont">
@@ -100,24 +78,14 @@
 </div>
 <!-- /.LATEST NEWS TITLE -->
 <div class="sidebar-blog-cont">
+	<#list newArrivals as nProperty>
 	<article>
-		<a href="blog-right-sidebar.html"><img src="/images/footer-blog1.jpg" alt="" class="sidebar-blog-image" /></a>
-		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
+		<a href="blog-right-sidebar.html"><img src="https://s3.us-east-2.amazonaws.com/rentafacilpuebla/${nProperty.imageUrls[0]}" alt="" class="sidebar-blog-image" /></a>
+		<div class="sidebar-blog-title"><a href="/detail/${nProperty.id}">${nProperty.cityStateZip}</a></div>
+		<div class="sidebar-blog-date">${nProperty.price?string.currency}</div>
 		<div class="clearfix"></div>					
 	</article>
-	<article>
-		<a href="blog-right-sidebar.html"><img src="/images/footer-blog2.jpg" alt="" class="sidebar-blog-image" /></a>
-		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
-		<div class="clearfix"></div>					
-	</article>
-	<article>
-		<a href="blog-right-sidebar.html"><img src="/images/footer-blog3.jpg" alt="" class="sidebar-blog-image" /></a>
-		<div class="sidebar-blog-title"><a href="blog-right-sidebar.html">This post title, lorem ipsum dolor sit</a></div>
-		<div class="sidebar-blog-date"><i class="fa fa-calendar-o"></i>28/09/15</div>
-		<div class="clearfix"></div>					
-	</article>
+	</#list>
 </div>
 <!-- /.LATEST NEWS CONTENT -->
 </#macro>

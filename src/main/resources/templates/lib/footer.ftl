@@ -30,7 +30,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6 small-cont">
-			</div>
+					<img src="/images/logo-light_rfp.png" alt="" class="img-responsive footer-logo" />
+				</div>
+
 			<div class="col-xs-12 col-md-6 footer-copyrights">
 				&copy; Copyright 2015 <a href="http://themeforest.net/user/johnnychaos?ref=johnnychaos" target="blank">Jan Skwara</a>. All rights reserved. Buy on <a href="http://themeforest.net/user/johnnychaos/portfolio?ref=johnnychaos" target="blank">Themeforest</a>
 			</div>

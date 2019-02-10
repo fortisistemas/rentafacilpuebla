@@ -21,6 +21,8 @@ public class PropertyDetailController extends AbstractWebController {
 		model.addAttribute("propiedad", toScreen);
 		modelMinPrice(model);
 		modelMaxPrice(model);
+		modelHighlighted(model);
+		modelNewArrivals(model);
 		return "public/detail";
 	}
 }

@@ -101,7 +101,7 @@
 						<div class="offer-pagination margin-top-30">
 							<#assign _m = resultSize % 5>
 							<#assign _d = resultSize / 5>
-							<#assign x = _d?ceiling + _m + 1>
+							<#assign x = _d?floor + _m>
 							<#if x gt 1>
 								<a href="#" class="prev"><i class="jfont">&#xe800;</i></a>
 								<#list 1..x as i>
@@ -165,49 +165,34 @@ $(document).on("ready", function () {
 				mapInit(${rsp.lat},${rsp.lng},'list-map_${rsp.id}','${rspHouseType?then("/images/pin-house.png", "/images/pin-apartment.png")}', false);
 			</#if>
 		</#list>
-		
-		/*
-		mapInit(41.2693,-70.0874,"list-map1","images/pin-house.png", false);
-		mapInit(33.7544,-84.3857,"list-map2","images/pin-apartment.png", false);
-		mapInit(33.7337,-84.4443,"list-map3","images/pin-land.png", false);
-		mapInit(33.8588,-84.4858,"list-map4","images/pin-commercial.png", false);
-		mapInit(34.0254,-84.3560,"list-map5","images/pin-apartment.png", false);
-		mapInit(40.6128,-73.9976,"list-map6","images/pin-house.png", false);
-		mapInit(40.6128,-73.7903,"list-map7","images/pin-house.png", false);
-		*/
 	}
 
 	$('#titleSearchApartmentTransaction').change( function() {
 		if ( !$(this).val() ) {
-			console.log('precios generales: [' + ${minPrice?c} + '/' + ${maxPrice?c} + ']')
 			$('#slider-range-price1').attr('data-min', ${minPrice?c});
 			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
 			$('#slider-range-price1').slider("option", "min", ${minPrice?c});
 			$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
 			$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
 		} else if ($(this).val().length == 2) {
-			console.log('precios generales: [' + ${minPrice} + '/' + ${maxPrice?c} + ']')
 			$('#slider-range-price1').attr('data-min', ${minPrice?c});
 			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
 			$('#slider-range-price1').slider("option", "min", ${minPrice?c});
 			$('#slider-range-price1').slider("option", "max", ${maxPrice?c});
 			$('#slider-range-price1-value').val(${minPrice?c} + ' - ' + ${maxPrice?c});
 		} else if ('En Renta' == $(this).val()[0]) {
-			console.log('precios en renta: [' + ${minLeasePrice?c} + '/' + ${maxLeasePrice?c} + ']')
 			$('#slider-range-price1').attr('data-min', ${minLeasePrice?c});
 			$('#slider-range-price1').attr('data-max', ${maxLeasePrice?c});
 			$('#slider-range-price1').slider("option", "min", ${minLeasePrice?c});
 			$('#slider-range-price1').slider("option", "max", ${maxLeasePrice?c});
 			$('#slider-range-price1-value').val(${minLeasePrice?c} + ' - ' + ${maxLeasePrice?c});
 		} else if ('En Venta' == $(this).val()[0]){
-			console.log('precios en venta: [' + ${minSalePrice?c} + '/' + ${maxSalePrice?c} + ']')
 			$('#slider-range-price1').attr('data-min', ${minSalePrice?c});
 			$('#slider-range-price1').attr('data-max', ${maxSalePrice?c});
 			$('#slider-range-price1').slider("option", "min", ${minSalePrice?c});
 			$('#slider-range-price1').slider("option", "max", ${maxSalePrice?c});
 			$('#slider-range-price1-value').val(${minSalePrice?c} + ' - ' + ${maxSalePrice?c});
 		} else {
-			console.log('precios generales 2: [' + ${minPrice?c} + '/' + ${maxPrice?c} + ']')
 			$('#slider-range-price1').attr('data-min', ${minPrice?c});
 			$('#slider-range-price1').attr('data-max', ${maxPrice?c});
 			$('#slider-range-price1').slider("option", "min", ${minPrice?c});

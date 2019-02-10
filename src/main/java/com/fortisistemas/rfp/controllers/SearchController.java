@@ -87,6 +87,7 @@ public class SearchController extends AbstractWebController {
 			modelMinLeasePrice(model);
 			modelMaxLeasePrice(model);
 			modelHighlighted(model);
+			modelNewArrivals(model);
 			
 			return "public/search-results";
 		}

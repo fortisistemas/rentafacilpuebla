@@ -9,7 +9,13 @@ $(document).on("ready", function () {
 		allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
 		showUpload: false,
 		maxFileCount: 15,
-		minFileCount: 1
+		maxFileSize: 5632,
+		minFileCount: 1,
+		maxImageWidth: 1920,
+		maxImageHeight: 1100,
+		resizePreference: 'height',
+		resizeImage: true,
+		resizeIfSizeMoreThan: 5120
 	}).on('filebatchuploadcomplete', function (event, files, extra) {
 		$("#imageCsv").val(images.join(","));
 		$(".loader-bg").fadeOut();

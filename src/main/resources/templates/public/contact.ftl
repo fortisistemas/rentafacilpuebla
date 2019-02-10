@@ -31,7 +31,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-6 margin-top-45">
 					<p class="negative-margin">Los asesoramos en cualquier duda quetenga nuestro eficáz equipo de asesores esta listo para ayudarte, llena este formulario y re suelve todas tus dudas. Tambien puedes dejar comentarios o sugerencias ya que apreciamos la opinion de nustros clientes.</p>
-					<img src="images/contact-image.jpg" alt="" class="pull-left margin-top-45" />
+					<img src="/images/rosario.jpg" style="width:250px;" alt="" class="pull-left margin-top-45" />
 					<address class="contact-info pull-left">
 						<!--<span><i class="fa fa-map-marker"></i>00456 Some Address line</span>-->
 						<span><i class="fa fa-envelope"></i><a href="gerencia@rentafacilpuebla.com">gerencia@rentafacilpuebla.com</a></span>
