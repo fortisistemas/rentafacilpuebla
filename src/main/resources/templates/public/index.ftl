@@ -28,7 +28,7 @@
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 					<div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-${highlighted?counter}">
+                            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-4 col-lg-offset-6 slide-desc-col animated fadeInDown slide-desc-${highlighted.id}">
 								<div class="slide-desc pull-right">
 									<div class="slide-desc-text">
 										
@@ -164,7 +164,7 @@
 						<div id="featured-map${highlighted.id}" class="featured-offer-map"></div>
 						<div class="button">	
 							<a href="/detail/${highlighted.id}" class="button-primary">
-								<span>read more</span>
+								<span>conoce mas</span>
 								<div class="button-triangle"></div>
 								<div class="button-triangle2"></div>
 								<div class="button-icon"><i class="fa fa-search"></i></div>

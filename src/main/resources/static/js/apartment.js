@@ -204,12 +204,7 @@ jQuery(window).load(function() {
 		$(".slide-desc-1").addClass("slide-desc-" + (slidesSum - 1));
 		$(".slide-desc-" + (slidesSum - 2)).addClass("slide-desc-0");
 
-		swiper1.on('onTransitionEnd', function () {
-			$(".slide-desc-" + swiper1.previousIndex).removeClass("fadeInDown");
-			$(".slide-desc-" + swiper1.previousIndex).addClass("fadeOutDown");
-			$(".slide-desc-" + swiper1.activeIndex).removeClass("fadeOutDown");
-			$(".slide-desc-" + swiper1.activeIndex).addClass("fadeInDown");
-		});
+		
 	}
 	
 	
