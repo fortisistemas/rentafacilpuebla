@@ -9,7 +9,7 @@ $(document).on("ready", function () {
 		allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
 		showUpload: false,
 		maxFileCount: 15,
-		maxFileSize: 5632,
+		maxFileSize: 10240,
 		minFileCount: 1,
 		maxImageWidth: 1920,
 		maxImageHeight: 1100,

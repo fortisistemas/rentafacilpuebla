@@ -41,7 +41,7 @@
 									</div>
 									<div class="slide-desc-params">	
 										<div class="slide-desc-area">
-											<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
+											<img src="/images/area-icon.png" alt="" /><#if highlighted.area??>${highlighted.area}<#else>0</#if>m<sup>2</sup>
 										</div>
 										<div class="slide-desc-rooms">
 											<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
@@ -147,7 +147,7 @@
 						</div>
 						<div class="featured-offer-params">
 							<div class="featured-area">
-								<img src="/images/area-icon.png" alt="" />${highlighted.area}m<sup>2</sup>
+								<img src="/images/area-icon.png" alt="" /><#if highlighted.area??>${highlighted.area}<#else>o</#if>m<sup>2</sup>
 							</div>
 							<div class="featured-rooms">
 								<img src="/images/rooms-icon.png" alt="" />${highlighted.bedrooms}
@@ -510,7 +510,7 @@
 							</div>
 							<div class="grid-offer-params">
 								<div class="grid-area">
-									<img src="/images/area-icon.png" alt="" />${newProperty.area}m<sup>2</sup>
+									<img src="/images/area-icon.png" alt="" /><#if newProperty.area??>${newProperty.area}<#else>0</#if>m<sup>2</sup>
 								</div>
 								<div class="grid-rooms">
 									<img src="/images/rooms-icon.png" alt="" />${newProperty.bedrooms}
