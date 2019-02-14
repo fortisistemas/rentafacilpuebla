@@ -14,7 +14,7 @@
     <script type="text/javascript" src="/bootstrap/bootstrap.min.js"></script>
 
 <!-- Google Maps -->
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDfDCV5hXiPamCIT8_vwGXuzimLQ9MF76g&amp;sensor=false&amp;libraries=places"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBaLX1nY1jS9th1l1RofmsKF6awwMDg9Dc&amp;sensor=true&amp;libraries=places"></script>
 	
 <!-- plugins script -->
 	<script type="text/javascript" src="/js/plugins.js"></script>
