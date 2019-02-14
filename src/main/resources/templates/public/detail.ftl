@@ -287,13 +287,14 @@
 								</div>
 								<div class="clearfix"></div>
 							</div>
-							<form name="contact-from" action="#">
+							<form id="contact-form" name="contact-from" action="/contact/send" method="POST">
+								<input type="hidden" name="relatedToProp" value="" />
 								<input name="name" type="text" class="input-short main-input" placeholder="Tu Nombre" />
 								<input name="phone" type="text" class="input-short pull-right main-input" placeholder="Tu Movil" />
 								<input name="mail" type="email" class="input-full main-input" placeholder="Tu Email" />
 								<textarea name="message" class="input-full agent-textarea main-input" placeholder="Escriba Aqui Su Pregunta"></textarea>
 								<div class="form-submit-cont">
-									<a href="#" class="button-primary pull-right">
+									<a href="#" onclick="document.forms['contact-form'].submit();" class="button-primary pull-right">
 										<span>Enviar</span>
 										<div class="button-triangle"></div>
 										<div class="button-triangle2"></div>

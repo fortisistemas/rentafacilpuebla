@@ -1,6 +1,7 @@
 package com.fortisistemas.rfp.controllers;
 
 import java.util.Date;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -32,9 +33,11 @@ public class UploadFileRestController {
 
 		Date date = new Date();
 		long time = date.getTime();
+		Random rand = new Random();
+		int n = rand.nextInt(100);
 
 		String extension = image.getOriginalFilename().split("\\.")[1];
-		String fileName = "rfp-" + userName + "-" + time + "." + extension;
+		String fileName = "rfp-" + userName + "-" + time + "_" + n + "." + extension;
 		amazonService.uploadFile(image, fileName);
 		return "{\"id\":\"" + fileName + "\"}";
 	}

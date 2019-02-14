@@ -42,7 +42,7 @@
 					</address>
 				</div>
 				<div class="col-xs-12 col-md-6 margin-top-45">
-					<form name="contact-from" id="contact-form" action="#" method="get">
+					<form name="contact-from" id="contact-form" action="/contact/send" method="post">
 								<div id="form-result"></div>
 								<input name="name" id="name" type="text" class="input-short main-input required,all" placeholder="tu nombre" />
 								<input name="phone" id="phone" type="text" class="input-short pull-right main-input required,all" placeholder="numero movil" />
@@ -69,6 +69,6 @@
 </div>	
 
 <@endscripts.nav />
-		
+		<script src="/js/contact.js" type="text/javascript"></script>
 	</body>
 </html>

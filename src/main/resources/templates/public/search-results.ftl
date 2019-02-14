@@ -99,19 +99,23 @@
 						</div>
 						
 						<div class="offer-pagination margin-top-30">
-							<#assign _m = resultSize % 5>
+							<#assign _m = ((resultSize % 5) gt 0)?then(1,0)>
 							<#assign _d = resultSize / 5>
 							<#assign x = _d?floor + _m>
 							<#if x gt 1>
-								<a href="#" class="prev"><i class="jfont">&#xe800;</i></a>
+								<#if currentPage != 1>
+								<a href="javascript:pageClick(${currentPage-1})" class="prev"><i class="jfont">&#xe800;</i></a>
+								</#if>
 								<#list 1..x as i>
 									<#if currentPage == i>
-										<a class="active">${i}</a>
+										<a href="#" class="active">${i}</a>
 									<#else>
-										<a>${i}</a>
+										<a href="javascript:pageClick(${i})">${i}</a>
 									</#if>
 								</#list>
-								<a href="#" class="next"><i class="jfont">&#xe802;</i></a>
+								<#if currentPage != x>
+									<a href="javascript:pageClick(${currentPage+1})" class="next"><i class="jfont">&#xe802;</i></a>
+								</#if>
 							</#if>
 							
 							<div class="clearfix"></div>
@@ -137,6 +141,19 @@
 /**
 * 
 */
+function pageClick(pageNum) {
+	var currentAddress = window.location.href;
+	var newAddress = '';
+	if(currentAddress.includes('page')) {
+		newAddress = currentAddress.replace(/(page=)(\d{1,2})/g, '$1' + pageNum);
+	} else if (currentAddress.includes('?')) {
+		newAddress = currentAddress + '&page=' + pageNum;
+	} else {
+		newAddress = currentAddress + '?page=' + pageNum;
+	}
+	window.location.href = newAddress;
+}
+
 $(document).on("ready", function () {
 	// Google maps initialization
 	google.maps.event.addDomListener(window, 'load', init);
