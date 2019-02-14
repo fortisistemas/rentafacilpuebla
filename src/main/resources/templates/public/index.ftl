@@ -164,7 +164,7 @@
 						<div id="featured-map${highlighted.id}" class="featured-offer-map"></div>
 						<div class="button">	
 							<a href="/detail/${highlighted.id}" class="button-primary">
-								<span>read more</span>
+								<span>conoce mas</span>
 								<div class="button-triangle"></div>
 								<div class="button-triangle2"></div>
 								<div class="button-icon"><i class="fa fa-search"></i></div>
